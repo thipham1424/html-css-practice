@@ -74,3 +74,29 @@
   border-color: var(--primary-color);
 }
 
+/* OTHER */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+
+  font-size: 12px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.pagination-dot.active {
+  background-color: var(--primary-color);
+}
