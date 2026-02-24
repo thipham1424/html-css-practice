@@ -13,3 +13,27 @@ body {
   background-color: var(--bg-color);
   line-height: 1.5;
 }
+
+/* TYPOGRAPHY */
+.h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.text-supporting {
+  font-size: 16px;
+  color: var(--gray-color);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.text-caption {
+  font-size: 14px;
+  color: var(--gray-color);
+}
