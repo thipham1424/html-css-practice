@@ -2,7 +2,7 @@
   --primary-color: #937dc2;
   --text-color: #4d4c4c;
   --heading-color: #382c2c;
-  --heading-color-two: #313131;
+  --heading-color-sm: #313131;
   --gray-color: #777;
   --bg-color: #fff;
 
@@ -10,10 +10,10 @@
   --container-width: 1200px;
 
   /* TYPOGRAPHY */
-  --fs-h-one: 48px;
-  --fs-h-two: 38px;
-  --fs-h-three: 36px;
-  --fs-h-four: 24px;
+  --fs-xl: 48px;
+  --fs-lg: 38px;
+  --fs-md: 24px;
+  --fs-sm: 14px;
   --fs-typ: 14px;
 
   --fw-bold: 700;
@@ -34,29 +34,29 @@ body {
 }
 
 /* TYPOGRAPHY */
-.heading-one {
-  font-size: var(--fs-h1);
+.text-xl {
+  font-size: var(--fs-xl);
   color: var(--heading-color);
   font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
 }
 
-.heading-two {
-  font-size: var(--fs-h2);
-  color: var(--heading-color-2);
+.text-lg {
+  font-size: var(--fs-lg);
+  color: var(--heading-color-two);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
-.heading-three {
-  font-size: var(--fs-h3);
+.text-md {
+  font-size: var(--fs-md);
   color: var(--heading-color);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
-.heading-four {
-  font-size: var(--fs-h4);
+.text-sm {
+  font-size: var(--fs-sm);
   color: var(--heading-color);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
