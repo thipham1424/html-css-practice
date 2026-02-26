@@ -27,9 +27,7 @@ body {
 }
 
 .text-supporting {
-  font-size: 16px;
   color: var(--gray-color);
-  line-height: 1.6;
   max-width: 600px;
 }
 
