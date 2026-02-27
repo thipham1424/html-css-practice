@@ -118,6 +118,122 @@
           </button>
         </div>
       </section>
+      <section class="section">
+        <div class="gallery">
+          <div class="gallery__thumbnails">
+            <div class="gallery__thumb-box gallery__thumb-box--active">
+              <img
+                src="assets/images/galleryafter.jpg"
+                class="gallery__thumb"
+              />
+            </div>
+
+            <div class="gallery__thumb-box">
+              <img
+                src="assets/images/gallerybefore.jpg"
+                class="gallery__thumb"
+              />
+            </div>
+
+            <div class="gallery__thumb-box">
+              <img src="assets/images/galleryback.jpg" class="gallery__thumb" />
+            </div>
+
+            <div class="gallery__thumb-box">
+              <img
+                src="assets/images/mainproducpage.jpg"
+                class="gallery__thumb"
+              />
+            </div>
+          </div>
+
+          <div class="gallery__main">
+            <div class="gallery__badge">
+              <span class="gallery__badge-icon">
+                <img src="assets/icons/bi_book.svg" alt="Book icon" />
+              </span>
+              <span>flips a few pages</span>
+            </div>
+            <img
+              src="assets/images/mainproducpage.jpg"
+              class="gallery__main-image"
+            />
+            <div class="slider-control gallery__slider">
+              <button class="slider-control__btn">
+                <svg
+                  class="slider-control__icon"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <button class="slider-control__btn">
+                <svg
+                  class="slider-control__icon"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <script>
+      const gallery = document.querySelector(".gallery");
+      const thumbBoxes = gallery.querySelectorAll(".gallery__thumb-box");
+      const mainImage = gallery.querySelector(".gallery__main-image");
+
+      const prevBtn = gallery.querySelector(".slider-control__btn:first-child");
+      const nextBtn = gallery.querySelector(".slider-control__btn:last-child");
+
+      let currentIndex = 0;
+
+      function updateGallery(index) {
+        const img = thumbBoxes[index].querySelector("img");
+        mainImage.src = img.src;
+
+        thumbBoxes.forEach((box) =>
+          box.classList.remove("gallery__thumb-box--active"),
+        );
+        thumbBoxes[index].classList.add("gallery__thumb-box--active");
+
+        currentIndex = index;
+      }
+
+      thumbBoxes.forEach((box, index) => {
+        box.addEventListener("click", () => {
+          updateGallery(index);
+        });
+      });
+
+      nextBtn.addEventListener("click", () => {
+        let newIndex = currentIndex + 1;
+        if (newIndex >= thumbBoxes.length) newIndex = 0;
+        updateGallery(newIndex);
+      });
+
+      prevBtn.addEventListener("click", () => {
+        let newIndex = currentIndex - 1;
+        if (newIndex < 0) newIndex = thumbBoxes.length - 1;
+        updateGallery(newIndex);
+      });
+    </script>
   </body>
 </html>

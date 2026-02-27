@@ -1,7 +1,9 @@
 :root {
   --primary-color: #937dc2;
+  --secondary-color: #937dc299;
   --text-color: #4d4c4c;
   --text-color-primary: #4F4C57;
+  --text-color-badge: #313131;
   --text-color-secondary: #b8b8b8;
   --heading-color-primary: #382c2c;
   --heading-color-secondary: #313131;
@@ -19,6 +21,7 @@
   --fs-md: 24px;
   --fs-sm: 14px;
   --fs-typ: 14px;
+  --fs-badge: 12px;
 
   --fw-bold: 700;
   --fw-semibold: 600;
