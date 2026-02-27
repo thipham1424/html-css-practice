@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 8px;
   padding: 12px 24px;
-  border-radius: 6px;
+  border-radius: 2px;
   font-weight: var(--fw-semibold);
   transition: 0.3s ease;
 }

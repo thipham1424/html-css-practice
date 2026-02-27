@@ -212,7 +212,11 @@
                   alt=""
                   class="map__pin-bg"
                 />
-                <img src="assets/icons/book-world.svg" alt="" class="map__pin-icon" />
+                <img
+                  src="assets/icons/book-world.svg"
+                  alt=""
+                  class="map__pin-icon"
+                />
               </div>
             </div>
 
@@ -224,7 +228,11 @@
                   alt=""
                   class="map__pin-bg"
                 />
-                <img src="assets/icons/book-world.svg" alt="" class="map__pin-icon" />
+                <img
+                  src="assets/icons/book-world.svg"
+                  alt=""
+                  class="map__pin-icon"
+                />
               </div>
             </div>
 
@@ -236,9 +244,49 @@
                   alt=""
                   class="map__pin-bg"
                 />
-                <img src="assets/icons/book-world.svg" alt="" class="map__pin-icon" />
+                <img
+                  src="assets/icons/book-world.svg"
+                  alt=""
+                  class="map__pin-icon"
+                />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="assets/images/SFUFF.png" alt="Financial Feminist" />
+          </div>
+
+          <div class="product-card__content">
+            <h3 class="text-md">Financial Feminist</h3>
+            <p class="body-text">Tori Dunlap</p>
+
+            <div class="product-card__bottom">
+              <span class="text-sm">$20.46</span>
+
+              <button
+                class="product-card__wishlist"
+                aria-label="Add to wishlist"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <button class="btn btn-primary product-card__cart">
+              <img src="assets/icons/cart.svg" alt="" />
+              Add to cart
+            </button>
           </div>
         </div>
       </section>
@@ -281,6 +329,13 @@
         let newIndex = currentIndex - 1;
         if (newIndex < 0) newIndex = thumbBoxes.length - 1;
         updateGallery(newIndex);
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".product-card__wishlist").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
       });
     </script>
   </body>
