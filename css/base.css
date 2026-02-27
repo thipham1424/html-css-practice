@@ -2,11 +2,12 @@
   --primary-color: #937dc2;
   --text-color: #4d4c4c;
   --text-color-primary: #4F4C57;
+  --text-color-secondary: #b8b8b8;
   --heading-color-primary: #382c2c;
   --heading-color-secondary: #313131;
   --black-color: #231F2D;
   --black-color-primary: #231F2D80;
-  --gray-color: #777;
+  --gray-color: #F1F1F1;
   --bg-color: #fff;
 
   /* LAYOUT */
