@@ -71,5 +71,7 @@ body {
 }
 
 .body-text {
+  color: var(--text-color);
   font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
 }

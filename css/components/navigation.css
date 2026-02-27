@@ -1,0 +1,36 @@
+.nav {
+  max-width: 1192px;
+  height: 49px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 49px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+.nav__item {
+  display: flex;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  font-size: 18px;
+  white-space: nowrap;
+  padding: 0 8px;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: var(--primary-color);
+}
