@@ -5,7 +5,3 @@
   border-radius: 6px;
   outline: none;
 }
-
-.input:focus {
-  border-color: var(--primary-color);
-}
