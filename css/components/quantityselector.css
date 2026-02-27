@@ -1,0 +1,26 @@
+.quantity {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.quantity__btn {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--black-color);
+  border-radius: 50%;
+}
+
+.quantity__btn:hover {
+  background: var(--gray-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.quantity__number {
+  line-height: var(--lh-normal);
+  font-weight: var(--fw-regular);
+  color: var(--text-color-primary);
+  min-width: 24px;
+  text-align: center;
+}
