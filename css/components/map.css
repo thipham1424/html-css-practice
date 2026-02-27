@@ -1,6 +1,6 @@
 .map {
-  width: 576.8px;
-  height: 466.65px;
+  width: 577px;
+  height: 467px;
   position: relative;
   border-radius: 5.1px;
   overflow: hidden;
@@ -28,8 +28,8 @@
 }
 
 .map__marker .icon {
-  width: 27.54px;
-  height: 32.05px;
+  width: 28px;
+  height: 32px;
 }
 
 .map__pin {
@@ -46,6 +46,6 @@
   top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 16.01px;
-  height: 16.01px;
+  width: 16px;
+  height: 16px;
 }
