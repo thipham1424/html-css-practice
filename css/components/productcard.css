@@ -24,7 +24,7 @@
 }
 
 .product-card__wishlist.active {
-  color: var(--primary-color); /* tím đậm khi click */
+  color: var(--primary-color);
 }
 
 .product-card__wishlist svg {
@@ -50,5 +50,5 @@
 }
 
 .product-card__content {
-  padding: 20px 0px 0px 0px;
+  padding-top: 20px;
 }
