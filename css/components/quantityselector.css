@@ -7,7 +7,7 @@
 .quantity__btn {
   width: 20px;
   height: 20px;
-  border: 1px solid var(--black-color);
+  border: 1px solid var(--dark-color);
   border-radius: 50%;
 }
 
