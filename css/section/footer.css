@@ -27,14 +27,14 @@
   gap: 16px;
 }
 
-.logo__brand {
+.footer-logo__brand {
   font-weight: var(--fw-regular);
   color: var(--bg-color);
   display: flex;
   align-items: center;
 }
 
-.logo__icon {
+.footer-logo__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
