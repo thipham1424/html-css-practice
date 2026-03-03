@@ -1,4 +1,4 @@
-.pagination-dot {
+.pagination__dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -6,6 +6,6 @@
   background-color: var(--bg-color);
 }
 
-.pagination-dot.active {
+.pagination__dot--active {
   background-color: var(--primary-color);
 }

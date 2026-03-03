@@ -13,11 +13,11 @@
         <h2>Button</h2>
 
         <div class="row">
-          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn--primary">Primary</button>
 
-          <button class="btn btn-text">Text Button</button>
+          <button class="btn btn--text">Text Button</button>
 
-          <button class="btn btn-primary btn-sm">Small Button</button>
+          <button class="btn btn--primary btn--sm">Small Button</button>
         </div>
       </section>
 
@@ -44,10 +44,10 @@
         <h2>Pagination Dots</h2>
 
         <div class="pagination" style="display: flex; gap: 8px">
-          <span class="pagination-dot active"></span>
-          <span class="pagination-dot"></span>
-          <span class="pagination-dot"></span>
-          <span class="pagination-dot"></span>
+          <span class="pagination__dot pagination__dot--active"></span>
+          <span class="pagination__dot"></span>
+          <span class="pagination__dot"></span>
+          <span class="pagination__dot"></span>
         </div>
       </section>
       <section class="layout-section">
@@ -56,18 +56,18 @@
         <div class="row">
           <img src="assets/icons/heart.svg" alt="Heart icon" class="icon" />
 
-          <button class="btn btn-primary">
-            <img src="assets/icons/heart.svg" alt="Heart" class="icon" />
+          <button class="btn btn--primary">
+            <img src="assets/icons/heart.svg" alt="" class="icon" />
             Wishlist
           </button>
 
-          <button class="btn btn-text btn-sm">
-            <img src="assets/icons/heart.svg" alt="Heart" class="icon" />
+          <button class="btn btn--text btn--sm">
+            <img src="assets/icons/heart.svg" alt="" class="icon" />
             Like
           </button>
         </div>
       </section>
-      <section class="layout-section">
+      <section class="section">
         <div class="slider-control">
           <button class="slider-control__btn">
             <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
@@ -94,14 +94,14 @@
           </button>
         </div>
       </section>
-      <section class="layout-section">
+      <section class="section">
         <div class="quantity">
           <button class="quantity__btn">-</button>
           <span class="quantity__number">1</span>
           <button class="quantity__btn">+</button>
         </div>
       </section>
-      <section class="layout-section">
+      <section class="section">
         <nav class="breadcrumb">
           <a href="#">Home</a>
           <span class="breadcrumb__separator">></span>
@@ -110,7 +110,7 @@
           <span class="breadcrumb__current">Chain of Gold</span>
         </nav>
       </section>
-      <section class="layout-section">
+      <section class="section">
         <div class="search">
           <input type="text" placeholder="Type any book here" />
           <button class="search__btn">
@@ -118,33 +118,30 @@
           </button>
         </div>
       </section>
-      <section class="layout-section">
+      <section class="section">
         <div class="gallery">
           <div class="gallery__thumbnails">
             <div class="gallery__thumb-box gallery__thumb-box--active">
               <img
-                src="assets/images/gallery-after.jpg"
+                src="assets/images/galleryafter.jpg"
                 class="gallery__thumb"
               />
             </div>
 
             <div class="gallery__thumb-box">
               <img
-                src="assets/images/gallery-before.jpg"
+                src="assets/images/gallerybefore.jpg"
                 class="gallery__thumb"
               />
             </div>
 
             <div class="gallery__thumb-box">
-              <img
-                src="assets/images/gallery-back.jpg"
-                class="gallery__thumb"
-              />
+              <img src="assets/images/galleryback.jpg" class="gallery__thumb" />
             </div>
 
             <div class="gallery__thumb-box">
               <img
-                src="assets/images/main-product-page.jpg"
+                src="assets/images/mainproducpage.jpg"
                 class="gallery__thumb"
               />
             </div>
@@ -153,12 +150,12 @@
           <div class="gallery__main">
             <div class="gallery__badge">
               <span class="gallery__badge-icon">
-                <img src="assets/icons/bi-book.svg" alt="Book icon" />
+                <img src="assets/icons/bibook.svg" alt="Book icon" />
               </span>
               <span>flips a few pages</span>
             </div>
             <img
-              src="assets/images/main-product-page.jpg"
+              src="assets/images/mainproducpage.jpg"
               class="gallery__main-image"
             />
             <div class="slider-control gallery__slider">
@@ -198,70 +195,69 @@
         </div>
       </section>
       <section class="map-section">
-        <div class="map">
-          <img
-            src="assets/images/map.png"
-            alt="Store location map"
-            class="map__image"
-          />
+        <div class="container">
+          <div class="map">
+            <img
+              src="assets/images/map.png"
+              alt="Store location map"
+              class="map__image"
+            />
 
-          <div class="map__marker" style="top: 30%; left: 30%">
-            <span class="map__label">B-World</span>
+            <div class="map__marker" style="top: 30%; left: 30%">
+              <span class="map__label">B-World</span>
 
-            <div class="map__pin">
-              <img
-                src="assets/icons/location.svg"
-                alt="Location"
-                class="map__pin-bg"
-              />
-              <img
-                src="assets/icons/book-world.svg"
-                alt="Book World"
-                class="map__pin-icon"
-              />
+              <div class="map__pin">
+                <img
+                  src="assets/icons/location.svg"
+                  alt=""
+                  class="map__pin-bg"
+                />
+                <img
+                  src="assets/icons/bookworld.svg"
+                  alt=""
+                  class="map__pin-icon"
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="map__marker" style="top: 35%; left: 83%">
-            <span class="map__label">B-World</span>
-            <div class="map__pin">
-              <img
-                src="assets/icons/location.svg"
-                alt="Location"
-                class="map__pin-bg"
-              />
-              <img
-                src="assets/icons/book-world.svg"
-                alt="Book World"
-                class="map__pin-icon"
-              />
+            <div class="map__marker" style="top: 35%; left: 83%">
+              <span class="map__label">B-World</span>
+              <div class="map__pin">
+                <img
+                  src="assets/icons/location.svg"
+                  alt=""
+                  class="map__pin-bg"
+                />
+                <img
+                  src="assets/icons/book-world.svg"
+                  alt=""
+                  class="map__pin-icon"
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="map__marker" style="top: 60%; left: 15%">
-            <span class="map__label">B-World</span>
-            <div class="map__pin">
-              <img
-                src="assets/icons/location.svg"
-                alt="Location"
-                class="map__pin-bg"
-              />
-              <img
-                src="assets/icons/book-world.svg"
-                alt="Book World"
-                class="map__pin-icon"
-              />
+            <div class="map__marker" style="top: 60%; left: 15%">
+              <span class="map__label">B-World</span>
+              <div class="map__pin">
+                <img
+                  src="assets/icons/location.svg"
+                  alt=""
+                  class="map__pin-bg"
+                />
+                <img
+                  src="assets/icons/book-world.svg"
+                  alt=""
+                  class="map__pin-icon"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="layout-section">
+      <section class="section">
         <div class="product-card">
           <div class="product-card__image">
-            <img
-              src="assets/images/financial-feminist.png"
-              alt="Financial Feminist"
-            />
+            <img src="assets/images/financialfeminist.png" alt="Financial Feminist" />
           </div>
 
           <div class="product-card__content">
@@ -271,10 +267,10 @@
             <div class="product-card__bottom">
               <span class="text-sm">$20.46</span>
 
-              <button
-                class="product-card__wishlist"
-                aria-label="Add to wishlist"
-              >
+                <button
+                  class="product-card__wishlist"
+                  aria-label="Add to wishlist"
+                >
                 <svg
                   viewBox="0 0 24 24"
                   fill="currentColor"
@@ -287,14 +283,14 @@
               </button>
             </div>
 
-            <button class="btn btn-primary product-card__cart">
-              <img src="assets/icons/cart.svg" alt="Cart" />
+            <button class="btn btn--primary product-card__cart">
+              <img src="assets/icons/cart.svg" alt="" />
               Add to cart
             </button>
           </div>
         </div>
       </section>
-      <section class="layout-section">
+      <section class="section">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -357,10 +353,11 @@
         if (newIndex < 0) newIndex = thumbBoxes.length - 1;
         updateGallery(newIndex);
       });
-
+    </script>
+    <script>
       document.querySelectorAll(".product-card__wishlist").forEach((btn) => {
         btn.addEventListener("click", function () {
-          this.classList.toggle("active");
+          this.classList.toggle("product-card__wishlist--active");
         });
       });
     </script>

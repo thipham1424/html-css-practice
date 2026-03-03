@@ -23,7 +23,7 @@
   color: var(--bg-color);
 }
 
-.product-card__wishlist.active {
+.product-card__wishlist--active {
   color: var(--primary-color);
 }
 
