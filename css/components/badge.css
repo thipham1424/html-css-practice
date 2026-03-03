@@ -2,11 +2,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   padding: 0 6px;
-  font-size: var(--fs-typ);
+  font-size: var(--fs-badge);
   border-radius: 50px;
-  background-color: var(--primary-color);
+  background-color: var(--purple-color);
   color: var(--bg-color);
 }

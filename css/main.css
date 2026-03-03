@@ -15,3 +15,5 @@
 @import "./components/map.css";
 @import "./components/product-card.css";
 @import "./components/navigation.css";
+
+@import "./section/headerarea.css";
