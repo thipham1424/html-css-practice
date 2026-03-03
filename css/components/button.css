@@ -18,7 +18,7 @@
   opacity: 0.9;
 }
 
-.btn-outline {
+.btn--outline {
   background: none;
   color: var(--primary-color);
   font-weight: var(--fw-medium);
