@@ -1,0 +1,102 @@
+.hero {
+  background: none;
+  padding: 80px 0;
+  position: relative;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 41px;
+  border-radius: 3px;
+  border: 1px solid var(--purple-color);
+  color: var(--purple-color);
+  gap: 10px;
+  font-size: var(--fs-badge);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+}
+
+.hero__text {
+  max-width: 553px;
+  height: 353px;
+}
+
+.hero__title {
+  margin: 20px 0;
+}
+
+.hero__desc {
+  width: 478px;
+  height: 97px;
+  margin-bottom: 30px;
+}
+
+.hero__image-block {
+  width: 627px;
+  height: 533px;
+  position: relative;
+  padding: 60px;
+}
+
+/* TEXT bên trái trên */
+.hero__promo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #4d4c4c;
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+  max-height: 500px;
+}
+
+.hero__note {
+  position: absolute;
+  right: 60px;
+  font-size: var(--fs-typ);
+  color: #777;
+}
+
+.hero__slider {
+  position: absolute;
+  left: 10px;
+}
+
+/* wrapper pagination */
+.hero__pagination {
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* dot thường */
+.pagination-dot {
+  width: 0px;
+  height: 70px;
+  border: 1px solid var(--primary-color);
+  opacity: 0.3;
+}
+
+.pagination-dot.active {
+  border: 1px solid var(--primary-color);
+  opacity: 1;
+}
