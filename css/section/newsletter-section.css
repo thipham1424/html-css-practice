@@ -10,7 +10,6 @@
 }
 
 .newsletter__content {
-  width: 178px;
   flex: 1;
 }
 
@@ -47,8 +46,6 @@
 
 .newsletter__btn {
   margin-top: 30px;
-  width: 555px;
-  height: 49px;
 }
 
 .newsletter__map {
