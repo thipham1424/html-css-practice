@@ -67,7 +67,7 @@
           </button>
         </div>
       </section>
-      <section class="section">
+      <section class="layout-section">
         <div class="slider-control">
           <button class="slider-control__btn">
             <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
@@ -94,31 +94,39 @@
           </button>
         </div>
       </section>
-      <section class="section">
+      <section class="layout-section">
         <div class="quantity">
           <button class="quantity__btn">-</button>
           <span class="quantity__number">1</span>
           <button class="quantity__btn">+</button>
         </div>
       </section>
-      <section class="section">
+      <section class="layout-section">
         <nav class="breadcrumb">
-          <a href="#">Home</a>
+          <a class="breadcrumb__link" href="#">Home</a>
           <span class="breadcrumb__separator">></span>
-          <a href="#">Fantasy books</a>
+          <a class="breadcrumb__link" href="#">Fantasy books</a>
           <span class="breadcrumb__separator">></span>
           <span class="breadcrumb__current">Chain of Gold</span>
         </nav>
       </section>
-      <section class="section">
+      <section class="layout-section">
         <div class="search">
-          <input type="text" placeholder="Type any book here" />
+          <input
+            class="seach__input"
+            type="text"
+            placeholder="Type any book here"
+          />
           <button class="search__btn">
-            <img src="assets/icons/search.svg" alt="Search icon" />
+            <img
+              src="assets/icons/search.svg"
+              alt="Search icon"
+              class="search__btn-icon"
+            />
           </button>
         </div>
       </section>
-      <section class="section">
+      <section class="layout-section">
         <div class="gallery">
           <div class="gallery__thumbnails">
             <div class="gallery__thumb-box gallery__thumb-box--active">
@@ -194,7 +202,7 @@
           </div>
         </div>
       </section>
-      <section class="map-section">
+      <section class="layout-section map-section">
         <div class="container">
           <div class="map">
             <img
@@ -254,10 +262,14 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="layout-section">
         <div class="product-card">
           <div class="product-card__image">
-            <img src="assets/images/financialfeminist.png" alt="Financial Feminist" />
+            <img
+              src="assets/images/financial-feminist.png"
+              alt="Financial Feminist"
+              class="product-card__img"
+            />
           </div>
 
           <div class="product-card__content">
@@ -267,11 +279,12 @@
             <div class="product-card__bottom">
               <span class="text-sm">$20.46</span>
 
-                <button
-                  class="product-card__wishlist"
-                  aria-label="Add to wishlist"
-                >
+              <button
+                class="product-card__wishlist"
+                aria-label="Add to wishlist"
+              >
                 <svg
+                  class="icon"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   stroke="currentColor"
@@ -284,13 +297,13 @@
             </div>
 
             <button class="btn btn--primary product-card__cart">
-              <img src="assets/icons/cart.svg" alt="" />
+              <img src="assets/icons/cart.svg" alt="Cart" class="icon" />
               Add to cart
             </button>
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="layout-section">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -353,8 +366,6 @@
         if (newIndex < 0) newIndex = thumbBoxes.length - 1;
         updateGallery(newIndex);
       });
-    </script>
-    <script>
       document.querySelectorAll(".product-card__wishlist").forEach((btn) => {
         btn.addEventListener("click", function () {
           this.classList.toggle("product-card__wishlist--active");

@@ -7,7 +7,7 @@
   margin-bottom: 12px;
 }
 
-.breadcrumb a {
+.breadcrumb__link {
   color: var(--dark-color-alpha-50);
   text-decoration: none;
 }
