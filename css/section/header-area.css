@@ -76,13 +76,12 @@
 
 .header-area__actions .icon {
   position: relative;
-  padding: 0 28px;   /* tăng khoảng cách */
+  padding: 0 28px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Gạch dọc giữa icon */
 .header-area__actions .icon:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -95,7 +94,6 @@
   opacity: 0.4;
 }
 
-/* Badge position */
 .icon--with-badge .badge {
   position: absolute;
   top: -6px;
@@ -103,7 +101,6 @@
   font-size: 12px;
 }
 
-/* ===== BOTTOM ===== */
 .header-area__bottom {
   border-top: 1px solid var(--primary-color);
   padding: 14px 0;
