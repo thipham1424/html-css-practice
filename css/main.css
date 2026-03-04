@@ -7,11 +7,11 @@
 @import "./components/badge.css";
 @import "./components/icon.css";
 @import "./components/pagination.css";
-@import "./components/slidercontrol.css";
-@import "./components/quantityselector.css";
+@import "./components/slider-control.css";
+@import "./components/quantity-selector.css";
 @import "./components/breadcrumb.css";
-@import "./components/searchbar.css";
-@import "./components/imagegallery.css";
+@import "./components/search-bar.css";
+@import "./components/image-gallery.css";
 @import "./components/map.css";
-@import "./components/productcard.css";
+@import "./components/product-card.css";
 @import "./components/navigation.css";
