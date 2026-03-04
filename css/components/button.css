@@ -5,7 +5,7 @@
   gap: 8px;
   padding: 12px 24px;
   border-radius: 2px;
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-regular);
   transition: 0.3s ease;
 }
 
