@@ -33,7 +33,7 @@
   margin: 0 1px;
 }
 
-.logo__icon img {
+.logo__icon-icon {
   width: 12px;
   height: 12px;
   width: auto;
@@ -74,15 +74,15 @@
   align-items: center;
 }
 
-.header-area__actions .icon {
+.header-area__icon {
   position: relative;
-  padding: 0 28px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header-area__actions .icon:not(:last-child)::after {
+.header-area__icon:not(:last-child)::after {
   content: "";
   position: absolute;
   right: 0;
@@ -94,10 +94,10 @@
   opacity: 0.4;
 }
 
-.icon--with-badge .badge {
+.header-area__icon--with-badge .header-area__badge {
   position: absolute;
   top: -6px;
-  right: 14px;
+  right: 15px;
   font-size: 12px;
 }
 
