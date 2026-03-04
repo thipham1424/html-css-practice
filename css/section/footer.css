@@ -3,7 +3,6 @@
   background: var(--primary-color);
   color: var(--bg-color);
   margin-top: 80px;
-
   display: flex;
   flex-direction: column;
 }
@@ -132,7 +131,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
 }
 
 .footer-area__social {
