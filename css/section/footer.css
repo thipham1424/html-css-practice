@@ -1,5 +1,4 @@
 .footer-area {
-  height: 410px;
   background: var(--primary-color);
   color: var(--bg-color);
   margin-top: 80px;
@@ -126,6 +125,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .footer-area__social {
