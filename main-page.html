@@ -120,6 +120,189 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="layout-section">
+        <div class="container">
+          <nav class="breadcrumb">
+            <a href="#">Home</a>
+            <span class="breadcrumb__separator">></span>
+            <a href="#">Fantasy books</a>
+            <span class="breadcrumb__separator">></span>
+            <span class="breadcrumb__current">Chain of Gold</span>
+          </nav>
+        </div>
+      </section>
+      <section class="layout-section product-detail">
+        <div class="container">
+          <div class="product-detail__wrapper">
+            <div class="gallery">
+              <div class="gallery__thumbnails">
+                <div class="gallery__thumb-box gallery__thumb-box--active">
+                  <img
+                    src="assets/images/gallery-after.jpg"
+                    class="gallery__thumb"
+                  />
+                </div>
+
+                <div class="gallery__thumb-box">
+                  <img
+                    src="assets/images/gallery-before.jpg"
+                    class="gallery__thumb"
+                  />
+                </div>
+
+                <div class="gallery__thumb-box">
+                  <img
+                    src="assets/images/gallery-back.jpg"
+                    class="gallery__thumb"
+                  />
+                </div>
+
+                <div class="gallery__thumb-box">
+                  <img
+                    src="assets/images/main-product-page.jpg"
+                    class="gallery__thumb"
+                  />
+                </div>
+              </div>
+
+              <div class="gallery__main">
+                <div class="gallery__badge">
+                  <span class="gallery__badge-icon">
+                    <img src="assets/icons/bi-book.svg" alt="Book icon" />
+                  </span>
+                  <span>flips a few pages</span>
+                </div>
+                <img
+                  src="assets/images/main-product-page.jpg"
+                  class="gallery__main-image"
+                />
+                <div class="slider-control gallery__slider">
+                  <button class="slider-control__btn">
+                    <svg
+                      class="slider-control__icon"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <button class="slider-control__btn">
+                    <svg
+                      class="slider-control__icon"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-detail__info">
+              <h1 class="text--md product-detail__title">
+                Chain of Gold: The Last Hours #1
+              </h1>
+
+              <p class="product-detail__author">Cassandra Clare</p>
+
+              <div class="product-detail__rating">
+                <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+                <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+                <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+                <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+                <img
+                  src="assets/icons/half-star.svg"
+                  alt="half start"
+                  class="icon"
+                />
+                4.5
+              </div>
+
+              <div class="product-detail__price">$12.49</div>
+
+              <p class="body--text product-detail__description">
+                From #1 New York Times and USA TODAY bestselling author
+                Cassandra Clare comes the first novel in a brand-new trilogy
+                where evil hides in plain sight and love cuts deeper than any
+                blade. Chain of Gold is a Shadowhunters novel.
+              </p>
+
+              <div class="quantity" data-min="1" data-max="10">
+                <button class="quantity__btn quantity__btn--minus">-</button>
+                <span class="quantity__number">1</span>
+                <button class="quantity__btn quantity__btn--plus">+</button>
+              </div>
+
+              <div class="product-detail__actions">
+                <button class="btn btn--primary product-detail__btn">
+                  Add to cart
+                </button>
+
+                <button class="btn btn--outline product-detail__btn">
+                  Favorite
+                </button>
+              </div>
+
+              <div class="product-detail__divider"></div>
+
+              <div class="product-detail__meta">
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Publisher :</span>
+                  <span class="product-detail__meta-value"
+                    >Margaret K.Books</span
+                  >
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label"
+                    >Publication date :</span
+                  >
+                  <span class="product-detail__meta-value">March 3, 2020</span>
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Language :</span>
+                  <span class="product-detail__meta-value">English</span>
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Reading age :</span>
+                  <span class="product-detail__meta-value">14+</span>
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Print length :</span>
+                  <span class="product-detail__meta-value">592 pages</span>
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Dimensions :</span>
+                  <span class="product-detail__meta-value"
+                    >6 x 1.8 x 9 inches</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer-area">
       <div class="container footer-area__top">
         <div class="footer-area__grid">
@@ -277,5 +460,77 @@
         </div>
       </div>
     </footer>
+    <script>
+      const gallery = document.querySelector(".gallery");
+      const thumbBoxes = gallery.querySelectorAll(".gallery__thumb-box");
+      const mainImage = gallery.querySelector(".gallery__main-image");
+
+      const prevBtn = gallery.querySelector(".slider-control__btn:first-child");
+      const nextBtn = gallery.querySelector(".slider-control__btn:last-child");
+
+      let currentIndex = 0;
+
+      function updateGallery(index) {
+        const img = thumbBoxes[index].querySelector("img");
+        mainImage.src = img.src;
+
+        thumbBoxes.forEach((box) =>
+          box.classList.remove("gallery__thumb-box--active"),
+        );
+        thumbBoxes[index].classList.add("gallery__thumb-box--active");
+
+        currentIndex = index;
+      }
+
+      thumbBoxes.forEach((box, index) => {
+        box.addEventListener("click", () => {
+          updateGallery(index);
+        });
+      });
+
+      nextBtn.addEventListener("click", () => {
+        let newIndex = currentIndex + 1;
+        if (newIndex >= thumbBoxes.length) newIndex = 0;
+        updateGallery(newIndex);
+      });
+
+      prevBtn.addEventListener("click", () => {
+        let newIndex = currentIndex - 1;
+        if (newIndex < 0) newIndex = thumbBoxes.length - 1;
+        updateGallery(newIndex);
+      });
+      const quantity = document.querySelector(".quantity");
+      const minusBtn = quantity.querySelector(".quantity__btn--minus");
+      const plusBtn = quantity.querySelector(".quantity__btn--plus");
+      const number = quantity.querySelector(".quantity__number");
+
+      const min = parseInt(quantity.dataset.min) || 1;
+      const max = parseInt(quantity.dataset.max) || Infinity;
+
+      function updateButtons(value) {
+        minusBtn.disabled = value <= min;
+        plusBtn.disabled = value >= max;
+      }
+
+      minusBtn.addEventListener("click", () => {
+        let value = parseInt(number.textContent);
+        if (value > min) {
+          value--;
+          number.textContent = value;
+          updateButtons(value);
+        }
+      });
+
+      plusBtn.addEventListener("click", () => {
+        let value = parseInt(number.textContent);
+        if (value < max) {
+          value++;
+          number.textContent = value;
+          updateButtons(value);
+        }
+      });
+
+      updateButtons(parseInt(number.textContent));
+    </script>
   </body>
 </html>
