@@ -11,15 +11,6 @@
   display: block;
 }
 
-.map__marker {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  width: 32px;
-  font-size: var(--fs-badge);
-  line-height: var(--lh-tight);
-}
 
 .map__label {
   font-size: var(--fs-badge);
@@ -27,25 +18,3 @@
   white-space: nowrap;
 }
 
-.map__marker .icon {
-  width: 28px;
-  height: 32px;
-}
-
-.map__pin {
-  position: relative;
-}
-
-.map__pin-bg {
-  width: 100%;
-  display: block;
-}
-
-.map__pin-icon {
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 16px;
-  height: 16px;
-}
