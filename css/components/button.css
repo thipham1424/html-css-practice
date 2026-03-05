@@ -4,27 +4,32 @@
   justify-content: center;
   gap: 8px;
   padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: var(--fw-semibold);
+  border-radius: 2px;
+  font-weight: var(--fw-regular);
   transition: 0.3s ease;
 }
 
-.btn-primary {
+.btn--primary {
   background-color: var(--primary-color);
   color: var(--bg-color);
 }
 
-.btn-primary:hover {
+.btn--primary:hover {
   opacity: 0.9;
 }
 
-.btn-text {
+.btn--outline {
   background: none;
   color: var(--primary-color);
-  padding: 0;
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-normal);
+  border-radius: 2px;
+  border: 2px solid var(--primary-color);
+  padding: 12px 24px 12px 24px;
+  gap: 10px;
 }
 
-.btn-sm {
+.btn--sm {
   padding: 8px 16px;
   font-size: var(--fs-typ);
 }

@@ -1,0 +1,21 @@
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-typ);
+  line-height: var(--lh-tight);
+  margin-bottom: 12px;
+}
+
+.breadcrumb__link {
+  color: var(--dark-color-alpha-50);
+  text-decoration: none;
+}
+
+.breadcrumb__current {
+  color: var(--dark-color);
+}
+
+.breadcrumb__separator {
+  color: var(--primary-color);
+}

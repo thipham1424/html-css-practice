@@ -7,3 +7,19 @@
 @import "./components/badge.css";
 @import "./components/icon.css";
 @import "./components/pagination.css";
+@import "./components/slider-control.css";
+@import "./components/quantity-selector.css";
+@import "./components/breadcrumb.css";
+@import "./components/search-bar.css";
+@import "./components/image-gallery.css";
+@import "./components/map.css";
+@import "./components/product-card.css";
+@import "./components/navigation.css";
+
+@import "./section/header-area.css";
+@import "./section/footer.css";
+@import "./section/benefit-section.css";
+@import "./section/product-section.css";
+@import "./section/product-detail.css";
+@import "./section/newsletter-section.css";
+@import "./section/hero-section.css";

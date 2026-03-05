@@ -1,0 +1,20 @@
+.map {
+  width: 577px;
+  height: 467px;
+  position: relative;
+  border-radius: 5.1px;
+  overflow: hidden;
+}
+
+.map__image {
+  width: 100%;
+  display: block;
+}
+
+
+.map__label {
+  font-size: var(--fs-badge);
+  font-weight: var(--fw-regular);
+  white-space: nowrap;
+}
+

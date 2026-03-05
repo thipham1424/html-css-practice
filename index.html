@@ -9,19 +9,19 @@
 
   <body>
     <div class="container">
-      <section class="section">
+      <section class="layout-section">
         <h2>Button</h2>
 
         <div class="row">
-          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn--primary">Primary</button>
 
-          <button class="btn btn-text">Text Button</button>
+          <button class="btn btn--text">Text Button</button>
 
-          <button class="btn btn-primary btn-sm">Small Button</button>
+          <button class="btn btn--primary btn--sm">Small Button</button>
         </div>
       </section>
 
-      <section class="section">
+      <section class="layout-section">
         <h2>Badge</h2>
 
         <div class="row">
@@ -32,7 +32,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="layout-section">
         <h2>Input</h2>
 
         <div class="row" style="max-width: 400px">
@@ -40,33 +40,288 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="layout-section">
         <h2>Pagination Dots</h2>
 
         <div class="pagination" style="display: flex; gap: 8px">
-          <span class="pagination-dot active"></span>
-          <span class="pagination-dot"></span>
-          <span class="pagination-dot"></span>
-          <span class="pagination-dot"></span>
+          <span class="pagination__dot pagination__dot--active"></span>
+          <span class="pagination__dot"></span>
+          <span class="pagination__dot"></span>
+          <span class="pagination__dot"></span>
         </div>
       </section>
-      <section class="section">
+      <section class="layout-section">
         <h2>Icon (IMG)</h2>
 
         <div class="row">
           <img src="assets/icons/heart.svg" alt="Heart icon" class="icon" />
 
-          <button class="btn btn-primary">
-            <img src="assets/icons/heart.svg" alt="" class="icon" />
+          <button class="btn btn--primary">
+            <img src="assets/icons/heart.svg" alt="Heart icon" class="icon" />
             Wishlist
           </button>
 
-          <button class="btn btn-text btn-sm">
-            <img src="assets/icons/heart.svg" alt="" class="icon" />
+          <button class="btn btn--text btn--sm">
+            <img src="assets/icons/heart.svg" alt="Heart icon" class="icon" />
             Like
           </button>
         </div>
       </section>
+      <section class="layout-section">
+        <div class="slider-control">
+          <button class="slider-control__btn">
+            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+              <path
+                d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <button class="slider-control__btn">
+            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+              <path
+                d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="layout-section">
+        <div class="quantity">
+          <button class="quantity__btn">-</button>
+          <span class="quantity__number">1</span>
+          <button class="quantity__btn">+</button>
+        </div>
+      </section>
+      <section class="layout-section">
+        <nav class="breadcrumb">
+          <a class="breadcrumb__link" href="#">Home</a>
+          <span class="breadcrumb__separator">></span>
+          <a class="breadcrumb__link" href="#">Fantasy books</a>
+          <span class="breadcrumb__separator">></span>
+          <span class="breadcrumb__current">Chain of Gold</span>
+        </nav>
+      </section>
+      <section class="layout-section">
+        <div class="search">
+          <input
+            class="search__input"
+            type="text"
+            placeholder="Type any book here"
+          />
+          <button class="search__btn">
+            <img
+              src="assets/icons/search.svg"
+              alt="Search icon"
+              class="search__btn-icon"
+            />
+          </button>
+        </div>
+      </section>
+      <section class="layout-section">
+        <div class="gallery">
+          <div class="gallery__thumbnails">
+            <div class="gallery__thumb-box gallery__thumb-box--active">
+              <img
+                src="assets/images/galleryafter.jpg"
+                class="gallery__thumb"
+              />
+            </div>
+
+            <div class="gallery__thumb-box">
+              <img
+                src="assets/images/gallerybefore.jpg"
+                class="gallery__thumb"
+              />
+            </div>
+
+            <div class="gallery__thumb-box">
+              <img src="assets/images/galleryback.jpg" class="gallery__thumb" />
+            </div>
+
+            <div class="gallery__thumb-box">
+              <img
+                src="assets/images/mainproducpage.jpg"
+                class="gallery__thumb"
+              />
+            </div>
+          </div>
+
+          <div class="gallery__main">
+            <div class="gallery__badge">
+              <span class="gallery__badge-icon">
+                <img src="assets/icons/bibook.svg" alt="Book icon" />
+              </span>
+              <span>flips a few pages</span>
+            </div>
+            <img
+              src="assets/images/mainproducpage.jpg"
+              class="gallery__main-image"
+            />
+            <div class="slider-control gallery__slider">
+              <button class="slider-control__btn">
+                <svg
+                  class="slider-control__icon"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <button class="slider-control__btn">
+                <svg
+                  class="slider-control__icon"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <path
+                    d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="layout-section map-section">
+        <div class="container">
+          <div class="map">
+            <img
+              src="assets/images/map.png"
+              alt="Store location map"
+              class="map__image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="layout-section">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="assets/images/financial-feminist.png"
+              alt="Financial Feminist"
+              class="product-card__img"
+            />
+          </div>
+
+          <div class="product-card__content">
+            <h3 class="text-md">Financial Feminist</h3>
+            <p class="body-text">Tori Dunlap</p>
+
+            <div class="product-card__bottom">
+              <span class="text-sm">$20.46</span>
+
+              <button
+                class="product-card__wishlist"
+                aria-label="Add to wishlist"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <button class="btn btn--primary product-card__cart">
+              <img src="assets/icons/cart.svg" alt="Cart" class="icon" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="layout-section">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link body-text">The must read</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link body-text">News</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link body-text">Promotion of the mount</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link body-text">Publishes</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link body-text"
+                >Subscribe to the newsletter</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
     </div>
+    <script>
+      const gallery = document.querySelector(".gallery");
+      const thumbBoxes = gallery.querySelectorAll(".gallery__thumb-box");
+      const mainImage = gallery.querySelector(".gallery__main-image");
+
+      const prevBtn = gallery.querySelector(".slider-control__btn:first-child");
+      const nextBtn = gallery.querySelector(".slider-control__btn:last-child");
+
+      let currentIndex = 0;
+
+      function updateGallery(index) {
+        const img = thumbBoxes[index].querySelector("img");
+        mainImage.src = img.src;
+
+        thumbBoxes.forEach((box) =>
+          box.classList.remove("gallery__thumb-box--active"),
+        );
+        thumbBoxes[index].classList.add("gallery__thumb-box--active");
+
+        currentIndex = index;
+      }
+
+      thumbBoxes.forEach((box, index) => {
+        box.addEventListener("click", () => {
+          updateGallery(index);
+        });
+      });
+
+      nextBtn.addEventListener("click", () => {
+        let newIndex = currentIndex + 1;
+        if (newIndex >= thumbBoxes.length) newIndex = 0;
+        updateGallery(newIndex);
+      });
+
+      prevBtn.addEventListener("click", () => {
+        let newIndex = currentIndex - 1;
+        if (newIndex < 0) newIndex = thumbBoxes.length - 1;
+        updateGallery(newIndex);
+      });
+      document.querySelectorAll(".product-card__wishlist").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.classList.toggle("product-card__wishlist--active");
+        });
+      });
+    </script>
   </body>
 </html>

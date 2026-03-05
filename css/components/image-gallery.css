@@ -1,0 +1,84 @@
+.gallery {
+  height: 653px;
+  width: 580px;
+  display: flex;
+  gap: 20px;
+}
+
+.gallery__thumbnails {
+  width: 148px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery__thumb {
+  width: 62px;
+  height: 116px;
+  border-radius: 2px;
+  transition: border 0.5s, transform 0.2s;
+}
+
+.gallery__thumb:hover {
+  transform: scale(1.05);
+}
+
+.gallery__thumb-box {
+  width: 148px;
+  height: 148px;
+  border: 0.5px solid var(--primary-color);
+  border-radius: 2px;
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gallery__main-image {
+  width: 421px;
+  height: 653px;
+  border-radius: 6px;
+}
+
+.gallery__main {
+  position: relative;
+}
+
+.gallery__slider {
+  position: absolute;
+  right: 10px;
+  top: 95%;
+  transform: translateY(-50%);
+}
+
+.gallery__slider .slider-control__btn {
+  background: var(--secondary-color);
+  border: none;
+  color: white;
+}
+
+.gallery__slider .slider-control__btn:hover {
+  background: var(--primary-color);
+}
+
+.gallery__slider .slider-control__icon {
+  color: var(--bg-color);
+}
+
+.gallery__badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: var(--bg-color);
+  backdrop-filter: blur(4px);
+  font-size: var(--fs-badge);
+  font-weight: var(--fw-regular);
+  color: var(--text-color-badge);
+}

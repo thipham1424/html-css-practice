@@ -1,11 +1,14 @@
-.pagination-dot {
-  width: 10px;
-  height: 10px;
+.pagination__dot {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  border: 1px solid var(--primary-color);
-  background-color: var(--bg-color);
+  background-color: var(--primary-color);
+  display: inline-flex;
+  margin-left: 10px;
+  opacity: 0.3;
 }
 
-.pagination-dot.active {
+.pagination__dot--active {
   background-color: var(--primary-color);
+  opacity: 1;
 }
