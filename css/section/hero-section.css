@@ -1,7 +1,7 @@
 .hero {
   background: none;
   padding: 80px 0;
-  position: relative;
+  margin-bottom: 60px;
 }
 
 .hero__content {
