@@ -87,21 +87,21 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link body-text">The must read</a>
+                <a href="#hero" class="nav__link body-text">The must read</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link body-text">News</a>
+                <a href="#benefit" class="nav__link body-text">News</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link body-text"
+                <a href="#selectedforyou" class="nav__link body-text"
                   >Promotion of the mount</a
                 >
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link body-text">Publishes</a>
+                <a href="#youmustbuyitnow" class="nav__link body-text">Publishes</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link body-text"
+                <a href="#newsletter" class="nav__link body-text"
                   >Subscribe to the newsletter</a
                 >
               </li>
@@ -122,7 +122,7 @@
     </header>
 
     <main>
-      <section class="layout-section hero">
+      <section id="hero" class="layout-section hero">
         <div class="container">
           <div class="hero__pagination">
             <span class="hero__pagination-dot--active"></span>
@@ -198,8 +198,8 @@
           </div>
         </div>
       </section>
-    
-      <section class="layout-section">
+
+      <section id="benefit" class="layout-section">
         <div class="container">
           <div class="benefit__list">
             <div class="benefit__item">
@@ -232,7 +232,7 @@
         </div>
       </section>
 
-      <section class="product">
+      <section id="selectedforyou" class="layout-section product">
         <div class="container">
           <div class="product__header">
             <h2 class="text--lg product__title">Selected for you</h2>
@@ -390,18 +390,18 @@
                 <div class="product-card">
                   <div class="product-card__image">
                     <img
-                      src="assets/images/nona-the-ninth.jpg"
-                      alt="Nona The Ninth"
+                      src="assets/images/main-product-page.jpg"
+                      alt="Chain of Gold"
                       class="product-card__img"
                     />
                   </div>
 
                   <div class="product-card__content">
-                    <h3 class="text-md">Nona The Ninth</h3>
-                    <p class="body-text">Tamsyn Muir</p>
+                    <h3 class="text-md">Chain of Gold</h3>
+                    <p class="body-text">Cassandra Clare</p>
 
                     <div class="product-card__bottom">
-                      <span class="text-sm">$26.96</span>
+                      <span class="text-sm">$12.49</span>
 
                       <button
                         class="product-card__wishlist"
@@ -420,7 +420,8 @@
                       </button>
                     </div>
 
-                    <button class="btn btn--primary product-card__cart">
+                    <button class="btn btn--primary product-card__cart"
+                      onclick="window.location.href='product-page.html'">
                       <img
                         src="assets/icons/white-cart.svg"
                         alt="Cart"
@@ -459,7 +460,7 @@
         </div>
       </section>
 
-      <section class="product">
+      <section id="youmustbuyitnow" class="layout-section product">
         <div class="container">
           <div class="product__header">
             <h2 class="text--lg product__title">You must buy it now</h2>
@@ -686,7 +687,7 @@
         </div>
       </section>
 
-      <section class="layout-section newsletter">
+      <section id="newsletter" class="layout-section newsletter">
         <div class="container">
           <div class="newsletter__wrapper">
             <div class="newsletter__content">
