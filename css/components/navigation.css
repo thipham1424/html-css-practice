@@ -2,13 +2,12 @@
   max-width: 1192px;
   height: 49px;
   overflow-x: auto;
-  margin: 0 auto;
 }
 
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 20px;
   height: 49px;
   list-style: none;
   margin: 0;

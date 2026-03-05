@@ -15,3 +15,11 @@
 @import "./components/map.css";
 @import "./components/product-card.css";
 @import "./components/navigation.css";
+
+@import "./section/header-area.css";
+@import "./section/footer.css";
+@import "./section/benefit-section.css";
+@import "./section/product-section.css";
+@import "./section/product-detail.css";
+@import "./section/newsletter-section.css";
+@import "./section/hero-section.css";
