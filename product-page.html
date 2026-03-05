@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Practice</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header class="header-area">
+      <div class="header-area__top">
+        <div class="container header-area__inner">
+          <a href="/" class="header-area__logo">
+            <span class="logo__brand">
+              B-W
+              <span class="logo__icon">
+                <img
+                  src="assets/icons/book-world.svg"
+                  alt="O"
+                  class="logo_icon-icon"
+                />
+              </span>
+              rld
+            </span>
+            <span class="logo__divider"></span>
+
+            <span class="logo__tagline">
+              We love <br />
+              books
+            </span>
+          </a>
+
+          <div class="search">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Type any book here"
+            />
+            <button class="search__btn">
+              <img
+                src="assets/icons/search.svg"
+                alt="Search icon"
+                class="icon search__btn-icon"
+              />
+            </button>
+          </div>
+
+          <nav class="header-area__policy">
+            <a href="#">Privacy policy</a>
+            <a href="#">Warranty</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+          </nav>
+
+          <div class="header-area__actions">
+            <button class="header-area__icon">
+              <img
+                class="header-area__icon-img"
+                src="assets/icons/purple-cart.svg"
+                alt="Cart icon"
+              />
+            </button>
+
+            <button class="header-area__icon header-area__icon--with-badge">
+              <img
+                class="header-area__icon-img"
+                src="assets/icons/wish-list.svg"
+                alt="Heart icon"
+              />
+              <span class="badge header-area__badge">3</span>
+            </button>
+
+            <button class="header-area__icon">
+              <img
+                class="header-area__icon-img"
+                src="assets/icons/user.svg"
+                alt="User icon"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-area__bottom">
+        <div class="container header-area__inner">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link body-text">The must read</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link body-text">News</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link body-text"
+                  >Promotion of the mount</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link body-text">Publishes</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link body-text"
+                  >Subscribe to the newsletter</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-area__contact">
+            <span>
+              <img class="icon" src="assets/icons/phone.svg" alt="Phone icon" />
+            </span>
+            <a href="tel:+44587999000" class="header-area__phone">
+              +445 87 999 000
+            </a>
+            <button class="btn btn--outline btn-nav">Request a call</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="layout-section">
+        <div class="container">
+          <nav class="breadcrumb">
+            <a href="#">Home</a>
+            <span class="breadcrumb__separator">></span>
+            <a href="#">Fantasy books</a>
+            <span class="breadcrumb__separator">></span>
+            <span class="breadcrumb__current">Chain of Gold</span>
+          </nav>
+        </div>
+      </section>
+      <section class="layout-section product-detail">
+        <div class="container">
+          <div class="product-detail__wrapper">
+            <div class="gallery">
+              <div class="gallery__thumbnails">
+                <div class="gallery__thumb-box gallery__thumb-box--active">
+                  <img
+                    src="assets/images/gallery-after.jpg"
+                    class="gallery__thumb"
+                  />
+                </div>
+
+                <div class="gallery__thumb-box">
+                  <img
+                    src="assets/images/gallery-before.jpg"
+                    class="gallery__thumb"
+                  />
+                </div>
+
+                <div class="gallery__thumb-box">
+                  <img
+                    src="assets/images/gallery-back.jpg"
+                    class="gallery__thumb"
+                  />
+                </div>
+
+                <div class="gallery__thumb-box">
+                  <img
+                    src="assets/images/main-product-page.jpg"
+                    class="gallery__thumb"
+                  />
+                </div>
+              </div>
+
+              <div class="gallery__main">
+                <div class="gallery__badge">
+                  <span class="gallery__badge-icon">
+                    <img src="assets/icons/bi-book.svg" alt="Book icon" />
+                  </span>
+                  <span>flips a few pages</span>
+                </div>
+                <img
+                  src="assets/images/main-product-page.jpg"
+                  class="gallery__main-image"
+                />
+                <div class="slider-control gallery__slider">
+                  <button class="slider-control__btn">
+                    <svg
+                      class="slider-control__icon"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+
+                  <button class="slider-control__btn">
+                    <svg
+                      class="slider-control__icon"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-detail__info">
+              <h1 class="text--md product-detail__title">
+                Chain of Gold: The Last Hours #1
+              </h1>
+
+              <p class="product-detail__author">Cassandra Clare</p>
+
+              <div class="product-detail__rating">
+                <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+                <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+                <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+                <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+                <img
+                  src="assets/icons/half-star.svg"
+                  alt="half start"
+                  class="icon"
+                />
+                4.5
+              </div>
+
+              <div class="product-detail__price">$12.49</div>
+
+              <p class="body--text product-detail__description">
+                From #1 New York Times and USA TODAY bestselling author
+                Cassandra Clare comes the first novel in a brand-new trilogy
+                where evil hides in plain sight and love cuts deeper than any
+                blade. Chain of Gold is a Shadowhunters novel.
+              </p>
+
+              <div class="quantity" data-min="1" data-max="10">
+                <button class="quantity__btn quantity__btn--minus">-</button>
+                <span class="quantity__number">1</span>
+                <button class="quantity__btn quantity__btn--plus">+</button>
+              </div>
+
+              <div class="product-detail__actions">
+                <button class="btn btn--primary product-detail__btn">
+                  Add to cart
+                </button>
+
+                <button class="btn btn--outline product-detail__btn">
+                  Favorite
+                </button>
+              </div>
+
+              <div class="product-detail__divider"></div>
+
+              <div class="product-detail__meta">
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Publisher :</span>
+                  <span class="product-detail__meta-value"
+                    >Margaret K.Books</span
+                  >
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label"
+                    >Publication date :</span
+                  >
+                  <span class="product-detail__meta-value">March 3, 2020</span>
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Language :</span>
+                  <span class="product-detail__meta-value">English</span>
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Reading age :</span>
+                  <span class="product-detail__meta-value">14+</span>
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Print length :</span>
+                  <span class="product-detail__meta-value">592 pages</span>
+                </div>
+
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Dimensions :</span>
+                  <span class="product-detail__meta-value"
+                    >6 x 1.8 x 9 inches</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <div class="product__header">
+            <h2 class="text--lg product__title">Collection</h2>
+          </div>
+
+          <div class="product__slider">
+            <button
+              class="slider-control__btn product__control product__control--prev"
+            >
+              <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+                <path
+                  d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <div class="product__viewport">
+              <div class="product__track">
+                <div class="product-card">
+                  <div class="product-card__image">
+                    <img
+                      src="assets/images/chain-of-iron.jpg"
+                      alt="Chain of Iron"
+                      class="product-card__img"
+                    />
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="text-md">Chain of Iron: Volume 2</h3>
+                    <p class="body-text">Cassandra Clare</p>
+
+                    <div class="product-card__bottom">
+                      <span class="text-sm">$23.24</span>
+
+                      <button
+                        class="product-card__wishlist"
+                        aria-label="Add to wishlist"
+                      >
+                        <svg
+                          class="icon"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <button class="btn btn--primary product-card__cart">
+                      <img
+                        src="assets/icons/white-cart.svg"
+                        alt="Cart"
+                        class="icon"
+                      />
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image">
+                    <img
+                      src="assets/images/chain-of-thorns.jpg"
+                      alt="Chain of Thorns"
+                      class="product-card__img"
+                    />
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="text-md">Chain of Thorns</h3>
+                    <p class="body-text">Cassandra Clare</p>
+
+                    <div class="product-card__bottom">
+                      <span class="text-sm">$23.24</span>
+
+                      <button
+                        class="product-card__wishlist"
+                        aria-label="Add to wishlist"
+                      >
+                        <svg
+                          class="icon"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <button class="btn btn--primary product-card__cart">
+                      <img
+                        src="assets/icons/white-cart.svg"
+                        alt="Cart"
+                        class="icon"
+                      />
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image">
+                    <img
+                      src="assets/images/city-of-failen-angles.jpg"
+                      alt="City of Fallen Angles"
+                      class="product-card__img"
+                    />
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="text-md">City of Fallen Angles</h3>
+                    <p class="body-text">Cassandra Clare</p>
+
+                    <div class="product-card__bottom">
+                      <span class="text-sm">$13.94</span>
+
+                      <button
+                        class="product-card__wishlist"
+                        aria-label="Add to wishlist"
+                      >
+                        <svg
+                          class="icon"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <button class="btn btn--primary product-card__cart">
+                      <img
+                        src="assets/icons/white-cart.svg"
+                        alt="Cart"
+                        class="icon"
+                      />
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image">
+                    <img
+                      src="assets/images/nona-the-ninth-collection.jpg"
+                      alt="Nona The Ninth"
+                      class="product-card__img"
+                    />
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="text-md">Nona The Ninth</h3>
+                    <p class="body-text">Tamsyn Muir</p>
+
+                    <div class="product-card__bottom">
+                      <span class="text-sm">$16.84</span>
+
+                      <button
+                        class="product-card__wishlist"
+                        aria-label="Add to wishlist"
+                      >
+                        <svg
+                          class="icon"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <button class="btn btn--primary product-card__cart">
+                      <img
+                        src="assets/icons/white-cart.svg"
+                        alt="Cart"
+                        class="icon"
+                      />
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="slider-control__btn product__control product__control--next"
+            >
+              <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+                <path
+                  d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="product__pagination">
+            <div class="pagination">
+              <span class="pagination__dot pagination__dot--active"></span>
+              <span class="pagination__dot"></span>
+              <span class="pagination__dot"></span>
+              <span class="pagination__dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="container">
+          <div class="product__header">
+            <h2 class="text--lg product__title">Last viewed</h2>
+          </div>
+
+          <div class="product__slider">
+            <button
+              class="slider-control__btn product__control product__control--prev"
+            >
+              <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+                <path
+                  d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <div class="product__viewport">
+              <div class="product__track">
+                <div class="product-card">
+                  <div class="product-card__image">
+                    <img
+                      src="assets/images/the-librarian-spy.jpg"
+                      alt="The Librarian Spy"
+                      class="product-card__img"
+                    />
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="text-md">The Librarian Spy</h3>
+                    <p class="body-text">Madeline Martin</p>
+
+                    <div class="product-card__bottom">
+                      <span class="text-sm">$16.73</span>
+
+                      <button
+                        class="product-card__wishlist"
+                        aria-label="Add to wishlist"
+                      >
+                        <svg
+                          class="icon"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <button class="btn btn--primary product-card__cart">
+                      <img
+                        src="assets/icons/white-cart.svg"
+                        alt="Cart"
+                        class="icon"
+                      />
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image">
+                    <img
+                      src="assets/images/other-birds.jpg"
+                      alt="Other-Birds"
+                      class="product-card__img"
+                    />
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="text-md">Other Birds</h3>
+                    <p class="body-text">Sarah Addison Allen</p>
+
+                    <div class="product-card__bottom">
+                      <span class="text-sm">$26.03</span>
+
+                      <button
+                        class="product-card__wishlist"
+                        aria-label="Add to wishlist"
+                      >
+                        <svg
+                          class="icon"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <button class="btn btn--primary product-card__cart">
+                      <img
+                        src="assets/icons/white-cart.svg"
+                        alt="Cart"
+                        class="icon"
+                      />
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image">
+                    <img
+                      src="assets/images/the-ways-we-hide.jpg"
+                      alt="The Ways We Hide"
+                      class="product-card__img"
+                    />
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="text-md">The Ways We Hide</h3>
+                    <p class="body-text">Kristina McMorris</p>
+
+                    <div class="product-card__bottom">
+                      <span class="text-sm">$27.93</span>
+
+                      <button
+                        class="product-card__wishlist"
+                        aria-label="Add to wishlist"
+                      >
+                        <svg
+                          class="icon"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <button class="btn btn--primary product-card__cart">
+                      <img
+                        src="assets/icons/white-cart.svg"
+                        alt="Cart"
+                        class="icon"
+                      />
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image">
+                    <img
+                      src="assets/images/room-and-board.jpg"
+                      alt="Room and Board"
+                      class="product-card__img"
+                    />
+                  </div>
+
+                  <div class="product-card__content">
+                    <h3 class="text-md">Room and Board</h3>
+                    <p class="body-text">Miriam Parker</p>
+
+                    <div class="product-card__bottom">
+                      <span class="text-sm">$15.81</span>
+
+                      <button
+                        class="product-card__wishlist"
+                        aria-label="Add to wishlist"
+                      >
+                        <svg
+                          class="icon"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    <button class="btn btn--primary product-card__cart">
+                      <img
+                        src="assets/icons/white-cart.svg"
+                        alt="Cart"
+                        class="icon"
+                      />
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="slider-control__btn product__control product__control--next"
+            >
+              <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+                <path
+                  d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="product__pagination">
+            <div class="pagination">
+              <span class="pagination__dot pagination__dot--active"></span>
+              <span class="pagination__dot"></span>
+              <span class="pagination__dot"></span>
+              <span class="pagination__dot"></span>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-area">
+      <div class="container footer-area__top">
+        <div class="footer-area__grid">
+          <div class="footer-area__col footer-area__brand">
+            <a href="/" class="footer-area__logo">
+              <span class="footer-area__brand-text">
+                B-W
+                <span class="footer-area__brand-icon">
+                  <img src="assets/icons/book-world.svg" alt="O" />
+                </span>
+                rld
+              </span>
+            </a>
+          </div>
+
+          <div class="footer-area__col">
+            <h4 class="footer-area__title">Categories</h4>
+            <ul class="footer-area__list">
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Psychology</a>
+              </li>
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Self-Help</a>
+              </li>
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Romance</a>
+              </li>
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Mystery</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-area__col">
+            <h4 class="footer-area__title">For kids</h4>
+            <ul class="footer-area__list">
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Games</a>
+              </li>
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Comics</a>
+              </li>
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Fantasy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-area__col">
+            <h4 class="footer-area__title">E-Books</h4>
+            <ul class="footer-area__list">
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Fiction</a>
+              </li>
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Historical</a>
+              </li>
+              <li class="footer-area__item">
+                <a class="footer-area__link" href="#">Horror</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-area__col footer-area__contact">
+            <h4 class="footer-area__title">Help & Contacts</h4>
+
+            <div class="footer-area__info">
+              <div class="footer-area__info-item">
+                <img
+                  class="footer-area__info-icon"
+                  src="assets/icons/white-phone.svg"
+                  alt="Phone icon"
+                />
+                <a href="tel:+44587999000" class="header-area__phone">
+                  +445 87 999 000
+                </a>
+              </div>
+
+              <div class="footer-area__info-item">
+                <img
+                  class="footer-area__info-icon"
+                  src="assets/icons/clock.svg"
+                  alt="Clock icon"
+                />
+                <span class="footer-area__info-text"
+                  >Mo-Fri, 9 AM to 11 PM</span
+                >
+              </div>
+
+              <div class="footer-area__info-item">
+                <img
+                  class="footer-area__info-icon"
+                  src="assets/icons/mail.svg"
+                  alt="Mail icon"
+                />
+                <span class="footer-area__info-text">b.world@store.ro</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-area__col footer-area__support">
+            <p class="footer-area__desc">
+              If you have questions, you can contact us or we will do it for
+              you.
+            </p>
+
+            <button class="btn btn--outline btn--footer">Request a call</button>
+          </div>
+        </div>
+        <div class="footer-area__icons">
+          <div class="footer-area__social">
+            <a href="#"
+              ><img
+                src="assets/icons/facebook.svg"
+                alt="Facebook"
+                class="footer-area__social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/icons/instagram.svg"
+                alt="Instagram"
+                class="footer-area__social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/icons/twitter.svg"
+                alt="Twitter"
+                class="footer-area__social-icon"
+            /></a>
+          </div>
+
+          <div class="footer-area__payments">
+            <img
+              src="assets/icons/pay-pal.svg"
+              alt="PayPal"
+              class="footer-area__payments-icon"
+            />
+            <img
+              src="assets/icons/master-card.svg"
+              alt="Mastercard"
+              class="footer-area__payments-icon"
+            />
+            <img
+              src="assets/icons/visa-card.svg"
+              alt="Visa"
+              class="footer-area__payments-icon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-area__bottom">
+        <div class="container footer-area__bottom-inner">
+          <img
+            src="assets/icons/copyright.svg"
+            alt="Copyright"
+            class="icon footer-area__icons"
+          />
+          <span>All copyrights are reserved. B-World 2022.</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll(".product-card__wishlist").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.classList.toggle("product-card__wishlist--active");
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const track = document.querySelector(".product__track");
+        const prevBtn = document.querySelector(".product__control--prev");
+        const nextBtn = document.querySelector(".product__control--next");
+        const dots = document.querySelectorAll(".pagination__dot");
+
+        const gap = 32;
+        const cards = document.querySelectorAll(".product-card");
+        const cardWidth = cards[0].offsetWidth + gap;
+
+        let currentIndex = 0;
+
+        function updateSlider() {
+          track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+          dots.forEach((dot) =>
+            dot.classList.remove("pagination__dot--active"),
+          );
+          if (dots[currentIndex]) {
+            dots[currentIndex].classList.add("pagination__dot--active");
+          }
+        }
+
+        nextBtn.addEventListener("click", () => {
+          if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateSlider();
+          }
+        });
+
+        prevBtn.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+          }
+        });
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentIndex = index;
+            updateSlider();
+          });
+        });
+      });
+      const gallery = document.querySelector(".gallery");
+      const thumbBoxes = gallery.querySelectorAll(".gallery__thumb-box");
+      const mainImage = gallery.querySelector(".gallery__main-image");
+
+      const prevBtn = gallery.querySelector(".slider-control__btn:first-child");
+      const nextBtn = gallery.querySelector(".slider-control__btn:last-child");
+
+      let currentIndex = 0;
+
+      function updateGallery(index) {
+        const img = thumbBoxes[index].querySelector("img");
+        mainImage.src = img.src;
+
+        thumbBoxes.forEach((box) =>
+          box.classList.remove("gallery__thumb-box--active"),
+        );
+        thumbBoxes[index].classList.add("gallery__thumb-box--active");
+
+        currentIndex = index;
+      }
+
+      thumbBoxes.forEach((box, index) => {
+        box.addEventListener("click", () => {
+          updateGallery(index);
+        });
+      });
+
+      nextBtn.addEventListener("click", () => {
+        let newIndex = currentIndex + 1;
+        if (newIndex >= thumbBoxes.length) newIndex = 0;
+        updateGallery(newIndex);
+      });
+
+      prevBtn.addEventListener("click", () => {
+        let newIndex = currentIndex - 1;
+        if (newIndex < 0) newIndex = thumbBoxes.length - 1;
+        updateGallery(newIndex);
+      });
+      const quantity = document.querySelector(".quantity");
+      const minusBtn = quantity.querySelector(".quantity__btn--minus");
+      const plusBtn = quantity.querySelector(".quantity__btn--plus");
+      const number = quantity.querySelector(".quantity__number");
+
+      const min = parseInt(quantity.dataset.min) || 1;
+      const max = parseInt(quantity.dataset.max) || Infinity;
+
+      function updateButtons(value) {
+        minusBtn.disabled = value <= min;
+        plusBtn.disabled = value >= max;
+      }
+
+      minusBtn.addEventListener("click", () => {
+        let value = parseInt(number.textContent);
+        if (value > min) {
+          value--;
+          number.textContent = value;
+          updateButtons(value);
+        }
+      });
+
+      plusBtn.addEventListener("click", () => {
+        let value = parseInt(number.textContent);
+        if (value < max) {
+          value++;
+          number.textContent = value;
+          updateButtons(value);
+        }
+      });
+
+      updateButtons(parseInt(number.textContent));
+    </script>
+  </body>
+</html>
