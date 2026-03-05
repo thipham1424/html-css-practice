@@ -1,0 +1,25 @@
+.benefit {
+  padding: 30px 0;
+}
+
+.benefit__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.benefit__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.benefit__divider {
+  height: 80px;
+  border: 1px solid var(--primary-color);
+}
+
+.benefit__link {
+  text-decoration: underline;
+}
