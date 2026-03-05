@@ -122,6 +122,83 @@
     </header>
 
     <main>
+      <section class="layout-section hero">
+        <div class="container">
+          <div class="hero__pagination">
+            <span class="hero__pagination-dot--active"></span>
+            <span class="hero__pagination-dot"></span>
+            <span class="hero__pagination-dot"></span>
+            <span class="hero__pagination-dot"></span>
+          </div>
+          <div class="hero__content">
+            <div class="hero__text">
+              <span class="hero__badge">Author of august</span>
+
+              <h1 class="text-xl hero__title">Eric-Emanuel Schmitt</h1>
+
+              <p class="body-text hero__desc">
+                Eric-Emmanuel Schmitt has been awarded more than 20 literary
+                prizes and distinctions, and in 2001 he received the title of
+                Chevalier des Arts et des Lettres. His books have been
+                translated into over 40 languages.
+              </p>
+
+              <button class="btn btn--primary">View his books</button>
+            </div>
+
+            <div class="hero__image-block">
+              <p class="hero__promo">
+                AUTOGRAPHED <br />
+                BOOKS + 30% <br />
+                DISCOUNT
+              </p>
+
+              <img
+                src="assets/images/schmitt.png"
+                alt="Book"
+                class="hero__img"
+              />
+
+              <span class="hero__note"> *within the stock limit </span>
+
+              <div class="slider-control hero__slider">
+                <button class="slider-control__btn hero__prev">
+                  <svg
+                    class="slider-control__icon"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+
+                <button class="slider-control__btn hero__next">
+                  <svg
+                    class="slider-control__icon"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="product">
         <div class="container">
           <div class="product__header">
@@ -571,82 +648,11 @@
               <span class="pagination__dot"></span>
               <span class="pagination__dot"></span>
               <span class="pagination__dot"></span>
-      <section class="layout-section hero">
-        <div class="container">
-          <div class="hero__pagination">
-            <span class="hero__pagination-dot--active"></span>
-            <span class="hero__pagination-dot"></span>
-            <span class="hero__pagination-dot"></span>
-            <span class="hero__pagination-dot"></span>
-          </div>
-          <div class="hero__content">
-            <div class="hero__text">
-              <span class="hero__badge">Author of august</span>
-
-              <h1 class="text-xl hero__title">Eric-Emanuel Schmitt</h1>
-
-              <p class="body-text hero__desc">
-                Eric-Emmanuel Schmitt has been awarded more than 20 literary
-                prizes and distinctions, and in 2001 he received the title of
-                Chevalier des Arts et des Lettres. His books have been
-                translated into over 40 languages.
-              </p>
-
-              <button class="btn btn--primary">View his books</button>
-            </div>
-
-            <div class="hero__image-block">
-              <p class="hero__promo">
-                AUTOGRAPHED <br />
-                BOOKS + 30% <br />
-                DISCOUNT
-              </p>
-
-              <img
-                src="assets/images/schmitt.png"
-                alt="Book"
-                class="hero__img"
-              />
-
-              <span class="hero__note"> *within the stock limit </span>
-
-              <div class="slider-control hero__slider">
-                <button class="slider-control__btn hero__prev">
-                  <svg
-                    class="slider-control__icon"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-
-                <button class="slider-control__btn hero__next">
-                  <svg
-                    class="slider-control__icon"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="layout-section newsletter">
         <div class="container">
           <div class="newsletter__wrapper">
@@ -848,11 +854,6 @@
       </div>
     </footer>
     <script>
-      document.querySelectorAll(".product-card__wishlist").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          this.classList.toggle("product-card__wishlist--active");
-        });
-      });
       document.addEventListener("DOMContentLoaded", function () {
         const track = document.querySelector(".product__track");
         const prevBtn = document.querySelector(".product__control--prev");
@@ -871,19 +872,20 @@
           dots.forEach((dot) =>
             dot.classList.remove("pagination__dot--active"),
           );
+
           if (dots[currentIndex]) {
             dots[currentIndex].classList.add("pagination__dot--active");
           }
         }
 
-        nextBtn.addEventListener("click", () => {
+        nextBtn?.addEventListener("click", () => {
           if (currentIndex < cards.length - 1) {
             currentIndex++;
             updateSlider();
           }
         });
 
-        prevBtn.addEventListener("click", () => {
+        prevBtn?.addEventListener("click", () => {
           if (currentIndex > 0) {
             currentIndex--;
             updateSlider();
@@ -896,31 +898,34 @@
             updateSlider();
           });
         });
-      const dots = document.querySelectorAll(".pagination-dot");
-      const prevBtn = document.querySelector(".hero__prev");
-      const nextBtn = document.querySelector(".hero__next");
-
-      let currentIndex = 0;
-
-      function updatePagination(index) {
-        dots.forEach((dot) => dot.classList.remove("active"));
-        dots[index].classList.add("active");
-      }
-
-      nextBtn.addEventListener("click", () => {
-        currentIndex++;
-        if (currentIndex >= dots.length) {
-          currentIndex = 0;
-        }
-        updatePagination(currentIndex);
       });
+      document.addEventListener("DOMContentLoaded", function () {
+        const heroDots = document.querySelectorAll(".pagination-dot");
+        const heroPrevBtn = document.querySelector(".hero__prev");
+        const heroNextBtn = document.querySelector(".hero__next");
 
-      prevBtn.addEventListener("click", () => {
-        currentIndex--;
-        if (currentIndex < 0) {
-          currentIndex = dots.length - 1;
+        let heroIndex = 0;
+
+        function updatePagination(index) {
+          heroDots.forEach((dot) => dot.classList.remove("active"));
+          heroDots[index].classList.add("active");
         }
-        updatePagination(currentIndex);
+
+        heroNextBtn?.addEventListener("click", () => {
+          heroIndex++;
+          if (heroIndex >= heroDots.length) {
+            heroIndex = 0;
+          }
+          updatePagination(heroIndex);
+        });
+
+        heroPrevBtn?.addEventListener("click", () => {
+          heroIndex--;
+          if (heroIndex < 0) {
+            heroIndex = heroDots.length - 1;
+          }
+          updatePagination(heroIndex);
+        });
       });
     </script>
   </body>
