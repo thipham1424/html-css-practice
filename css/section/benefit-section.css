@@ -6,7 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 130px;
+  gap: 60px;
+  font-size: var(--fs-price);
+  font-weight: var(--fw-semibold);
 }
 
 .benefit__item {
@@ -21,5 +23,5 @@
 }
 
 .benefit__link {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--dark-color);
 }

@@ -27,23 +27,6 @@
   gap: 28px;
 }
 
-.newsletter__input {
-  opacity: 0.4;
-  border: none;
-  border-bottom: 1px solid var(--primary-color);
-  padding: 12px 0;
-  outline: none;
-  background: transparent;
-}
-
-.newsletter__input::placeholder {
-  color: var(--primary-color);
-}
-
-.newsletter__input:focus {
-  border-bottom: 1px solid var(--primary-color);
-}
-
 .newsletter__btn {
   margin-top: 30px;
 }

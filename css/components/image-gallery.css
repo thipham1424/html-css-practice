@@ -56,7 +56,7 @@
 .gallery__slider .slider-control__btn {
   background: var(--secondary-color);
   border: none;
-  color: white;
+  color: var(--bg-color);
 }
 
 .gallery__slider .slider-control__btn:hover {
