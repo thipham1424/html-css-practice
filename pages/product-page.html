@@ -15,8 +15,8 @@
 
   <body>
     <header class="header-area">
-      <div class="header-area__top">
-        <div class="container header-area__inner">
+      <div class="header-area__top container">
+        <div class="header-area__inner">
           <a href="/" class="header-area__logo">
             <span class="logo__brand">
               B-W
@@ -88,8 +88,8 @@
         </div>
       </div>
 
-      <div class="header-area__bottom">
-        <div class="container header-area__inner">
+      <div class="header-area__bottom container">
+        <div class="header-area__inner">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -132,651 +132,641 @@
     </header>
 
     <main>
-      <section class="layout-section">
-        <div class="container">
-          <nav class="breadcrumb">
-            <a href="index.html">Home</a>
-            <span class="breadcrumb__separator">></span>
-            <a href="#">Fantasy books</a>
-            <span class="breadcrumb__separator">></span>
-            <span class="breadcrumb__current">Chain of Gold</span>
-          </nav>
-        </div>
+      <section class="layout-section container">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__separator">></span>
+          <a href="#">Fantasy books</a>
+          <span class="breadcrumb__separator">></span>
+          <span class="breadcrumb__current">Chain of Gold</span>
+        </nav>
       </section>
-      <section class="layout-section">
-        <div class="container">
-          <div class="product-detail__wrapper">
-            <div class="gallery">
-              <div class="gallery__thumbnails">
-                <div class="gallery__thumb-box gallery__thumb-box--active">
-                  <img
-                    src="../assets/images/gallery-after.jpg"
-                    class="gallery__thumb"
-                  />
-                </div>
-
-                <div class="gallery__thumb-box">
-                  <img
-                    src="../assets/images/gallery-before.jpg"
-                    class="gallery__thumb"
-                  />
-                </div>
-
-                <div class="gallery__thumb-box">
-                  <img
-                    src="../assets/images/gallery-back.jpg"
-                    class="gallery__thumb"
-                  />
-                </div>
-
-                <div class="gallery__thumb-box">
-                  <img
-                    src="../assets/images/main-product-page.jpg"
-                    class="gallery__thumb"
-                  />
-                </div>
+      <section class="layout-section container">
+        <div class="product-detail__wrapper">
+          <div class="gallery">
+            <div class="gallery__thumbnails">
+              <div class="gallery__thumb-box gallery__thumb-box--active">
+                <img
+                  src="../assets/images/gallery-after.jpg"
+                  class="gallery__thumb"
+                />
               </div>
 
-              <div class="gallery__main">
-                <div class="gallery__badge">
-                  <span class="gallery__badge-icon">
-                    <img src="../assets/icons/bi-book.svg" alt="Book icon" />
-                  </span>
-                  <span>flips a few pages</span>
-                </div>
+              <div class="gallery__thumb-box">
+                <img
+                  src="../assets/images/gallery-before.jpg"
+                  class="gallery__thumb"
+                />
+              </div>
+
+              <div class="gallery__thumb-box">
+                <img
+                  src="../assets/images/gallery-back.jpg"
+                  class="gallery__thumb"
+                />
+              </div>
+
+              <div class="gallery__thumb-box">
                 <img
                   src="../assets/images/main-product-page.jpg"
-                  class="gallery__main-image"
+                  class="gallery__thumb"
                 />
-                <div class="slider-control gallery__slider">
-                  <button class="slider-control__btn">
-                    <svg
-                      class="slider-control__icon"
-                      viewBox="0 0 25 25"
-                      fill="none"
-                    >
-                      <path
-                        d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-
-                  <button class="slider-control__btn">
-                    <svg
-                      class="slider-control__icon"
-                      viewBox="0 0 25 25"
-                      fill="none"
-                    >
-                      <path
-                        d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
               </div>
             </div>
-            <div class="product-detail__info">
-              <h1 class="text--md product-detail__title">
-                Chain of Gold: The Last Hours #1
-              </h1>
 
-              <p class="product-detail__author">Cassandra Clare</p>
-
-              <div class="product-detail__rating">
-                <img
-                  src="../assets/icons/rate-star.svg"
-                  alt="star"
-                  class="icon"
-                />
-                <img
-                  src="../assets/icons/rate-star.svg"
-                  alt="star"
-                  class="icon"
-                />
-                <img
-                  src="../assets/icons/rate-star.svg"
-                  alt="star"
-                  class="icon"
-                />
-                <img
-                  src="../assets/icons/rate-star.svg"
-                  alt="star"
-                  class="icon"
-                />
-                <img
-                  src="../assets/icons/half-star.svg"
-                  alt="half start"
-                  class="icon"
-                />
-                4.5
+            <div class="gallery__main">
+              <div class="gallery__badge">
+                <span class="gallery__badge-icon">
+                  <img src="../assets/icons/bi-book.svg" alt="Book icon" />
+                </span>
+                <span>flips a few pages</span>
               </div>
-
-              <div class="product-detail__price">$12.49</div>
-
-              <p class="body--text product-detail__description">
-                From #1 New York Times and USA TODAY bestselling author
-                Cassandra Clare comes the first novel in a brand-new trilogy
-                where evil hides in plain sight and love cuts deeper than any
-                blade. Chain of Gold is a Shadowhunters novel.
-              </p>
-
-              <div class="quantity" data-min="1" data-max="10">
-                <button class="quantity__btn quantity__btn--minus">-</button>
-                <span class="quantity__number">1</span>
-                <button class="quantity__btn quantity__btn--plus">+</button>
-              </div>
-
-              <div class="product-detail__actions">
-                <button class="btn btn--primary product-detail__btn">
-                  Add to cart
+              <img
+                src="../assets/images/main-product-page.jpg"
+                class="gallery__main-image"
+              />
+              <div class="slider-control gallery__slider">
+                <button class="slider-control__btn">
+                  <svg
+                    class="slider-control__icon"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </button>
 
-                <button class="btn btn--outline product-detail__btn">
-                  Favorite
+                <button class="slider-control__btn">
+                  <svg
+                    class="slider-control__icon"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </button>
               </div>
+            </div>
+          </div>
+          <div class="product-detail__info">
+            <h1 class="text--md product-detail__title">
+              Chain of Gold: The Last Hours #1
+            </h1>
 
-              <div class="product-detail__divider"></div>
+            <p class="product-detail__author">Cassandra Clare</p>
 
-              <div class="product-detail__meta">
-                <div class="product-detail__meta-item">
-                  <span class="product-detail__meta-label">Publisher :</span>
-                  <span class="product-detail__meta-value"
-                    >Margaret K.Books</span
-                  >
-                </div>
+            <div class="product-detail__rating">
+              <img
+                src="../assets/icons/rate-star.svg"
+                alt="star"
+                class="icon"
+              />
+              <img
+                src="../assets/icons/rate-star.svg"
+                alt="star"
+                class="icon"
+              />
+              <img
+                src="../assets/icons/rate-star.svg"
+                alt="star"
+                class="icon"
+              />
+              <img
+                src="../assets/icons/rate-star.svg"
+                alt="star"
+                class="icon"
+              />
+              <img
+                src="../assets/icons/half-star.svg"
+                alt="half start"
+                class="icon"
+              />
+              4.5
+            </div>
 
-                <div class="product-detail__meta-item">
-                  <span class="product-detail__meta-label"
-                    >Publication date :</span
-                  >
-                  <span class="product-detail__meta-value">March 3, 2020</span>
-                </div>
+            <div class="product-detail__price">$12.49</div>
 
-                <div class="product-detail__meta-item">
-                  <span class="product-detail__meta-label">Language :</span>
-                  <span class="product-detail__meta-value">English</span>
-                </div>
+            <p class="body--text product-detail__description">
+              From #1 New York Times and USA TODAY bestselling author Cassandra
+              Clare comes the first novel in a brand-new trilogy where evil
+              hides in plain sight and love cuts deeper than any blade. Chain of
+              Gold is a Shadowhunters novel.
+            </p>
 
-                <div class="product-detail__meta-item">
-                  <span class="product-detail__meta-label">Reading age :</span>
-                  <span class="product-detail__meta-value">14+</span>
-                </div>
+            <div class="quantity" data-min="1" data-max="10">
+              <button class="quantity__btn quantity__btn--minus">-</button>
+              <span class="quantity__number">1</span>
+              <button class="quantity__btn quantity__btn--plus">+</button>
+            </div>
 
-                <div class="product-detail__meta-item">
-                  <span class="product-detail__meta-label">Print length :</span>
-                  <span class="product-detail__meta-value">592 pages</span>
-                </div>
+            <div class="product-detail__actions">
+              <button class="btn btn--primary product-detail__btn">
+                Add to cart
+              </button>
 
-                <div class="product-detail__meta-item">
-                  <span class="product-detail__meta-label">Dimensions :</span>
-                  <span class="product-detail__meta-value"
-                    >6 x 1.8 x 9 inches</span
-                  >
-                </div>
+              <button class="btn btn--outline product-detail__btn">
+                Favorite
+              </button>
+            </div>
+
+            <div class="product-detail__divider"></div>
+
+            <div class="product-detail__meta">
+              <div class="product-detail__meta-item">
+                <span class="product-detail__meta-label">Publisher :</span>
+                <span class="product-detail__meta-value">Margaret K.Books</span>
+              </div>
+
+              <div class="product-detail__meta-item">
+                <span class="product-detail__meta-label"
+                  >Publication date :</span
+                >
+                <span class="product-detail__meta-value">March 3, 2020</span>
+              </div>
+
+              <div class="product-detail__meta-item">
+                <span class="product-detail__meta-label">Language :</span>
+                <span class="product-detail__meta-value">English</span>
+              </div>
+
+              <div class="product-detail__meta-item">
+                <span class="product-detail__meta-label">Reading age :</span>
+                <span class="product-detail__meta-value">14+</span>
+              </div>
+
+              <div class="product-detail__meta-item">
+                <span class="product-detail__meta-label">Print length :</span>
+                <span class="product-detail__meta-value">592 pages</span>
+              </div>
+
+              <div class="product-detail__meta-item">
+                <span class="product-detail__meta-label">Dimensions :</span>
+                <span class="product-detail__meta-value"
+                  >6 x 1.8 x 9 inches</span
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="layout-section">
-        <div class="container">
-          <div class="product__header">
-            <h2 class="text--lg product__title">Collection</h2>
-          </div>
+      <section class="layout-section container">
+        <div class="product__header">
+          <h2 class="text--lg product__title">Collection</h2>
+        </div>
 
-          <div class="product__slider">
-            <button
-              class="slider-control__btn product__control product__control--prev"
-            >
-              <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
-                <path
-                  d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
+        <div class="product__slider">
+          <button
+            class="slider-control__btn product__control product__control--prev"
+          >
+            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+              <path
+                d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
 
-            <div class="product__viewport">
-              <div class="product__track">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <img
-                      src="../assets/images/chain-of-iron.jpg"
-                      alt="Chain of Iron"
-                      class="product-card__img"
-                    />
-                  </div>
-
-                  <div class="product-card__content">
-                    <h3 class="text-md">Chain of Iron: Volume 2</h3>
-                    <p class="body-text">Cassandra Clare</p>
-
-                    <div class="product-card__bottom">
-                      <span class="text-sm">$23.24</span>
-
-                      <button
-                        class="product-card__wishlist"
-                        aria-label="Add to wishlist"
-                      >
-                        <svg
-                          class="icon"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          stroke="currentColor"
-                        >
-                          <path
-                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-
-                    <button class="btn btn--primary product-card__cart">
-                      <img
-                        src="../assets/icons/white-cart.svg"
-                        alt="Cart"
-                        class="icon"
-                      />
-                      Add to cart
-                    </button>
-                  </div>
+          <div class="product__viewport">
+            <div class="product__track">
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="../assets/images/chain-of-iron.jpg"
+                    alt="Chain of Iron"
+                    class="product-card__img"
+                  />
                 </div>
 
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <img
-                      src="../assets/images/chain-of-thorns.jpg"
-                      alt="Chain of Thorns"
-                      class="product-card__img"
-                    />
-                  </div>
+                <div class="product-card__content">
+                  <h3 class="text-md">Chain of Iron: Volume 2</h3>
+                  <p class="body-text">Cassandra Clare</p>
 
-                  <div class="product-card__content">
-                    <h3 class="text-md">Chain of Thorns</h3>
-                    <p class="body-text">Cassandra Clare</p>
+                  <div class="product-card__bottom">
+                    <span class="text-sm">$23.24</span>
 
-                    <div class="product-card__bottom">
-                      <span class="text-sm">$23.24</span>
-
-                      <button
-                        class="product-card__wishlist"
-                        aria-label="Add to wishlist"
-                      >
-                        <svg
-                          class="icon"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          stroke="currentColor"
-                        >
-                          <path
-                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-
-                    <button class="btn btn--primary product-card__cart">
-                      <img
-                        src="../assets/icons/white-cart.svg"
-                        alt="Cart"
+                    <button
+                      class="product-card__wishlist"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
                         class="icon"
-                      />
-                      Add to cart
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                        />
+                      </svg>
                     </button>
                   </div>
+
+                  <button class="btn btn--primary product-card__cart">
+                    <img
+                      src="../assets/icons/white-cart.svg"
+                      alt="Cart"
+                      class="icon"
+                    />
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="../assets/images/chain-of-thorns.jpg"
+                    alt="Chain of Thorns"
+                    class="product-card__img"
+                  />
                 </div>
 
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <img
-                      src="../assets/images/city-of-failen-angles.jpg"
-                      alt="City of Fallen Angles"
-                      class="product-card__img"
-                    />
-                  </div>
+                <div class="product-card__content">
+                  <h3 class="text-md">Chain of Thorns</h3>
+                  <p class="body-text">Cassandra Clare</p>
 
-                  <div class="product-card__content">
-                    <h3 class="text-md">City of Fallen Angles</h3>
-                    <p class="body-text">Cassandra Clare</p>
+                  <div class="product-card__bottom">
+                    <span class="text-sm">$23.24</span>
 
-                    <div class="product-card__bottom">
-                      <span class="text-sm">$13.94</span>
-
-                      <button
-                        class="product-card__wishlist"
-                        aria-label="Add to wishlist"
-                      >
-                        <svg
-                          class="icon"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          stroke="currentColor"
-                        >
-                          <path
-                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-
-                    <button class="btn btn--primary product-card__cart">
-                      <img
-                        src="../assets/icons/white-cart.svg"
-                        alt="Cart"
+                    <button
+                      class="product-card__wishlist"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
                         class="icon"
-                      />
-                      Add to cart
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                        />
+                      </svg>
                     </button>
                   </div>
+
+                  <button class="btn btn--primary product-card__cart">
+                    <img
+                      src="../assets/icons/white-cart.svg"
+                      alt="Cart"
+                      class="icon"
+                    />
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="../assets/images/city-of-failen-angles.jpg"
+                    alt="City of Fallen Angles"
+                    class="product-card__img"
+                  />
                 </div>
 
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <img
-                      src="../assets/images/nona-the-ninth-collection.jpg"
-                      alt="Nona The Ninth"
-                      class="product-card__img"
-                    />
-                  </div>
+                <div class="product-card__content">
+                  <h3 class="text-md">City of Fallen Angles</h3>
+                  <p class="body-text">Cassandra Clare</p>
 
-                  <div class="product-card__content">
-                    <h3 class="text-md">Nona The Ninth</h3>
-                    <p class="body-text">Tamsyn Muir</p>
+                  <div class="product-card__bottom">
+                    <span class="text-sm">$13.94</span>
 
-                    <div class="product-card__bottom">
-                      <span class="text-sm">$16.84</span>
-
-                      <button
-                        class="product-card__wishlist"
-                        aria-label="Add to wishlist"
-                      >
-                        <svg
-                          class="icon"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          stroke="currentColor"
-                        >
-                          <path
-                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-
-                    <button class="btn btn--primary product-card__cart">
-                      <img
-                        src="../assets/icons/white-cart.svg"
-                        alt="Cart"
+                    <button
+                      class="product-card__wishlist"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
                         class="icon"
-                      />
-                      Add to cart
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                        />
+                      </svg>
                     </button>
                   </div>
+
+                  <button class="btn btn--primary product-card__cart">
+                    <img
+                      src="../assets/icons/white-cart.svg"
+                      alt="Cart"
+                      class="icon"
+                    />
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="../assets/images/nona-the-ninth-collection.jpg"
+                    alt="Nona The Ninth"
+                    class="product-card__img"
+                  />
+                </div>
+
+                <div class="product-card__content">
+                  <h3 class="text-md">Nona The Ninth</h3>
+                  <p class="body-text">Tamsyn Muir</p>
+
+                  <div class="product-card__bottom">
+                    <span class="text-sm">$16.84</span>
+
+                    <button
+                      class="product-card__wishlist"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <button class="btn btn--primary product-card__cart">
+                    <img
+                      src="../assets/icons/white-cart.svg"
+                      alt="Cart"
+                      class="icon"
+                    />
+                    Add to cart
+                  </button>
                 </div>
               </div>
             </div>
-
-            <button
-              class="slider-control__btn product__control product__control--next"
-            >
-              <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
-                <path
-                  d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
           </div>
 
-          <div class="product__pagination">
-            <div class="pagination">
-              <span class="pagination__dot pagination__dot--active"></span>
-              <span class="pagination__dot"></span>
-              <span class="pagination__dot"></span>
-              <span class="pagination__dot"></span>
-            </div>
+          <button
+            class="slider-control__btn product__control product__control--next"
+          >
+            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+              <path
+                d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="product__pagination">
+          <div class="pagination">
+            <span class="pagination__dot pagination__dot--active"></span>
+            <span class="pagination__dot"></span>
+            <span class="pagination__dot"></span>
+            <span class="pagination__dot"></span>
           </div>
         </div>
       </section>
 
-      <section class="layout-section">
-        <div class="container">
-          <div class="product__header">
-            <h2 class="text--lg product__title">Last viewed</h2>
-          </div>
+      <section class="layout-section container">
+        <div class="product__header">
+          <h2 class="text--lg product__title">Last viewed</h2>
+        </div>
 
-          <div class="product__slider">
-            <button
-              class="slider-control__btn product__control product__control--prev"
-            >
-              <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
-                <path
-                  d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
+        <div class="product__slider">
+          <button
+            class="slider-control__btn product__control product__control--prev"
+          >
+            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+              <path
+                d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
 
-            <div class="product__viewport">
-              <div class="product__track">
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <img
-                      src="../assets/images/the-librarian-spy.jpg"
-                      alt="The Librarian Spy"
-                      class="product-card__img"
-                    />
-                  </div>
-
-                  <div class="product-card__content">
-                    <h3 class="text-md">The Librarian Spy</h3>
-                    <p class="body-text">Madeline Martin</p>
-
-                    <div class="product-card__bottom">
-                      <span class="text-sm">$16.73</span>
-
-                      <button
-                        class="product-card__wishlist"
-                        aria-label="Add to wishlist"
-                      >
-                        <svg
-                          class="icon"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          stroke="currentColor"
-                        >
-                          <path
-                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-
-                    <button class="btn btn--primary product-card__cart">
-                      <img
-                        src="../assets/icons/white-cart.svg"
-                        alt="Cart"
-                        class="icon"
-                      />
-                      Add to cart
-                    </button>
-                  </div>
+          <div class="product__viewport">
+            <div class="product__track">
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="../assets/images/the-librarian-spy.jpg"
+                    alt="The Librarian Spy"
+                    class="product-card__img"
+                  />
                 </div>
 
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <img
-                      src="../assets/images/other-birds.jpg"
-                      alt="Other-Birds"
-                      class="product-card__img"
-                    />
-                  </div>
+                <div class="product-card__content">
+                  <h3 class="text-md">The Librarian Spy</h3>
+                  <p class="body-text">Madeline Martin</p>
 
-                  <div class="product-card__content">
-                    <h3 class="text-md">Other Birds</h3>
-                    <p class="body-text">Sarah Addison Allen</p>
+                  <div class="product-card__bottom">
+                    <span class="text-sm">$16.73</span>
 
-                    <div class="product-card__bottom">
-                      <span class="text-sm">$26.03</span>
-
-                      <button
-                        class="product-card__wishlist"
-                        aria-label="Add to wishlist"
-                      >
-                        <svg
-                          class="icon"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          stroke="currentColor"
-                        >
-                          <path
-                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-
-                    <button class="btn btn--primary product-card__cart">
-                      <img
-                        src="../assets/icons/white-cart.svg"
-                        alt="Cart"
+                    <button
+                      class="product-card__wishlist"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
                         class="icon"
-                      />
-                      Add to cart
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                        />
+                      </svg>
                     </button>
                   </div>
+
+                  <button class="btn btn--primary product-card__cart">
+                    <img
+                      src="../assets/icons/white-cart.svg"
+                      alt="Cart"
+                      class="icon"
+                    />
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="../assets/images/other-birds.jpg"
+                    alt="Other-Birds"
+                    class="product-card__img"
+                  />
                 </div>
 
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <img
-                      src="../assets/images/the-ways-we-hide.jpg"
-                      alt="The Ways We Hide"
-                      class="product-card__img"
-                    />
-                  </div>
+                <div class="product-card__content">
+                  <h3 class="text-md">Other Birds</h3>
+                  <p class="body-text">Sarah Addison Allen</p>
 
-                  <div class="product-card__content">
-                    <h3 class="text-md">The Ways We Hide</h3>
-                    <p class="body-text">Kristina McMorris</p>
+                  <div class="product-card__bottom">
+                    <span class="text-sm">$26.03</span>
 
-                    <div class="product-card__bottom">
-                      <span class="text-sm">$27.93</span>
-
-                      <button
-                        class="product-card__wishlist"
-                        aria-label="Add to wishlist"
-                      >
-                        <svg
-                          class="icon"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          stroke="currentColor"
-                        >
-                          <path
-                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-
-                    <button class="btn btn--primary product-card__cart">
-                      <img
-                        src="../assets/icons/white-cart.svg"
-                        alt="Cart"
+                    <button
+                      class="product-card__wishlist"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
                         class="icon"
-                      />
-                      Add to cart
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                        />
+                      </svg>
                     </button>
                   </div>
+
+                  <button class="btn btn--primary product-card__cart">
+                    <img
+                      src="../assets/icons/white-cart.svg"
+                      alt="Cart"
+                      class="icon"
+                    />
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="../assets/images/the-ways-we-hide.jpg"
+                    alt="The Ways We Hide"
+                    class="product-card__img"
+                  />
                 </div>
 
-                <div class="product-card">
-                  <div class="product-card__image">
-                    <img
-                      src="../assets/images/room-and-board.jpg"
-                      alt="Room and Board"
-                      class="product-card__img"
-                    />
-                  </div>
+                <div class="product-card__content">
+                  <h3 class="text-md">The Ways We Hide</h3>
+                  <p class="body-text">Kristina McMorris</p>
 
-                  <div class="product-card__content">
-                    <h3 class="text-md">Room and Board</h3>
-                    <p class="body-text">Miriam Parker</p>
+                  <div class="product-card__bottom">
+                    <span class="text-sm">$27.93</span>
 
-                    <div class="product-card__bottom">
-                      <span class="text-sm">$15.81</span>
-
-                      <button
-                        class="product-card__wishlist"
-                        aria-label="Add to wishlist"
-                      >
-                        <svg
-                          class="icon"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          stroke="currentColor"
-                        >
-                          <path
-                            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-
-                    <button class="btn btn--primary product-card__cart">
-                      <img
-                        src="../assets/icons/white-cart.svg"
-                        alt="Cart"
+                    <button
+                      class="product-card__wishlist"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
                         class="icon"
-                      />
-                      Add to cart
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                        />
+                      </svg>
                     </button>
                   </div>
+
+                  <button class="btn btn--primary product-card__cart">
+                    <img
+                      src="../assets/icons/white-cart.svg"
+                      alt="Cart"
+                      class="icon"
+                    />
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img
+                    src="../assets/images/room-and-board.jpg"
+                    alt="Room and Board"
+                    class="product-card__img"
+                  />
+                </div>
+
+                <div class="product-card__content">
+                  <h3 class="text-md">Room and Board</h3>
+                  <p class="body-text">Miriam Parker</p>
+
+                  <div class="product-card__bottom">
+                    <span class="text-sm">$15.81</span>
+
+                    <button
+                      class="product-card__wishlist"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <button class="btn btn--primary product-card__cart">
+                    <img
+                      src="../assets/icons/white-cart.svg"
+                      alt="Cart"
+                      class="icon"
+                    />
+                    Add to cart
+                  </button>
                 </div>
               </div>
             </div>
-
-            <button
-              class="slider-control__btn product__control product__control--next"
-            >
-              <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
-                <path
-                  d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
           </div>
 
-          <div class="product__pagination">
-            <div class="pagination">
-              <span class="pagination__dot pagination__dot--active"></span>
-              <span class="pagination__dot"></span>
-              <span class="pagination__dot"></span>
-              <span class="pagination__dot"></span>
-            </div>
+          <button
+            class="slider-control__btn product__control product__control--next"
+          >
+            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
+              <path
+                d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="product__pagination">
+          <div class="pagination">
+            <span class="pagination__dot pagination__dot--active"></span>
+            <span class="pagination__dot"></span>
+            <span class="pagination__dot"></span>
+            <span class="pagination__dot"></span>
           </div>
         </div>
       </section>
@@ -935,12 +925,7 @@
 
       <div class="footer-area__bottom">
         <div class="container footer-area__bottom-inner">
-          <img
-            src="../assets/icons/copyright.svg"
-            alt="Copyright"
-            class="icon footer-area__icons"
-          />
-          <span>All copyrights are reserved. B-World 2022.</span>
+          <span> &#169; All copyrights are reserved. B-World 2022.</span>
         </div>
       </div>
     </footer>
