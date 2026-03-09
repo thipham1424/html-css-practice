@@ -40,7 +40,6 @@
 
 .footer-area__list {
   list-style: none;
-  opacity: 0.8;
 }
 
 .footer-area__item {
@@ -55,6 +54,12 @@
   text-decoration: none;
   transition: 0.3s;
   white-space: nowrap;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.footer-area__link:hover {
+  opacity: 1;
 }
 
 .footer-area__info-icon {
