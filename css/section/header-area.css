@@ -5,18 +5,23 @@
 .header-area__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 70px;
 }
 
 .header-area__top {
-  padding: 16px 0;
+  padding: 18px 0;
 }
 
 .header-area__logo {
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 16px;
+  gap: 8px;
+}
+
+.header-area__img {
+  width: 61px;
+  height: 25px;
 }
 
 .logo__brand {
@@ -42,14 +47,17 @@
 
 .logo__divider {
   width: 1px;
-  height: 32px;
+  height: 30px;
   background: var(--primary-color);
   opacity: 0.4;
 }
 
 .logo__tagline {
+  width: 51px;
   color: var(--secondary-color);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
+  line-height: 100%;
+  font-size: var(--fs-badge)
 }
 
 .header-area__search {
@@ -59,8 +67,10 @@
 
 .header-area__policy {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   font-size: var(--fs-typ);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-regular);
 }
 
 .header-area__policy a {
@@ -75,7 +85,7 @@
 
 .header-area__icon {
   position: relative;
-  padding: 0 20px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,15 +112,18 @@
 
 .header-area__bottom {
   border-top: 1px solid var(--primary-color);
-  padding: 14px 0;
+  padding: 16px 0;
 }
 
 .header-area__contact {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 35px;
+  margin-left: auto;
 }
 
 .header-area__phone {
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  margin-left: 8px;
 }
