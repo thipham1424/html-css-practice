@@ -11,10 +11,8 @@
   display: block;
 }
 
-
 .map__label {
   font-size: var(--fs-badge);
   font-weight: var(--fw-regular);
   white-space: nowrap;
 }
-

@@ -16,7 +16,9 @@
   width: 62px;
   height: 116px;
   border-radius: 2px;
-  transition: border 0.5s, transform 0.2s;
+  transition:
+    border 0.5s,
+    transform 0.2s;
 }
 
 .gallery__thumb:hover {

@@ -2,24 +2,26 @@
 @import url("./base.css");
 @import url("./layout.css");
 
-@import "./components/button.css";
-@import "./components/input.css";
-@import "./components/badge.css";
-@import "./components/icon.css";
-@import "./components/pagination.css";
-@import "./components/slider-control.css";
-@import "./components/quantity-selector.css";
-@import "./components/breadcrumb.css";
-@import "./components/search-bar.css";
-@import "./components/image-gallery.css";
-@import "./components/map.css";
-@import "./components/product-card.css";
-@import "./components/navigation.css";
+/* COMPONENTS */
+@import url("./components/button.css");
+@import url("./components/input.css");
+@import url("./components/badge.css");
+@import url("./components/icon.css");
+@import url("./components/pagination.css");
+@import url("./components/slider-control.css");
+@import url("./components/quantity-selector.css");
+@import url("./components/breadcrumb.css");
+@import url("./components/search-bar.css");
+@import url("./components/image-gallery.css");
+@import url("./components/map.css");
+@import url("./components/product-card.css");
+@import url("./components/navigation.css");
 
-@import "./section/header-area.css";
-@import "./section/footer.css";
-@import "./section/benefit-section.css";
-@import "./section/product-section.css";
-@import "./section/product-detail.css";
-@import "./section/newsletter-section.css";
-@import "./section/hero-section.css";
+/* SECTIONS */
+@import url("./section/header-area.css");
+@import url("./section/footer.css");
+@import url("./section/benefit-section.css");
+@import url("./section/product-section.css");
+@import url("./section/product-detail.css");
+@import url("./section/newsletter-section.css");
+@import url("./section/hero-section.css");

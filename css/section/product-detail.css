@@ -74,7 +74,6 @@
 }
 
 .product-detail__meta-item {
-  display: grid;
   align-items: start;
   display: contents;
   gap: 8px;

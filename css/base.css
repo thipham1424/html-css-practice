@@ -26,7 +26,6 @@
   --fs-author: 18px;
   --fs-typ: 14px;
   --fs-badge: 12px;
-
   --fw-bold: 700;
   --fw-semibold: 600;
   --fw-medium: 500;
@@ -38,7 +37,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
   line-height: var(--lh-normal);

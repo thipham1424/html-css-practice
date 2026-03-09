@@ -79,14 +79,12 @@
 }
 
 .hero__pagination-dot {
-  width: 0px;
   height: 70px;
   border: 1px solid var(--primary-color);
   opacity: 0.3;
 }
 
 .hero__pagination-dot--active {
-  width: 0px;
   height: 70px;
   border: 1px solid var(--primary-color);
   opacity: 1;
