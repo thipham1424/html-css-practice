@@ -1,26 +1,72 @@
+/* Box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* Reset margin & padding */
+
+* {
   margin: 0;
   padding: 0;
 }
 
-img {
+/* Media elements */
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
+  max-width: 100%;
 }
 
-ul {
+/* Lists */
+ul,
+ol {
   list-style: none;
 }
 
+/* Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-button {
+/* Form elements */
+button,
+input,
+textarea,
+select {
+  font: inherit;
   border: none;
   background: none;
+}
+
+/* Button behavior */
+button {
   cursor: pointer;
+}
+
+/* Remove default quote styles */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Improve line-height */
+body {
+  line-height: 1.5;
+}
+
+/* Prevent text overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
