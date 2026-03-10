@@ -2,15 +2,15 @@
   width: 274px;
 }
 
-.product-card:hover {
-  transform: translateY(-8px);
-}
-
 .product-card__image {
   position: relative;
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: 24px;
+}
+
+.product-card__image:hover {
+  transform: translateY(-8px);
 }
 
 .product-card__img {
@@ -29,6 +29,10 @@
 
 .product-card__wishlist--active {
   color: var(--primary-color);
+}
+
+.product-card__wishlist:hover {
+  transform: translateY(-8px);
 }
 
 .product-card__wishlist svg {
