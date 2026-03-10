@@ -364,12 +364,7 @@
                   class="product-card__wishlist"
                   aria-label="Add to wishlist"
                 >
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
+                  <svg class="product-card__wishlist-icon" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
                     />
@@ -408,12 +403,7 @@
                   class="product-card__wishlist"
                   aria-label="Add to wishlist"
                 >
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
+                  <svg class="product-card__wishlist-icon" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
                     />
@@ -452,12 +442,7 @@
                   class="product-card__wishlist"
                   aria-label="Add to wishlist"
                 >
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
+                  <svg class="product-card__wishlist-icon" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
                     />
@@ -496,12 +481,7 @@
                   class="product-card__wishlist"
                   aria-label="Add to wishlist"
                 >
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
+                  <svg class="product-card__wishlist-icon" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
                     />
@@ -588,12 +568,7 @@
                   class="product-card__wishlist"
                   aria-label="Add to wishlist"
                 >
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
+                  <svg class="product-card__wishlist-icon" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
                     />
@@ -634,12 +609,7 @@
                   class="product-card__wishlist"
                   aria-label="Add to wishlist"
                 >
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
+                  <svg class="product-card__wishlist-icon" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
                     />
@@ -678,12 +648,7 @@
                   class="product-card__wishlist"
                   aria-label="Add to wishlist"
                 >
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
+                  <svg class="product-card__wishlist-icon" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
                     />
@@ -722,12 +687,7 @@
                   class="product-card__wishlist"
                   aria-label="Add to wishlist"
                 >
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
+                  <svg class="product-card__wishlist-icon" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
                     />
@@ -1052,6 +1012,12 @@
       });
 
       updateButtons(parseInt(number.textContent));
+      document.querySelectorAll(".product-card__wishlist").forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          this.classList.toggle("product-card__wishlist--active");
+        });
+      });
     </script>
   </body>
 </html>
