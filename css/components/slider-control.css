@@ -1,6 +1,6 @@
 .slider-control {
   display: inline-flex;
-  gap: 24px;
+  gap: 16px;
 }
 
 .slider-control__btn {

@@ -50,7 +50,7 @@
 
 .gallery__slider {
   position: absolute;
-  right: 10px;
+  right: 24px;
   top: 95%;
   transform: translateY(-50%);
 }
@@ -76,7 +76,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 14px;
+  padding: 4px 8px;
   border-radius: 20px;
   background: var(--bg-color);
   backdrop-filter: blur(4px);
