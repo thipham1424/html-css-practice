@@ -73,9 +73,13 @@
   font-weight: var(--fw-regular);
 }
 
-.header-area__policy a {
+.header-area__policy-text {
   text-decoration: none;
   color: var(--text-color-nav);
+}
+
+.header-area__policy-text:hover {
+  color: var(--primary-color);
 }
 
 .header-area__actions {
