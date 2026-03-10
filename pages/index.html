@@ -133,20 +133,22 @@
     </header>
 
     <main>
-      <section id="hero" class="layout-section container">
-        <div class="hero__pagination">
-          <span class="hero__pagination-dot--active"></span>
-          <span class="hero__pagination-dot"></span>
-          <span class="hero__pagination-dot"></span>
-          <span class="hero__pagination-dot"></span>
-        </div>
+      <section id="hero" class="hero container">
         <div class="hero__content">
+          <div class="hero__pagination">
+            <span
+              class="hero__pagination-dot hero__pagination-dot--active"
+            ></span>
+            <span class="hero__pagination-dot"></span>
+            <span class="hero__pagination-dot"></span>
+            <span class="hero__pagination-dot"></span>
+          </div>
           <div class="hero__text">
             <span class="hero__badge">Author of august</span>
 
-            <h1 class="text-xl hero__title">Eric-Emanuel Schmitt</h1>
+            <h1 class="text--xl hero__title">Eric-Emanuel Schmitt</h1>
 
-            <p class="body-text hero__desc">
+            <p class="body--text hero__desc">
               Eric-Emmanuel Schmitt has been awarded more than 20 literary
               prizes and distinctions, and in 2001 he received the title of
               Chevalier des Arts et des Lettres. His books have been translated
@@ -935,15 +937,23 @@
         });
       });
       document.addEventListener("DOMContentLoaded", function () {
-        const heroDots = document.querySelectorAll(".pagination-dot");
-        const heroPrevBtn = document.querySelector(".hero__prev");
-        const heroNextBtn = document.querySelector(".hero__next");
+        const heroSection = document.querySelector("#hero");
+
+        const heroDots = heroSection.querySelectorAll(
+          ".hero__pagination-dot, .hero__pagination-dot--active",
+        );
+        const heroPrevBtn = heroSection.querySelector(".hero__prev");
+        const heroNextBtn = heroSection.querySelector(".hero__next");
 
         let heroIndex = 0;
 
         function updatePagination(index) {
-          heroDots.forEach((dot) => dot.classList.remove("active"));
-          heroDots[index].classList.add("active");
+          heroDots.forEach((dot) => {
+            dot.classList.remove("hero__pagination-dot--active");
+            dot.classList.add("hero__pagination-dot");
+          });
+
+          heroDots[index].classList.add("hero__pagination-dot--active");
         }
 
         heroNextBtn?.addEventListener("click", () => {
