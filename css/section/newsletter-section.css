@@ -1,11 +1,18 @@
 .newsletter__wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 80px;
+  gap: 61px;
+}
+
+.newsletter__form {
+  flex: 1;
+  margin-top: 30px;
 }
 
 .newsletter__content {
+  flex-direction: column;
+  height: 178px;
+  justify-content: space-between;
   flex: 1;
 }
 
@@ -14,17 +21,13 @@
 }
 
 .newsletter__desc {
-  margin-bottom: 50px;
-}
-
-.newsletter__form {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
+  width: 555px;
+  margin-bottom: 59px;
 }
 
 .newsletter__btn {
-  margin-top: 30px;
+  margin-top: 16px;
+  width: 100%;
 }
 
 .newsletter__map {
