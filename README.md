@@ -4,6 +4,10 @@ Ecommerce Book Store
 
 ## Overview
 
+```bash
+design: http://figma.com/design/8p6KclP2GuzXknabZrCjoa/E-commerce-%7C-Website-design-%7C-Bookstore--Community-?node-id=1-762&t=Y8EKIbguQDMMDm3E-0
+```
+
 This project is a practice of HTML and CSS focused on building a webpage from a design file.
 The goal is to convert a Sketch design of an Ecommerce Book Store into a structured and maintainable HTML/CSS implementation.
 The project emphasizes proper HTML semantics, modern CSS layout techniques, and clean code organization.
