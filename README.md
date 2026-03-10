@@ -54,6 +54,5 @@ The purpose is to simulate a real-world frontend workflow where developers conve
 git clone https://github.com/thipham1424/html-css-practice1
 cd html-css-practice1
 npm install
-```
-
 Open the index.html file in your browser (Chrome latest version recommended).
+```
