@@ -1,18 +1,14 @@
-/* Box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Reset margin & padding */
-
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Media elements */
 img,
 picture,
 video,
@@ -22,19 +18,16 @@ svg {
   max-width: 100%;
 }
 
-/* Lists */
 ul,
 ol {
   list-style: none;
 }
 
-/* Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Form elements */
 button,
 input,
 textarea,
@@ -44,23 +37,19 @@ select {
   background: none;
 }
 
-/* Button behavior */
 button {
   cursor: pointer;
 }
 
-/* Remove default quote styles */
 blockquote,
 q {
   quotes: none;
 }
 
-/* Improve line-height */
 body {
   line-height: 1.5;
 }
 
-/* Prevent text overflow */
 p,
 h1,
 h2,
