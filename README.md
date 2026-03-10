@@ -14,11 +14,11 @@ The project emphasizes proper HTML semantics, modern CSS layout techniques, and 
 
 ## Objectives
 
-  - Understand and correctly apply HTML and CSS properties
-  - Practice slicing UI design (Sketch) into HTML/CSS
-  - Learn and apply Flexbox layout
-  - Follow CSS coding guidelines
-  - Use validation tools to ensure code quality
+- Understand and correctly apply HTML and CSS properties
+- Practice slicing UI design (Sketch) into HTML/CSS
+- Learn and apply Flexbox layout
+- Follow CSS coding guidelines
+- Use validation tools to ensure code quality
 
 ## Requirements
 
@@ -28,25 +28,25 @@ The website must work properly on the latest version of Chrome
 
 The UI is based on an Ecommerce Book Store layout with 2 pages (main page and product page), which includes typical e-commerce components such as:
 
-  - Header Area
-  - Hero Section
-  - Benefit Section
-  - Product Section
-  - Product Detail Section
-  - Newsletter Section
-  - Footer
+- Header Area
+- Hero Section
+- Benefit Section
+- Product Section
+- Product Detail Section
+- Newsletter Section
+- Footer
 
 The purpose is to simulate a real-world frontend workflow where developers convert a design file into a working webpage.
 
 ## Technologies
 
-  - HTML5
-  - CSS3
-  - Git and Git Hub
-  - Figma
-  - Google docs
-  - GPT and Copilot
-  - Visual Studio Code
+- HTML5
+- CSS3
+- Git and Git Hub
+- Figma
+- Google docs
+- GPT and Copilot
+- Visual Studio Code
 
 ## Installation
 
