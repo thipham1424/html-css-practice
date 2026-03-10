@@ -1,3 +1,7 @@
+.benefit {
+  margin-bottom: 80px;
+}
+
 .benefit__list {
   display: flex;
   align-items: center;

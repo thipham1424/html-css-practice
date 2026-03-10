@@ -77,3 +77,11 @@ body {
   font-weight: var(--fw-regular);
   line-height: var(--lh-normal);
 }
+
+.text--name-card {
+  font-size: var(--fs-price);
+  color: var(--heading-color-primary);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-semibold);
+  margin-bottom: 7px;
+}
