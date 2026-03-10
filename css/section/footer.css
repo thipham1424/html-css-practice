@@ -55,7 +55,6 @@
   transition: 0.3s;
   white-space: nowrap;
   opacity: 0.8;
-  text-decoration: none;
 }
 
 .footer-area__link:hover {
