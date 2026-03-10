@@ -1,27 +1,32 @@
 .benefit {
   margin-bottom: 80px;
+  margin-top: 103px;
 }
 
 .benefit__list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 60px;
-  font-size: var(--fs-price);
-  font-weight: var(--fw-semibold);
 }
 
 .benefit__item {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
 .benefit__divider {
   height: 80px;
   border: 1px solid var(--primary-color);
+  margin: 0 61px;
 }
 
-.benefit__link {
+.benefit__text {
+  margin-left: 20px;
+  font-size: var(--fs-price);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  color: var(--heading-color-primary);
+}
+
+.benefit__read {
   border-bottom: 1px solid var(--dark-color);
 }

@@ -19,23 +19,14 @@
       <div class="header-area__top container">
         <div class="header-area__inner">
           <a href="/" class="header-area__logo">
-            <span class="logo__brand">
-              B-W
-              <span class="logo__icon">
-                <img
-                  src="../assets/icons/book-world.svg"
-                  alt="O"
-                  class="logo_icon-icon"
-                />
-              </span>
-              rld
-            </span>
+            <img
+              class="header-area__img"
+              src="../assets/images/logo.png"
+              alt="logo"
+            />
             <span class="logo__divider"></span>
 
-            <span class="logo__tagline">
-              We love <br />
-              books
-            </span>
+            <span class="logo__tagline"> We love books </span>
           </a>
 
           <div class="search">
@@ -54,10 +45,10 @@
           </div>
 
           <nav class="header-area__policy">
-            <a href="#">Privacy policy</a>
-            <a href="#">Warranty</a>
-            <a href="#">Shipping</a>
-            <a href="#">Returns</a>
+            <a href="#" class="header-area__policy-text">Privacy policy</a>
+            <a href="#" class="header-area__policy-text">Warranty</a>
+            <a href="#" class="header-area__policy-text">Shipping</a>
+            <a href="#" class="header-area__policy-text">Returns</a>
           </nav>
 
           <div class="header-area__actions">
@@ -94,21 +85,23 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link body-text">The must read</a>
+                <a href="#hero" class="nav__link body-text">The must read</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link body-text">News</a>
+                <a href="#benefit" class="nav__link body-text">News</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link body-text"
+                <a href="#selected-for-you" class="nav__link body-text"
                   >Promotion of the mount</a
                 >
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link body-text">Publishes</a>
+                <a href="#you-must-buy-it-now" class="nav__link body-text"
+                  >Publishes</a
+                >
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link body-text"
+                <a href="#newsletter" class="nav__link body-text"
                   >Subscribe to the newsletter</a
                 >
               </li>
@@ -122,10 +115,11 @@
                 src="../assets/icons/phone.svg"
                 alt="Phone icon"
               />
+              <a href="tel:+44587999000" class="header-area__phone">
+                +445 87 999 000
+              </a>
             </span>
-            <a href="tel:+44587999000" class="header-area__phone">
-              +445 87 999 000
-            </a>
+
             <button class="btn btn--outline btn-nav">Request a call</button>
           </div>
         </div>
@@ -133,16 +127,17 @@
     </header>
 
     <main>
-      <section class="layout-section container">
+      <section class="container">
         <nav class="breadcrumb">
-          <a href="index.html">Home</a>
+          <a href="index.html" class="breadcrumb__link">Home</a>
           <span class="breadcrumb__separator">></span>
-          <a href="#">Fantasy books</a>
+          <a href="#" class="breadcrumb__link">Fantasy books</a>
           <span class="breadcrumb__separator">></span>
           <span class="breadcrumb__current">Chain of Gold</span>
         </nav>
       </section>
-      <section class="layout-section container">
+
+      <section class="product-detail container">
         <div class="product-detail__wrapper">
           <div class="gallery">
             <div class="gallery__thumbnails">
@@ -767,20 +762,15 @@
 
     <footer class="footer-area">
       <div class="container footer-area__top">
+        <a href="/" class="footer-area__logo">
+          <img
+            class="footer-area__img"
+            src="../assets/images/white-logo.png"
+            alt="logo"
+          />
+        </a>
         <div class="footer-area__grid">
-          <div class="footer-area__col footer-area__brand">
-            <a href="/" class="footer-area__logo">
-              <span class="footer-area__brand-text">
-                B-W
-                <span class="footer-area__brand-icon">
-                  <img src="../assets/icons/book-world.svg" alt="O" />
-                </span>
-                rld
-              </span>
-            </a>
-          </div>
-
-          <div class="footer-area__col">
+          <div>
             <h4 class="footer-area__title">Categories</h4>
             <ul class="footer-area__list">
               <li class="footer-area__item">
@@ -797,8 +787,7 @@
               </li>
             </ul>
           </div>
-
-          <div class="footer-area__col">
+          <div>
             <h4 class="footer-area__title">For kids</h4>
             <ul class="footer-area__list">
               <li class="footer-area__item">
@@ -812,8 +801,7 @@
               </li>
             </ul>
           </div>
-
-          <div class="footer-area__col">
+          <div>
             <h4 class="footer-area__title">E-Books</h4>
             <ul class="footer-area__list">
               <li class="footer-area__item">
@@ -827,52 +815,45 @@
               </li>
             </ul>
           </div>
-
-          <div class="footer-area__col footer-area__contact">
+          <div>
             <h4 class="footer-area__title">Help & Contacts</h4>
-
-            <div class="footer-area__info">
-              <div class="footer-area__info-item">
+            <div class="footer-area__list">
+              <div class="footer-area__item">
                 <img
                   class="footer-area__info-icon"
                   src="../assets/icons/white-phone.svg"
                   alt="Phone icon"
                 />
-                <a href="tel:+44587999000" class="header-area__phone">
+                <a href="tel:+44587999000" class="header-area__link">
                   +445 87 999 000
                 </a>
               </div>
-
-              <div class="footer-area__info-item">
+              <div class="footer-area__item footer-area__link">
                 <img
                   class="footer-area__info-icon"
                   src="../assets/icons/clock.svg"
                   alt="Clock icon"
                 />
-                <span class="footer-area__info-text"
-                  >Mo-Fri, 9 AM to 11 PM</span
-                >
+                <span class="footer-area__link">Mo-Fri, 9 AM to 11 PM</span>
               </div>
-
-              <div class="footer-area__info-item">
+              <div class="footer-area__item">
                 <img
                   class="footer-area__info-icon"
                   src="../assets/icons/mail.svg"
                   alt="Mail icon"
                 />
-                <span class="footer-area__info-text">b.world@store.ro</span>
+                <a href="mailto:b.world@store.ro" class="footer-area__link">
+                  b.world@store.ro
+                </a>
               </div>
             </div>
           </div>
-
-          <div class="footer-area__col footer-area__support">
-            <p class="footer-area__desc">
-              If you have questions, you can contact us or we will do it for
-              you.
-            </p>
-
-            <button class="btn btn--outline btn--footer">Request a call</button>
-          </div>
+        </div>
+        <div class="footer-area__support">
+          <p class="footer-area__desc">
+            If you have questions, you can contact us or we will do it for you.
+          </p>
+          <button class="btn btn--outline btn--footer">Request a call</button>
         </div>
         <div class="footer-area__icons">
           <div class="footer-area__social">
@@ -915,7 +896,6 @@
           </div>
         </div>
       </div>
-
       <div class="footer-area__bottom">
         <div class="container footer-area__bottom-inner">
           <span> &#169; All copyrights are reserved. B-World 2022.</span>
