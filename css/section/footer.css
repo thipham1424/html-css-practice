@@ -16,7 +16,7 @@
   margin-left: 144px;
   margin-right: 161px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, auto);;
   width: 653px;
   gap: 0 78px;
 }
