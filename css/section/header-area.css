@@ -107,11 +107,10 @@
   opacity: 0.4;
 }
 
-.header-area__icon--with-badge .header-area__badge {
+.header-area__badge {
   position: absolute;
-  top: -6px;
-  right: 15px;
-  font-size: var(--fs-badge);
+  top: -10px;
+  right: 10px;
 }
 
 .header-area__bottom {
