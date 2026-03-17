@@ -1,6 +1,6 @@
 .breadcrumb {
   margin-top: 24px;
-  display: flex;
+  display: none;
   gap: 4px;
   font-weight: var(--fw-regular);
   font-size: var(--fs-typ);
@@ -19,4 +19,10 @@
 
 .breadcrumb__separator {
   color: var(--primary-color);
+}
+
+@media (width >= 361px){
+  .breadcrumb {
+    display: flex;
+  }
 }
