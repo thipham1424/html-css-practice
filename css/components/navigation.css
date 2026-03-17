@@ -1,4 +1,5 @@
 .nav {
+  display: none;
   max-width: 1192px;
   height: 49px;
   overflow-x: auto;
@@ -27,4 +28,10 @@
 
 .nav__link:hover {
   color: var(--primary-color);
+}
+
+@media (width >= 769px) {
+  .nav {
+    display: flex;
+  }
 }
