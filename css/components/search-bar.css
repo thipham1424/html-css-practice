@@ -2,7 +2,7 @@
   width: 376px;
   height: 36px;
   border-radius: 2px;
-  background: var(--gray-color);
+  background: var(--bg-color);
   display: flex;
   align-items: center;
   padding: 8px 12px;
@@ -21,4 +21,10 @@
 
 .search__btn-icon {
   opacity: 0.6;
+}
+
+@media (width >= 769px) {
+  .search {
+    background: var(--gray-color);
+  }
 }
