@@ -67,7 +67,7 @@
   transform: translateY(-50%);
 }
 
-@media (width >= 361px) {
+@media (width >= 768px) {
   .gallery {
     flex-direction: row;
     gap: 20px;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (width >= 769px) {
+@media (width >= 922px) {
   .gallery {
     width: 580px;
     height: 653px;

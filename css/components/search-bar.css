@@ -1,11 +1,5 @@
 .search {
-  width: 376px;
-  height: 36px;
-  border-radius: 2px;
-  background: var(--bg-color);
-  display: flex;
-  align-items: center;
-  padding: 8px 12px;
+  display: none;
 }
 
 .search__btn {
@@ -23,8 +17,14 @@
   opacity: 0.6;
 }
 
-@media (width >= 769px) {
+@media (width >= 992px) {
   .search {
+    width: 376px;
+    height: 36px;
+    border-radius: 2px;
     background: var(--gray-color);
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
   }
 }

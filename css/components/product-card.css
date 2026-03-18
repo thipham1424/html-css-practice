@@ -55,13 +55,13 @@
   margin-right: 155px;
 }
 
-@media (width >= 361px) {
+@media (width >= 768px) {
   .product-card__image {
     margin-bottom: 24px;
   }
 }
 
-@media (width >= 769px) {
+@media (width >= 922px) {
   .product-card:hover {
     transform: translateY(-8px);
   }

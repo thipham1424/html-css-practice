@@ -1,8 +1,5 @@
 .nav {
   display: none;
-  max-width: 1192px;
-  height: 49px;
-  overflow-x: auto;
 }
 
 .nav__list {
@@ -30,8 +27,11 @@
   color: var(--primary-color);
 }
 
-@media (width >= 769px) {
+@media (width >= 922px) {
   .nav {
     display: flex;
+    max-width: 1192px;
+    height: 49px;
+    overflow-x: auto;
   }
 }
