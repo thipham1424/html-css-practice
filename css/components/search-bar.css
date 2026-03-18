@@ -17,7 +17,7 @@
   opacity: 0.6;
 }
 
-@media (width >= 769px) {
+@media (width >= 992px) {
   .search {
     width: 376px;
     border-radius: 2px;
