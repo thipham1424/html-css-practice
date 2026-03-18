@@ -11,7 +11,7 @@
   color: var(--bg-color);
 }
 
-@media (width >= 769px) {
+@media (width >= 922px) {
   .badge {
     display: inline-flex;
   }
