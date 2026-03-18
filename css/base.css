@@ -100,7 +100,7 @@ img {
 }
 
 /* TABLET */
-@media (width >= 361px) {
+@media (width >= 768px) {
   :root {
     --fs-xl: 48px;
     --fs-lg: 38px;
@@ -118,7 +118,7 @@ img {
 }
 
 /* DESKTOP */
-@media (width >= 769px) {
+@media (width >= 922px) {
   :root {
     --fs-xl: 48px;
     --fs-lg: 38px;

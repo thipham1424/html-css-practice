@@ -3,14 +3,14 @@
 }
 
 /* TABLET */
-@media (width >= 361px) {
+@media (width >= 768px) {
   .layout-section {
     margin-bottom: 80px;
   }
 }
 
 /* DESKTOP */
-@media (width >= 769px) {
+@media (width >= 922px) {
   .layout-section {
     margin-bottom: 110px;
   }
