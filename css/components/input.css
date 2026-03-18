@@ -29,7 +29,7 @@
   border-bottom: 1px solid var(--primary-color);
 }
 
-@media (width >= 922px) {
+@media (width >= 992px) {
   .search__input {
     display: flex;
   }
