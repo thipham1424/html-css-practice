@@ -5,7 +5,6 @@
 .header-area__inner {
   display: flex;
   align-items: center;
-  gap: 70px;
 }
 
 .header-area__top {
@@ -17,6 +16,7 @@
   align-items: center;
   text-decoration: none;
   gap: 8px;
+  margin-right: 16px;
 }
 
 .header-area__img {
@@ -24,25 +24,11 @@
   height: 25px;
 }
 
-.logo__brand {
-  font-weight: var(--fw-regular);
-  color: var(--dark-color);
-  display: flex;
-  align-items: center;
-}
-
 .logo__icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: 0 1px;
-}
-
-.logo__icon-icon {
-  height: 12px;
-  width: auto;
-  display: block;
-  transform: translateY(1px);
 }
 
 .logo__divider {
@@ -64,21 +50,8 @@
   margin: 0 80px;
 }
 
-.header-area__policy {
+.header-area__navigation {
   display: none;
-  gap: 24px;
-  font-size: var(--fs-typ);
-  line-height: var(--lh-tight);
-  font-weight: var(--fw-regular);
-}
-
-.header-area__policy-text {
-  text-decoration: none;
-  color: var(--text-color-nav);
-}
-
-.header-area__policy-text:hover {
-  color: var(--primary-color);
 }
 
 .header-area__actions {
@@ -100,30 +73,19 @@
   display: none;
 }
 
-.header-area__badge {
-  position: absolute;
-  top: -10px;
-  right: 10px;
-}
-
 .header-area__bottom {
   display: none;
 }
 
-.header-area__contact {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  margin-left: auto;
-}
-
-.header-area__phone {
-  font-weight: var(--fw-regular);
-  line-height: var(--lh-normal);
-  margin-left: 8px;
+.header-area__contact-top {
+  display: none;
 }
 
 @media (width >= 768px) {
+  .header-area__inner {
+    gap: 70px;
+  }
+
   .header-area__icon:not(:last-child)::after {
     content: "";
     position: absolute;
@@ -133,15 +95,60 @@
     height: 20px;
     border: 1px solid var(--primary-color);
   }
+
+  .header-area__contact-top {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: auto;
+  }
+
+  .header-area__phone {
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    margin-left: 8px;
+  }
+
+  .header-area__wishlist,
+  .header-area__user {
+    display: flex;
+  }
+
+  .header-area__badge {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+  }
 }
 
 @media (width >= 992px) {
-  .header-area__top {
+  /* .header-area__top {
     padding: 18px 0;
+  } */
+
+  .header-area__inner {
+    gap: 70px;
+  }
+
+  .header-area__navigation {
+    display: block;
   }
 
   .header-area__policy {
     display: flex;
+    gap: 24px;
+    font-size: var(--fs-typ);
+    line-height: var(--lh-tight);
+    font-weight: var(--fw-regular);
+  }
+
+  .header-area__policy-text {
+    text-decoration: none;
+    color: var(--text-color-nav);
+  }
+
+  .header-area__policy-text:hover {
+    color: var(--primary-color);
   }
 
   .header-area__bottom {
@@ -161,5 +168,16 @@
 
   .header-area__user::after {
     display: none;
+  }
+
+  .header-area__contact-top {
+    display: none;
+  }
+
+  .header-area__contact {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: auto;
   }
 }

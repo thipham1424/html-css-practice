@@ -26,6 +26,7 @@
   --fs-author: 14px;
   --fs-regular: 14px;
   --fs-typ: 12px;
+  --fs-badge: 12px;
 
   /* FONT WEIGHT */
   --fw-bold: 700;
@@ -111,7 +112,6 @@ img {
     --fs-author: 18px;
     --fs-regular: 16px;
     --fs-typ: 14px;
-    --fs-badge: 12px;
   }
 
   .container {
@@ -123,6 +123,6 @@ img {
 @media (width >= 992px) {
   .container {
     max-width: 1200px;
-    padding: 0;
+    padding: 0 10px;
   }
 }
