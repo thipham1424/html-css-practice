@@ -1,5 +1,5 @@
 .search {
-  display: none;
+  background: var(--bg-color);
 }
 
 .search__btn {
