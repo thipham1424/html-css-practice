@@ -238,4 +238,13 @@
   .footer-area__link:hover {
     opacity: 1;
   }
+
+  .footer-area__payments-icon {
+    width: 48px;
+    height: 32px;
+  }
+
+  .footer-area__payments-secondary {
+    gap: 16px;
+  }
 }
