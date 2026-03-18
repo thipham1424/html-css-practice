@@ -10,7 +10,7 @@
 }
 
 /* DESKTOP */
-@media (width >= 922px) {
+@media (width >= 992px) {
   .layout-section {
     margin-bottom: 110px;
   }
