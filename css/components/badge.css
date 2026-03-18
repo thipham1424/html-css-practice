@@ -13,6 +13,6 @@
 
 @media (width >= 769px) {
   .badge {
-    display: inline-block;
+    display: inline-flex;
   }
 }
