@@ -24,6 +24,7 @@
   --fs-price: 18px;
   --fs-sm: 16px;
   --fs-author: 14px;
+  --fs-regular: 14px;
   --fs-typ: 12px;
 
   /* FONT WEIGHT */
@@ -108,6 +109,7 @@ img {
     --fs-price: 24px;
     --fs-sm: 20px;
     --fs-author: 18px;
+    --fs-regular: 16px;
     --fs-typ: 14px;
     --fs-badge: 12px;
   }
@@ -119,17 +121,6 @@ img {
 
 /* DESKTOP */
 @media (width >= 992px) {
-  :root {
-    --fs-xl: 48px;
-    --fs-lg: 38px;
-    --fs-md: 28px;
-    --fs-price: 24px;
-    --fs-sm: 20px;
-    --fs-author: 18px;
-    --fs-typ: 14px;
-    --fs-badge: 12px;
-  }
-
   .container {
     max-width: 1200px;
     padding: 0;
