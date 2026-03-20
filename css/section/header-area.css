@@ -50,10 +50,6 @@
   margin: 0 80px;
 }
 
-.header-area__navigation {
-  display: none;
-}
-
 .header-area__actions {
   display: flex;
   align-items: center;
@@ -70,7 +66,9 @@
 
 .header-area__wishlist,
 .header-area__user,
-.header-area__contact-top {
+.header-area__contact,
+.header-area__contact-top,
+.header-area__navigation {
   display: none;
 }
 
@@ -96,8 +94,6 @@
   .header-area__contact-top {
     display: flex;
     align-items: center;
-    gap: 35px;
-    margin-left: auto;
   }
 
   .header-area__phone {
@@ -160,8 +156,8 @@
   }
 
   .header-area__menu,
-  .header-area__user::after,
-  .header-area__contact-top {
+  .header-area__contact-top,
+  .header-area__user::after {
     display: none;
   }
 
