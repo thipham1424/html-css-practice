@@ -24,7 +24,7 @@
 }
 
 @media (width >= 768px) {
-    .newsletter__content {
+  .newsletter__content {
     max-width: 555px;
   }
 
