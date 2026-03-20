@@ -8,12 +8,14 @@
 .gallery__main {
   order: 1;
   position: relative;
+  width: 100%;
 }
 
 .gallery__thumbnails {
   order: 2;
   display: flex;
   gap: 12px;
+  width: 100%;
 }
 
 .gallery__main-image {
@@ -30,7 +32,6 @@
   border: 0.5px solid var(--primary-color);
   border-radius: 2px;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 10px 19px;
   cursor: pointer;
@@ -61,54 +62,28 @@
 
 .gallery__slider {
   display: none;
-  position: absolute;
-  right: 24px;
-  top: 95%;
-  transform: translateY(-50%);
 }
 
 @media (width >= 768px) {
   .gallery {
     flex-direction: row;
+    width: 100%;
+    height: 100%;
     gap: 20px;
-    height: auto;
   }
 
   .gallery__thumbnails {
     order: 1;
     flex-direction: column;
-    flex: 0 0 120px;
-    gap: 16px;
-  }
-
-  .gallery__main {
-    order: 2;
-    flex: 1;
-  }
-
-  .gallery__thumb-box {
-    aspect-ratio: 1 / 1;
-  }
-
-  .gallery__slider {
-    display: flex;
-  }
-}
-
-@media (width >= 992px) {
-  .gallery {
-    width: 580px;
-    height: 653px;
-  }
-
-  .gallery__thumbnails {
     flex: 0 0 148px;
     gap: 20px;
   }
 
   .gallery__thumb-box {
-    width: 148px;
-    height: 148px;
+    align-items: center;
+    width: 167px;
+    height: 167px;
+    padding: 0;
   }
 
   .gallery__thumb {
@@ -116,8 +91,46 @@
     height: 116px;
   }
 
+  .gallery__main {
+    height: 728px;
+  }
+
   .gallery__main-image {
-    width: 421px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery__slider {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    top: 95%;
+    transform: translateY(-50%);
+  }
+
+  .gallery__slider .slider-control__btn {
+    background: var(--secondary-color);
+    border: none;
+    color: var(--bg-color);
+  }
+
+  .gallery__slider .slider-control__icon {
+    color: var(--bg-color);
+  }
+}
+
+@media (width >= 922px) {
+  .gallery__main {
+    width: 412px;
     height: 653px;
+  }
+
+  .gallery__thumb-box {
+    width: 148px;
+    height: 148px;
+  }
+
+  .gallery__slider .slider-control__btn:hover {
+    background: var(--primary-color);
   }
 }
