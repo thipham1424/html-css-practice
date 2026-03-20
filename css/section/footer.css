@@ -150,9 +150,8 @@
   .footer-area__support-primary {
     grid-column: 3;
     flex-direction: column;
-    max-width: 168px;
+    width: 168px;
     display: flex;
-    width: max-content;
   }
 
   .footer-area__desc {
@@ -176,7 +175,7 @@
 
   .footer-area__payments-secondary {
     display: flex;
-    gap: 12px;
+    gap: 5px;
   }
 
   .footer-area__social-secondary {
@@ -192,6 +191,11 @@
     width: 44px;
     height: 28px;
     margin-bottom: 0;
+  }
+
+  .footer-area__payments-icon-mastercard {
+    width: 55px;
+    height: 29px;
   }
 
   .footer-area__bottom-inner {
@@ -245,6 +249,6 @@
   }
 
   .footer-area__payments-secondary {
-    gap: 16px;
+    gap: 14px;
   }
 }
