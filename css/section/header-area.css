@@ -8,7 +8,7 @@
 }
 
 .header-area__top {
-  padding: 18px;
+  padding: 16px;
 }
 
 .header-area__logo {
@@ -68,15 +68,16 @@
 .header-area__user,
 .header-area__contact,
 .header-area__contact-top,
-.header-area__navigation {
-  display: none;
-}
-
+.header-area__navigation,
 .header-area__bottom {
   display: none;
 }
 
 @media (width >= 768px) {
+  .header-area__top {
+    padding: 20px;
+  }
+
   .header-area__inner {
     gap: 70px;
   }
@@ -119,6 +120,10 @@
 }
 
 @media (width >= 992px) {
+  .header-area__top {
+    padding: 18px 0;
+  }
+
   .header-area__inner {
     gap: 70px;
   }
