@@ -24,7 +24,6 @@
 }
 
 .hero__desc {
-  width: 328px;
   margin-bottom: 24px;
 }
 
@@ -110,7 +109,7 @@
   }
 
   .hero__desc {
-    width: 470px;
+    max-width: 470px;
     margin-bottom: 39px;
   }
 
