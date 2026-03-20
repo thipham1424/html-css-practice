@@ -23,7 +23,12 @@
   color: var(--primary-color);
 }
 
-.slider-control__btn:hover .slider-control__icon {
-  background: var(--primary-color);
-  color: var(--bg-color);
+@media (width >= 992px) {
+  .slider-control__btn:hover {
+    background: var(--primary-color);
+  }
+
+  .slider-control__btn:hover .slider-control__icon {
+    color: var(--bg-color);
+  }
 }
