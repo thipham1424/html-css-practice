@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+  <symbol id="chevron-left" viewBox="0 0 25 25">
+  <path
+    d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
+    stroke="currentColor"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</symbol>
+
+  <symbol id="chevron-right" viewBox="0 0 25 25">
+    <path d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
+          stroke="currentColor"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="wishlist" viewBox="0 0 24 24">
+    <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+          stroke="#937dc2"
+          fill="currentColor"/>
+  </symbol>
+
+</svg>
+
