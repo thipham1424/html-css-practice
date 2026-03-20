@@ -959,6 +959,70 @@
           this.classList.toggle("product-card__wishlist--active");
         });
       });
+      const menuBtn = document.querySelector(".header-area__menu");
+      const sidebar = document.querySelector(".header-area__bottom");
+      const navLinks = document.querySelectorAll(".nav__link");
+
+      let startX = 0;
+      let endX = 0;
+
+      function openSidebar() {
+        sidebar.classList.add("active");
+        document.body.classList.add("no-scroll");
+      }
+
+      function closeSidebar() {
+        sidebar.classList.remove("active");
+        document.body.classList.remove("no-scroll");
+      }
+
+      function toggleSidebar() {
+        sidebar.classList.toggle("active");
+        document.body.classList.toggle("no-scroll");
+      }
+
+      menuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleSidebar();
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          closeSidebar();
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        const isInsideSidebar = sidebar.contains(e.target);
+        const isMenuBtn = menuBtn.contains(e.target);
+
+        if (!isInsideSidebar && !isMenuBtn) {
+          closeSidebar();
+        }
+      });
+
+      window.addEventListener("scroll", () => {
+        if (sidebar.classList.contains("active")) {
+          closeSidebar();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeSidebar();
+        }
+      });
+
+      document.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      document.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX;
+        if (startX < 50 && endX - startX > 80) {
+          openSidebar();
+        }
+      });
     </script>
   </body>
 </html>
