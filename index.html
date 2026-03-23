@@ -988,9 +988,7 @@
       });
       const menuBtn = document.querySelector(".header-area__menu");
       const mobileSidebar = document.querySelector(".sidebar");
-      const mobileSidebarOverlay = document.querySelector(
-        ".sidebar-overlay",
-      );
+      const mobileSidebarOverlay = document.querySelector(".sidebar-overlay");
       const navLinks = document.querySelectorAll(".nav__link");
 
       let startX = 0;
@@ -1018,10 +1016,10 @@
 
       navLinks.forEach((link) => {
         link.addEventListener("click", () => {
-          document.querySelectorAll('.nav__item').forEach(item => {
-            item.classList.remove('nav__item--active');
+          document.querySelectorAll(".nav__item").forEach((item) => {
+            item.classList.remove("nav__item--active");
           });
-          link.closest('.nav__item').classList.add('nav__item--active');
+          link.closest(".nav__item").classList.add("nav__item--active");
           closeSidebar();
         });
       });
@@ -1052,27 +1050,27 @@
         }
       });
 
-      const navItems = document.querySelectorAll('.nav__item');
+      const navItems = document.querySelectorAll(".nav__item");
 
       function setActiveNav() {
         const scrollY = window.scrollY + 100;
-        navItems.forEach(item => {
-          item.classList.remove('nav__item--active');
-          const link = item.querySelector('.nav__link');
+        navItems.forEach((item) => {
+          item.classList.remove("nav__item--active");
+          const link = item.querySelector(".nav__link");
           if (link) {
-            const targetId = link.getAttribute('href').substring(1);
+            const targetId = link.getAttribute("href").substring(1);
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
               const rect = targetSection.getBoundingClientRect();
               if (rect.top <= 100 && rect.bottom > 100) {
-                item.classList.add('nav__item--active');
+                item.classList.add("nav__item--active");
               }
             }
           }
         });
       }
 
-      window.addEventListener('scroll', setActiveNav);
+      window.addEventListener("scroll", setActiveNav);
       setActiveNav();
     </script>
   </body>
