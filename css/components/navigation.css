@@ -1,19 +1,21 @@
-.nav {
-  border-bottom: 1px solid var(--bg-color);
-}
-
-.nav__list {
-  margin: 20px 0;
-}
-
 .nav__item {
-  margin-bottom: 20px;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--bg-color);
+  opacity: 0.8;
 }
 
 .nav__link {
+  color: var(--text-color);
+  font-size: var(--fs-regular);
+  opacity: 1;
+}
+
+.nav__item--active {
+  background: var(--secondary-color);
+  border-radius: 2px;
+  opacity: 1;
+}
+
+.nav__item--active .nav__link {
   color: var(--bg-color);
 }
 
@@ -40,6 +42,7 @@
     border: none;
     padding: 0;
     margin: 0;
+    background: none;
   }
 
   .nav__link {

@@ -46,6 +46,10 @@ body {
   line-height: var(--lh-normal);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;

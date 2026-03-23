@@ -91,6 +91,85 @@
         </div>
       </div>
 
+      <div class="sidebar" aria-hidden="true">
+        <div class="sidebar-header">
+          <a href="/" class="header-area__logo-bottom">
+            <img
+              class="header-area__img"
+              src="assets/images/logo.png"
+              alt="logo"
+            />
+          </a>
+          <button class="icon sidebar__wishlist">
+            <img class="icon" src="assets/icons/wish-list.svg" alt="Wishlist" />
+            <span class="badge sidebar__badge">3</span>
+          </button>
+        </div>
+
+        <p class="sidebar__title">Menu</p>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#hero" class="nav__link">The must read</a>
+            </li>
+            <li class="nav__item">
+              <a href="#benefit" class="nav__link">News</a>
+            </li>
+            <li class="nav__item">
+              <a href="#selected-for-you" class="nav__link"
+                >Promotion of the mount</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#you-must-buy-it-now" class="nav__link">Publishes</a>
+            </li>
+            <li class="nav__item">
+              <a href="#newsletter" class="nav__link"
+                >Subscribe to the newsletter</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <p class="sidebar__title">Policies</p>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Privacy policy</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Warranty</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Shipping</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Returns</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar__contact">
+          <span>
+            <img class="icon" src="assets/icons/phone.svg" alt="Phone icon" />
+            <a href="tel:+44587999000" class="sidebar__phone"
+              >+445 87 999 000</a
+            >
+          </span>
+        </div>
+
+        <div class="sidebar__user">
+          <div class="sidebar__user-avatar">
+            <img class="icon" src="assets/icons/user.svg" alt="User avatar" />
+          </div>
+          <div>
+            <p class="sidebar__user-name">User Name</p>
+            <p class="sidebar__user-action">View profile</p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-overlay"></div>
+
       <div class="header-area__bottom">
         <div class="container header-area__inner">
           <nav class="nav">
@@ -908,25 +987,28 @@
         });
       });
       const menuBtn = document.querySelector(".header-area__menu");
-      const sidebar = document.querySelector(".header-area__bottom");
+      const mobileSidebar = document.querySelector(".sidebar");
+      const mobileSidebarOverlay = document.querySelector(
+        ".sidebar-overlay",
+      );
       const navLinks = document.querySelectorAll(".nav__link");
 
       let startX = 0;
       let endX = 0;
 
       function openSidebar() {
-        sidebar.classList.add("active");
-        document.body.classList.add("no-scroll");
+        mobileSidebar.classList.add("sidebar--active");
+        mobileSidebarOverlay.classList.add("sidebar-overlay--active");
       }
 
       function closeSidebar() {
-        sidebar.classList.remove("active");
-        document.body.classList.remove("no-scroll");
+        mobileSidebar.classList.remove("sidebar--active");
+        mobileSidebarOverlay.classList.remove("sidebar-overlay--active");
       }
 
       function toggleSidebar() {
-        sidebar.classList.toggle("active");
-        document.body.classList.toggle("no-scroll");
+        mobileSidebar.classList.toggle("sidebar--active");
+        mobileSidebarOverlay.classList.toggle("sidebar-overlay--active");
       }
 
       menuBtn.addEventListener("click", (e) => {
@@ -936,27 +1018,25 @@
 
       navLinks.forEach((link) => {
         link.addEventListener("click", () => {
+          document.querySelectorAll('.nav__item').forEach(item => {
+            item.classList.remove('nav__item--active');
+          });
+          link.closest('.nav__item').classList.add('nav__item--active');
           closeSidebar();
         });
       });
 
       document.addEventListener("click", (e) => {
-        const isInsideSidebar = sidebar.contains(e.target);
-        const isMenuBtn = menuBtn.contains(e.target);
+        const isInsideSidebar = mobileSidebar?.contains(e.target);
+        const isMenuBtn = menuBtn?.contains(e.target);
 
         if (!isInsideSidebar && !isMenuBtn) {
           closeSidebar();
         }
       });
 
-      window.addEventListener("scroll", () => {
-        if (sidebar.classList.contains("active")) {
-          closeSidebar();
-        }
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
+      mobileSidebar?.addEventListener("scroll", () => {
+        if (mobileSidebar?.classList.contains("mobile-sidebar--active")) {
           closeSidebar();
         }
       });
@@ -971,6 +1051,29 @@
           openSidebar();
         }
       });
+
+      const navItems = document.querySelectorAll('.nav__item');
+
+      function setActiveNav() {
+        const scrollY = window.scrollY + 100;
+        navItems.forEach(item => {
+          item.classList.remove('nav__item--active');
+          const link = item.querySelector('.nav__link');
+          if (link) {
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+              const rect = targetSection.getBoundingClientRect();
+              if (rect.top <= 100 && rect.bottom > 100) {
+                item.classList.add('nav__item--active');
+              }
+            }
+          }
+        });
+      }
+
+      window.addEventListener('scroll', setActiveNav);
+      setActiveNav();
     </script>
   </body>
 </html>
