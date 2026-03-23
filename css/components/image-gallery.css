@@ -109,7 +109,7 @@
   }
 }
 
-@media (width >= 922px) {
+@media (width >= 992px) {
   .gallery__main {
     width: 412px;
     height: 653px;
