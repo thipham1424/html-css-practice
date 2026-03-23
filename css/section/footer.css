@@ -27,7 +27,7 @@
 .footer-area__grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 21px 86px;
+  gap: 0 86px;
   width: 100%;
 }
 
@@ -38,9 +38,14 @@
   margin-bottom: 19px;
 }
 
+.footer-area__list {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 36px;
+}
+
 .footer-area__item {
   display: flex;
-  margin-bottom: 15px;
 }
 
 .footer-area__link {
@@ -105,7 +110,6 @@
 }
 
 .footer-area__social {
-  margin-top: -16px;
   grid-column: 1;
 }
 
@@ -117,11 +121,18 @@
 
 .footer-area__payments {
   grid-column: 2;
+  margin-top: 10px;
 }
 
 .footer-area__payments-icon {
   width: 32px;
   height: 20px;
+  margin-bottom: 8px;
+}
+
+.footer-area__payments-icon-mastercard {
+  width: 36px;
+  height: 22px;
   margin-bottom: 8px;
 }
 
@@ -134,7 +145,7 @@
     margin-left: 126px;
     grid-template-columns: 2fr 2fr 1fr;
     width: 541px;
-    gap: 16px 0;
+    gap: 31px 0;
   }
 
   .footer-area__info-icon {
@@ -155,6 +166,12 @@
     font-size: var(--fs-typ);
   }
 
+  .footer-area__list {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 0;
+  }
+
   .footer-area__payments,
   .footer-area__social {
     display: none;
@@ -164,17 +181,16 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: -30px;
   }
 
-  .footer-area__payments-secondary {
+  .footer-area__payments-secondary,
+  .footer-area__social-secondary {
     display: flex;
     gap: 5px;
   }
 
   .footer-area__social-secondary {
-    display: flex;
-    gap: 14px;
+    gap: 9px;
   }
 
   .footer-area__social-icon {
@@ -184,12 +200,10 @@
   .footer-area__payments-icon {
     width: 44px;
     height: 28px;
-    margin-bottom: 0;
   }
 
   .footer-area__payments-icon-mastercard {
     width: 55px;
-    height: 29px;
   }
 
   .footer-area__bottom-inner {
