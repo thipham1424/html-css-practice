@@ -40,10 +40,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  /* .benefit__item {
-    margin-right: 50px;
-  } */
 }
 
 @media (width >= 992px) {
