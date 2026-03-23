@@ -56,10 +56,7 @@
 .header-area__user,
 .header-area__contact-top,
 .header-area__navigation,
-.header-area__contact {
-  display: none;
-}
-
+.header-area__contact,
 .header-area__bottom {
   display: none;
 }
@@ -104,8 +101,6 @@
   font-weight: var(--fw-semibold);
   letter-spacing: 0.08em;
   color: var(--primary-color);
-  margin: 0;
-  padding: 0;
 }
 
 .sidebar-header {
