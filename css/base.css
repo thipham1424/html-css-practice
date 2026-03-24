@@ -86,7 +86,7 @@ img {
 }
 
 .body--text {
-  font-size: var(--fs-typ);
+  font-size: var(--fs-regular);
   color: var(--text-color);
   font-weight: var(--fw-regular);
   line-height: var(--lh-normal);
