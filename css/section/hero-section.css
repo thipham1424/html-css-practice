@@ -27,15 +27,21 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 .hero__img {
   padding: 0 77px 0 36px;
 }
 
+.hero__slider {
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+}
+
 .hero__pagination,
 .hero__slider-secondary,
-.hero__slider,
 .hero__promo,
 .hero__note {
   display: none;
@@ -59,6 +65,7 @@
 
   .hero__image-block {
     display: block;
+    margin: 0;
   }
 
   .hero__img {
@@ -67,12 +74,6 @@
 
   .hero__slider-secondary {
     display: none;
-  }
-
-  .hero__slider {
-    gap: 24px;
-    display: flex;
-    justify-content: center;
   }
 }
 
