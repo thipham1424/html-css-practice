@@ -936,17 +936,32 @@
 
         sliders.forEach((slider) => {
           const track = slider.querySelector(".product__track");
+          const viewport = slider.querySelector(".product__viewport");
           const prevBtn = slider.querySelector(".product__control--prev");
           const nextBtn = slider.querySelector(".product__control--next");
 
           const section = slider.closest(".layout-section");
           const dots = section.querySelectorAll(".pagination__dot");
 
-          const gap = 32;
+          const gap = 24;
           const cards = track.querySelectorAll(".product-card");
-          const cardWidth = cards[0].offsetWidth + gap;
 
           let currentIndex = 0;
+          let cardWidth;
+          let visibleCards;
+          let maxIndex;
+          let isDesktop = window.innerWidth >= 992;
+
+          function calculateSizes() {
+            isDesktop = window.innerWidth >= 992;
+
+            cardWidth = cards[0].offsetWidth + gap;
+            visibleCards = Math.floor(viewport.offsetWidth / cardWidth);
+            maxIndex = cards.length - visibleCards;
+
+            if (maxIndex < 0) maxIndex = 0;
+            if (currentIndex > maxIndex) currentIndex = maxIndex;
+          }
 
           function updateSlider() {
             track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
@@ -961,13 +976,17 @@
           }
 
           nextBtn?.addEventListener("click", () => {
-            if (currentIndex < cards.length - 1) {
+            if (!isDesktop) return;
+
+            if (currentIndex < maxIndex) {
               currentIndex++;
               updateSlider();
             }
           });
 
           prevBtn?.addEventListener("click", () => {
+            if (!isDesktop) return;
+
             if (currentIndex > 0) {
               currentIndex--;
               updateSlider();
@@ -976,10 +995,43 @@
 
           dots.forEach((dot, index) => {
             dot.addEventListener("click", () => {
-              currentIndex = index;
-              updateSlider();
+              if (index <= maxIndex) {
+                currentIndex = index;
+                updateSlider();
+              }
             });
           });
+
+          viewport.addEventListener("scroll", () => {
+            if (isDesktop) return;
+
+            const scrollLeft = viewport.scrollLeft;
+            const index = Math.round(scrollLeft / cardWidth);
+
+            if (index !== currentIndex) {
+              currentIndex = index;
+
+              dots.forEach((dot) =>
+                dot.classList.remove("pagination__dot--active"),
+              );
+
+              if (dots[currentIndex]) {
+                dots[currentIndex].classList.add("pagination__dot--active");
+              }
+            }
+          });
+
+          window.addEventListener("resize", () => {
+            calculateSizes();
+
+            if (isDesktop) {
+              viewport.scrollLeft = 0;
+              updateSlider();
+            }
+          });
+
+          calculateSizes();
+          updateSlider();
         });
       });
       const gallery = document.querySelector(".gallery");
