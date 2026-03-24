@@ -47,7 +47,7 @@
 
   .product__viewport {
     overflow: hidden;
-}
+  }
 
   .product__control {
     display: flex;
