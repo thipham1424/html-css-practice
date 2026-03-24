@@ -127,6 +127,10 @@
     height: 656px;
   }
 
+  .product-detail__info {
+    width: 100%;
+  }
+
   .product-detail__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
