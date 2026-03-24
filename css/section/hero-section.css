@@ -142,7 +142,6 @@
     right: 0;
     font-weight: var(--fw-regular);
     color: var(--heading-color-secondary);
-    margin-top: -15px;
   }
 
   .hero__slider-secondary {
