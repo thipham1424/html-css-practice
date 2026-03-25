@@ -5,8 +5,8 @@
 }
 
 .quantity__btn {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   border: 1px solid var(--dark-color);
   border-radius: 50%;
   display: flex;
@@ -22,8 +22,16 @@
 }
 
 .quantity__number {
+  font-size: var(--fs-regular);
   line-height: var(--lh-normal);
   font-weight: var(--fw-regular);
   color: var(--text-color-primary);
   text-align: center;
+}
+
+@media (width >= 768px) {
+  .quantity__btn {
+    width: 20px;
+    height: 20px;
+  }
 }

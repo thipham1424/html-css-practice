@@ -26,7 +26,10 @@
             />
             <span class="logo__divider"></span>
 
-            <span class="logo__tagline"> We love books </span>
+            <span class="logo__tagline">
+              We love <br />
+              books
+            </span>
           </a>
 
           <div class="search">
@@ -44,66 +47,143 @@
             </button>
           </div>
 
-          <nav class="header-area__policy">
-            <a href="#" class="header-area__policy-text">Privacy policy</a>
-            <a href="#" class="header-area__policy-text">Warranty</a>
-            <a href="#" class="header-area__policy-text">Shipping</a>
-            <a href="#" class="header-area__policy-text">Returns</a>
+          <nav class="header-area__navigation">
+            <ul class="header-area__policy">
+              <li>
+                <a class="header-area__policy-text" href="#">Privacy policy</a>
+              </li>
+              <li><a class="header-area__policy-text" href="#">Warranty</a></li>
+              <li><a class="header-area__policy-text" href="#">Shipping</a></li>
+              <li><a class="header-area__policy-text" href="#">Returns</a></li>
+            </ul>
           </nav>
 
           <div class="header-area__actions">
+            <div class="header-area__contact-top">
+              <span>
+                <img
+                  class="icon"
+                  src="assets/icons/phone.svg"
+                  alt="Phone icon"
+                />
+                <a href="tel:+44587999000" class="header-area__phone">
+                  +445 87 999 000
+                </a>
+              </span>
+            </div>
             <button class="header-area__icon">
               <img
-                class="header-area__icon-img"
+                class="icon"
                 src="assets/icons/purple-cart.svg"
                 alt="Cart icon"
               />
             </button>
 
-            <button class="header-area__icon header-area__icon--with-badge">
+            <button class="header-area__icon header-area__wishlist">
               <img
-                class="header-area__icon-img"
+                class="icon"
                 src="assets/icons/wish-list.svg"
-                alt="Heart icon"
+                alt="Wishlist"
               />
               <span class="badge header-area__badge">3</span>
             </button>
 
-            <button class="header-area__icon">
-              <img
-                class="header-area__icon-img"
-                src="assets/icons/user.svg"
-                alt="User icon"
-              />
+            <button class="header-area__icon header-area__user">
+              <img class="icon" src="assets/icons/user.svg" alt="User icon" />
+            </button>
+
+            <button class="header-area__icon header-area__menu">
+              <img class="icon" src="assets/icons/menu.svg" alt="Menu icon" />
             </button>
           </div>
         </div>
       </div>
+      <div class="sidebar" aria-hidden="true">
+        <div class="sidebar__header">
+          <a href="/" class="header-area__logo-bottom">
+            <img
+              class="header-area__img"
+              src="assets/images/logo.png"
+              alt="logo"
+            />
+          </a>
+          <button class="icon sidebar__wishlist">
+            <img class="icon" src="assets/icons/wish-list.svg" alt="Wishlist" />
+            <span class="badge sidebar__badge">3</span>
+          </button>
+        </div>
+
+        <a href="index.html" class="sidebar__home">
+          <img class="icon" src="assets/icons/home.svg" alt="Home icon" />
+          Home
+        </a>
+
+        <p class="sidebar__title">Menu</p>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#detail-book" class="nav__link">The details book</a>
+            </li>
+            <li class="nav__item">
+              <a href="#collection" class="nav__link">Our collection</a>
+            </li>
+            <li class="nav__item">
+              <a href="#last-viewed" class="nav__link">Your history</a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="sidebar__title">Policies</p>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Privacy policy</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Warranty</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Shipping</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Returns</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar__contact">
+          <span>
+            <img class="icon" src="assets/icons/phone.svg" alt="Phone icon" />
+            <a href="tel:+44587999000" class="sidebar__phone"
+              >+445 87 999 000</a
+            >
+          </span>
+        </div>
+
+        <div class="sidebar__user">
+          <div class="sidebar__user-avatar">
+            <img class="icon" src="assets/icons/user.svg" alt="User avatar" />
+          </div>
+          <div>
+            <p class="sidebar__user-name">User Name</p>
+            <p class="sidebar__user-action">View profile</p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__overlay"></div>
 
       <div class="header-area__bottom">
         <div class="container header-area__inner">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#hero" class="nav__link body-text">The must read</a>
+                <a href="#detail-book" class="nav__link">The details book</a>
               </li>
               <li class="nav__item">
-                <a href="#benefit" class="nav__link body-text">News</a>
+                <a href="#collection" class="nav__link">Our collection</a>
               </li>
               <li class="nav__item">
-                <a href="#selected-for-you" class="nav__link body-text"
-                  >Promotion of the mount</a
-                >
-              </li>
-              <li class="nav__item">
-                <a href="#you-must-buy-it-now" class="nav__link body-text"
-                  >Publishes</a
-                >
-              </li>
-              <li class="nav__item">
-                <a href="#newsletter" class="nav__link body-text"
-                  >Subscribe to the newsletter</a
-                >
+                <a href="#last-viewed" class="nav__link">Your history</a>
               </li>
             </ul>
           </nav>
@@ -116,7 +196,7 @@
               </a>
             </span>
 
-            <button class="btn btn--outline btn-nav">Request a call</button>
+            <button class="btn btn--outline">Request a call</button>
           </div>
         </div>
       </div>
@@ -133,7 +213,7 @@
         </nav>
       </section>
 
-      <section class="product-detail container">
+      <section id="detail-book" class="product-detail layout-section container">
         <div class="product-detail__wrapper">
           <div class="gallery">
             <div class="gallery__thumbnails">
@@ -160,7 +240,7 @@
 
               <div class="gallery__thumb-box">
                 <img
-                  src="assets/images/main-product-page.jpg"
+                  src="assets/images/chain-of-gold.png"
                   class="gallery__thumb"
                 />
               </div>
@@ -174,39 +254,19 @@
                 <span>flips a few pages</span>
               </div>
               <img
-                src="assets/images/main-product-page.jpg"
+                src="assets/images/chain-of-gold.png"
                 class="gallery__main-image"
               />
               <div class="slider-control gallery__slider">
                 <button class="slider-control__btn">
-                  <svg
-                    class="slider-control__icon"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <svg class="slider-control__icon" viewBox="0 0 25 25">
+                    <use href="assets/icons/sprite.svg#chevron-left"></use>
                   </svg>
                 </button>
 
                 <button class="slider-control__btn">
-                  <svg
-                    class="slider-control__icon"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+                  <svg class="slider-control__icon">
+                    <use href="assets/icons/sprite.svg#chevron-right"></use>
                   </svg>
                 </button>
               </div>
@@ -260,44 +320,48 @@
             <div class="product-detail__divider"></div>
 
             <div class="product-detail__meta">
-              <div class="product-detail__meta-item">
-                <span class="product-detail__meta-label">Publisher :</span>
-                <span class="product-detail__meta-value">Margaret K.Books</span>
+              <div class="product-detail__meta-item-primary">
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Publisher:</span>
+                  <span class="product-detail__meta-value"
+                    >Margaret K.Books</span
+                  >
+                </div>
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Language:</span>
+                  <span class="product-detail__meta-value">English</span>
+                </div>
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Print length:</span>
+                  <span class="product-detail__meta-value">592 pages</span>
+                </div>
               </div>
-
-              <div class="product-detail__meta-item">
-                <span class="product-detail__meta-label"
-                  >Publication date :</span
-                >
-                <span class="product-detail__meta-value">March 3, 2020</span>
-              </div>
-
-              <div class="product-detail__meta-item">
-                <span class="product-detail__meta-label">Language :</span>
-                <span class="product-detail__meta-value">English</span>
-              </div>
-
-              <div class="product-detail__meta-item">
-                <span class="product-detail__meta-label">Reading age :</span>
-                <span class="product-detail__meta-value">14+</span>
-              </div>
-
-              <div class="product-detail__meta-item">
-                <span class="product-detail__meta-label">Print length :</span>
-                <span class="product-detail__meta-value">592 pages</span>
-              </div>
-
-              <div class="product-detail__meta-item">
-                <span class="product-detail__meta-label">Dimensions :</span>
-                <span class="product-detail__meta-value"
-                  >6 x 1.8 x 9 inches</span
-                >
+              <div class="product-detail__meta-item-secondary">
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label"
+                    >Publication date:</span
+                  >
+                  <span class="product-detail__meta-value">March 3, 2020</span>
+                </div>
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Reading age:</span>
+                  <span class="product-detail__meta-value">14+</span>
+                </div>
+                <div class="product-detail__meta-item">
+                  <span class="product-detail__meta-label">Dimensions:</span>
+                  <span class="product-detail__meta-value"
+                    >6 x 1.8 x 9 inches</span
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="layout-section container">
+      <section
+        id="collection"
+        class="layout-section container product__container"
+      >
         <div class="product__header">
           <h2 class="text--lg product__title">Collection</h2>
         </div>
@@ -306,14 +370,8 @@
           <button
             class="slider-control__btn product__control product__control--prev"
           >
-            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
-              <path
-                d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+            <svg class="slider-control__icon" viewBox="0 0 25 25">
+              <use href="assets/icons/sprite.svg#chevron-left"></use>
             </svg>
           </button>
 
@@ -334,22 +392,17 @@
                 <div class="product-card__content">
                   <h3 class="text--name-card">Chain of Iron: Volume 2</h3>
                   <p class="body--text product-card__author">Cassandra Clare</p>
-                  <span class="text--sm product-card__price">$23.24</span>
-
-                  <button
-                    class="product-card__wishlist"
-                    aria-label="Add to wishlist"
-                  >
-                    <svg
-                      class="product-card__wishlist-icon"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div class="product-card__bottom">
+                    <span class="text--sm product-card__price">$20.46</span>
+                    <button
+                      class="product-card__wishlist"
+                      aria-lable="Add to wishlist"
                     >
-                      <path
-                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                      />
-                    </svg>
-                  </button>
+                      <svg class="product-card__wishlist-icon">
+                        <use href="assets/icons/sprite.svg#wishlist"></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <button class="btn btn--primary product-card__cart">
                     <img
@@ -377,22 +430,17 @@
                 <div class="product-card__content">
                   <h3 class="text--name-card">Chain of Thorns</h3>
                   <p class="body--text product-card__author">Cassandra Clare</p>
-                  <span class="text--sm product-card__price">$23.24</span>
-
-                  <button
-                    class="product-card__wishlist"
-                    aria-label="Add to wishlist"
-                  >
-                    <svg
-                      class="product-card__wishlist-icon"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div class="product-card__bottom">
+                    <span class="text--sm product-card__price">$20.46</span>
+                    <button
+                      class="product-card__wishlist"
+                      aria-lable="Add to wishlist"
                     >
-                      <path
-                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                      />
-                    </svg>
-                  </button>
+                      <svg class="product-card__wishlist-icon">
+                        <use href="assets/icons/sprite.svg#wishlist"></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <button class="btn btn--primary product-card__cart">
                     <img
@@ -420,22 +468,17 @@
                 <div class="product-card__content">
                   <h3 class="text--name-card">City of Fallen Angles</h3>
                   <p class="body--text product-card__author">Cassandra Clare</p>
-                  <span class="text--sm product-card__price">$13.94</span>
-
-                  <button
-                    class="product-card__wishlist"
-                    aria-label="Add to wishlist"
-                  >
-                    <svg
-                      class="product-card__wishlist-icon"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div class="product-card__bottom">
+                    <span class="text--sm product-card__price">$20.46</span>
+                    <button
+                      class="product-card__wishlist"
+                      aria-lable="Add to wishlist"
                     >
-                      <path
-                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                      />
-                    </svg>
-                  </button>
+                      <svg class="product-card__wishlist-icon">
+                        <use href="assets/icons/sprite.svg#wishlist"></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <button class="btn btn--primary product-card__cart">
                     <img
@@ -463,22 +506,17 @@
                 <div class="product-card__content">
                   <h3 class="text--name-card">Nona The Ninth</h3>
                   <p class="body--text product-card__author">Tamsyn Muir</p>
-                  <span class="text--sm product-card__price">$16.84</span>
-
-                  <button
-                    class="product-card__wishlist"
-                    aria-label="Add to wishlist"
-                  >
-                    <svg
-                      class="product-card__wishlist-icon"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div class="product-card__bottom">
+                    <span class="text--sm product-card__price">$20.46</span>
+                    <button
+                      class="product-card__wishlist"
+                      aria-lable="Add to wishlist"
                     >
-                      <path
-                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                      />
-                    </svg>
-                  </button>
+                      <svg class="product-card__wishlist-icon">
+                        <use href="assets/icons/sprite.svg#wishlist"></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <button class="btn btn--primary product-card__cart">
                     <img
@@ -496,14 +534,8 @@
           <button
             class="slider-control__btn product__control product__control--next"
           >
-            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
-              <path
-                d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+            <svg class="slider-control__icon">
+              <use href="assets/icons/sprite.svg#chevron-right"></use>
             </svg>
           </button>
         </div>
@@ -519,7 +551,10 @@
         </div>
       </section>
 
-      <section class="layout-section container">
+      <section
+        id="last-viewed"
+        class="layout-section container product__container"
+      >
         <div class="product__header">
           <h2 class="text--lg product__title">Last viewed</h2>
         </div>
@@ -528,14 +563,8 @@
           <button
             class="slider-control__btn product__control product__control--prev"
           >
-            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
-              <path
-                d="M15.0208 19.0264L8.01103 12.0167L15.0208 5.00696"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+            <svg class="slider-control__icon" viewBox="0 0 25 25">
+              <use href="assets/icons/sprite.svg#chevron-left"></use>
             </svg>
           </button>
 
@@ -556,22 +585,17 @@
                 <div class="product-card__content">
                   <h3 class="text--name-card">The Librarian Spy</h3>
                   <p class="body--text product-card__author">Madeline Martin</p>
-                  <span class="text--sm product-card__price">$16.73</span>
-
-                  <button
-                    class="product-card__wishlist"
-                    aria-label="Add to wishlist"
-                  >
-                    <svg
-                      class="product-card__wishlist-icon"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div class="product-card__bottom">
+                    <span class="text--sm product-card__price">$20.46</span>
+                    <button
+                      class="product-card__wishlist"
+                      aria-lable="Add to wishlist"
                     >
-                      <path
-                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                      />
-                    </svg>
-                  </button>
+                      <svg class="product-card__wishlist-icon">
+                        <use href="assets/icons/sprite.svg#wishlist"></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <button class="btn btn--primary product-card__cart">
                     <img
@@ -601,22 +625,17 @@
                   <p class="body--text product-card__author">
                     Sarah Addison Allen
                   </p>
-                  <span class="text--sm product-card__price">$26.03</span>
-
-                  <button
-                    class="product-card__wishlist"
-                    aria-label="Add to wishlist"
-                  >
-                    <svg
-                      class="product-card__wishlist-icon"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div class="product-card__bottom">
+                    <span class="text--sm product-card__price">$20.46</span>
+                    <button
+                      class="product-card__wishlist"
+                      aria-lable="Add to wishlist"
                     >
-                      <path
-                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                      />
-                    </svg>
-                  </button>
+                      <svg class="product-card__wishlist-icon">
+                        <use href="assets/icons/sprite.svg#wishlist"></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <button class="btn btn--primary product-card__cart">
                     <img
@@ -646,22 +665,17 @@
                   <p class="body--text product-card__author">
                     Kristina McMorris
                   </p>
-                  <span class="text--sm product-card__price">$27.93</span>
-
-                  <button
-                    class="product-card__wishlist"
-                    aria-label="Add to wishlist"
-                  >
-                    <svg
-                      class="product-card__wishlist-icon"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div class="product-card__bottom">
+                    <span class="text--sm product-card__price">$20.46</span>
+                    <button
+                      class="product-card__wishlist"
+                      aria-lable="Add to wishlist"
                     >
-                      <path
-                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                      />
-                    </svg>
-                  </button>
+                      <svg class="product-card__wishlist-icon">
+                        <use href="assets/icons/sprite.svg#wishlist"></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <button class="btn btn--primary product-card__cart">
                     <img
@@ -689,22 +703,17 @@
                 <div class="product-card__content">
                   <h3 class="text--name-card">Room and Board</h3>
                   <p class="body--text product-card__author">Miriam Parker</p>
-                  <span class="text--sm product-card__price">$15.81</span>
-
-                  <button
-                    class="product-card__wishlist"
-                    aria-label="Add to wishlist"
-                  >
-                    <svg
-                      class="product-card__wishlist-icon"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div class="product-card__bottom">
+                    <span class="text--sm product-card__price">$20.46</span>
+                    <button
+                      class="product-card__wishlist"
+                      aria-lable="Add to wishlist"
                     >
-                      <path
-                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
-                      />
-                    </svg>
-                  </button>
+                      <svg class="product-card__wishlist-icon">
+                        <use href="assets/icons/sprite.svg#wishlist"></use>
+                      </svg>
+                    </button>
+                  </div>
 
                   <button class="btn btn--primary product-card__cart">
                     <img
@@ -722,14 +731,8 @@
           <button
             class="slider-control__btn product__control product__control--next"
           >
-            <svg class="slider-control__icon" viewBox="0 0 25 25" fill="none">
-              <path
-                d="M9.01245 5.00692L16.0222 12.0166L9.01245 19.0264"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+            <svg class="slider-control__icon">
+              <use href="assets/icons/sprite.svg#chevron-right"></use>
             </svg>
           </button>
         </div>
@@ -806,17 +809,17 @@
             <div class="footer-area__list">
               <div class="footer-area__item">
                 <img
-                  class="footer-area__info-icon"
+                  class="icon footer-area__info-icon"
                   src="assets/icons/white-phone.svg"
                   alt="Phone icon"
                 />
-                <a href="tel:+44587999000" class="header-area__link">
+                <a href="tel:+44587999000" class="footer-area__link">
                   +445 87 999 000
                 </a>
               </div>
-              <div class="footer-area__item footer-area__link">
+              <div class="footer-area__item">
                 <img
-                  class="footer-area__info-icon"
+                  class="icon footer-area__info-icon"
                   src="assets/icons/clock.svg"
                   alt="Clock icon"
                 />
@@ -824,7 +827,7 @@
               </div>
               <div class="footer-area__item">
                 <img
-                  class="footer-area__info-icon"
+                  class="icon footer-area__info-icon"
                   src="assets/icons/mail.svg"
                   alt="Mail icon"
                 />
@@ -834,14 +837,13 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="footer-area__support">
-          <p class="footer-area__desc">
-            If you have questions, you can contact us or we will do it for you.
-          </p>
-          <button class="btn btn--outline btn--footer">Request a call</button>
-        </div>
-        <div class="footer-area__icons">
+          <div class="footer-area__support-primary">
+            <p class="footer-area__desc">
+              If you have questions, you can contact us or we will do it for
+              you.
+            </p>
+            <button class="btn btn--outline btn--footer">Request a call</button>
+          </div>
           <div class="footer-area__social">
             <a href="#"
               ><img
@@ -872,7 +874,53 @@
             <img
               src="assets/icons/master-card.svg"
               alt="Mastercard"
+              class="footer-area__payments-icon-mastercard"
+            />
+            <img
+              src="assets/icons/visa-card.svg"
+              alt="Visa"
               class="footer-area__payments-icon"
+            />
+          </div>
+        </div>
+        <div class="footer-area__support-secondary">
+          <p class="footer-area__desc">
+            If you have questions, you can contact us or we will do it for you.
+          </p>
+          <button class="btn btn--outline btn--footer">Request a call</button>
+        </div>
+        <div class="footer-area__icons">
+          <div class="footer-area__social-secondary">
+            <a href="#"
+              ><img
+                src="assets/icons/facebook.svg"
+                alt="Facebook"
+                class="footer-area__social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/icons/instagram.svg"
+                alt="Instagram"
+                class="footer-area__social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/icons/twitter.svg"
+                alt="Twitter"
+                class="footer-area__social-icon"
+            /></a>
+          </div>
+
+          <div class="footer-area__payments-secondary">
+            <img
+              src="assets/icons/pay-pal.svg"
+              alt="PayPal"
+              class="footer-area__payments-icon"
+            />
+            <img
+              src="assets/icons/master-card.svg"
+              alt="Mastercard"
+              class="footer-area__payments-icon-mastercard"
             />
             <img
               src="assets/icons/visa-card.svg"
@@ -894,17 +942,32 @@
 
         sliders.forEach((slider) => {
           const track = slider.querySelector(".product__track");
+          const viewport = slider.querySelector(".product__viewport");
           const prevBtn = slider.querySelector(".product__control--prev");
           const nextBtn = slider.querySelector(".product__control--next");
 
           const section = slider.closest(".layout-section");
           const dots = section.querySelectorAll(".pagination__dot");
 
-          const gap = 32;
+          const gap = 24;
           const cards = track.querySelectorAll(".product-card");
-          const cardWidth = cards[0].offsetWidth + gap;
 
           let currentIndex = 0;
+          let cardWidth;
+          let visibleCards;
+          let maxIndex;
+          let isDesktop = window.innerWidth >= 992;
+
+          function calculateSizes() {
+            isDesktop = window.innerWidth >= 992;
+
+            cardWidth = cards[0].offsetWidth + gap;
+            visibleCards = Math.floor(viewport.offsetWidth / cardWidth);
+            maxIndex = cards.length - visibleCards;
+
+            if (maxIndex < 0) maxIndex = 0;
+            if (currentIndex > maxIndex) currentIndex = maxIndex;
+          }
 
           function updateSlider() {
             track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
@@ -919,13 +982,17 @@
           }
 
           nextBtn?.addEventListener("click", () => {
-            if (currentIndex < cards.length - 1) {
+            if (!isDesktop) return;
+
+            if (currentIndex < maxIndex) {
               currentIndex++;
               updateSlider();
             }
           });
 
           prevBtn?.addEventListener("click", () => {
+            if (!isDesktop) return;
+
             if (currentIndex > 0) {
               currentIndex--;
               updateSlider();
@@ -934,10 +1001,43 @@
 
           dots.forEach((dot, index) => {
             dot.addEventListener("click", () => {
-              currentIndex = index;
-              updateSlider();
+              if (index <= maxIndex) {
+                currentIndex = index;
+                updateSlider();
+              }
             });
           });
+
+          viewport.addEventListener("scroll", () => {
+            if (isDesktop) return;
+
+            const scrollLeft = viewport.scrollLeft;
+            const index = Math.round(scrollLeft / cardWidth);
+
+            if (index !== currentIndex) {
+              currentIndex = index;
+
+              dots.forEach((dot) =>
+                dot.classList.remove("pagination__dot--active"),
+              );
+
+              if (dots[currentIndex]) {
+                dots[currentIndex].classList.add("pagination__dot--active");
+              }
+            }
+          });
+
+          window.addEventListener("resize", () => {
+            calculateSizes();
+
+            if (isDesktop) {
+              viewport.scrollLeft = 0;
+              updateSlider();
+            }
+          });
+
+          calculateSizes();
+          updateSlider();
         });
       });
       const gallery = document.querySelector(".gallery");
@@ -1016,6 +1116,91 @@
           this.classList.toggle("product-card__wishlist--active");
         });
       });
+      const menuBtn = document.querySelector(".header-area__menu");
+      const sidebar = document.querySelector(".sidebar");
+      const sidebarOverlay = document.querySelector(".sidebar__overlay");
+      const navLinks = document.querySelectorAll(".nav__link");
+
+      let startX = 0;
+      let endX = 0;
+
+      function openSidebar() {
+        sidebar.classList.add("sidebar--active");
+        sidebarOverlay.classList.add("sidebar__overlay--active");
+      }
+
+      function closeSidebar() {
+        sidebar.classList.remove("sidebar--active");
+        sidebarOverlay.classList.remove("sidebar__overlay--active");
+      }
+
+      function toggleSidebar() {
+        sidebar.classList.toggle("sidebar--active");
+        sidebarOverlay.classList.toggle("sidebar__overlay--active");
+      }
+
+      menuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleSidebar();
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelectorAll(".nav__item").forEach((item) => {
+            item.classList.remove("nav__item--active");
+          });
+          link.closest(".nav__item").classList.add("nav__item--active");
+          closeSidebar();
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        const isInsideSidebar = sidebar?.contains(e.target);
+        const isMenuBtn = menuBtn?.contains(e.target);
+
+        if (!isInsideSidebar && !isMenuBtn) {
+          closeSidebar();
+        }
+      });
+
+      sidebar?.addEventListener("scroll", () => {
+        if (sidebar?.classList.contains("sidebar--active")) {
+          closeSidebar();
+        }
+      });
+
+      document.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      document.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX;
+        if (startX < 50 && endX - startX > 80) {
+          openSidebar();
+        }
+      });
+
+      const navItems = document.querySelectorAll(".nav__item");
+      function setActiveNav() {
+        const scrollY = window.scrollY + 100;
+        navItems.forEach((item) => {
+          item.classList.remove("nav__item--active");
+          const link = item.querySelector(".nav__link");
+          if (link) {
+            const targetId = link.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+              const rect = targetSection.getBoundingClientRect();
+              if (rect.top <= 100 && rect.bottom > 100) {
+                item.classList.add("nav__item--active");
+              }
+            }
+          }
+        });
+      }
+
+      window.addEventListener("scroll", setActiveNav);
+      setActiveNav();
     </script>
   </body>
 </html>
