@@ -26,6 +26,7 @@
   --fs-author: 14px;
   --fs-regular: 14px;
   --fs-typ: 12px;
+  --fs-badge: 12px;
 
   /* FONT WEIGHT */
   --fw-bold: 700;
@@ -43,6 +44,10 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   line-height: var(--lh-normal);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 img {
@@ -111,7 +116,6 @@ img {
     --fs-author: 18px;
     --fs-regular: 16px;
     --fs-typ: 14px;
-    --fs-badge: 12px;
   }
 
   .container {
