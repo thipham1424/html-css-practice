@@ -1149,7 +1149,7 @@
       });
 
       document.addEventListener("click", (e) => {
-        const isInsideSidebar = Sidebar?.contains(e.target);
+        const isInsideSidebar = sidebar?.contains(e.target);
         const isMenuBtn = menuBtn?.contains(e.target);
 
         if (!isInsideSidebar && !isMenuBtn) {
@@ -1157,8 +1157,8 @@
         }
       });
 
-      Sidebar?.addEventListener("scroll", () => {
-        if (Sidebar?.classList.contains("sidebar--active")) {
+      sidebar?.addEventListener("scroll", () => {
+        if (sidebar?.classList.contains("sidebar--active")) {
           closeSidebar();
         }
       });
