@@ -42,7 +42,7 @@
   .product-container {
     max-width: 1200px;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto 110px;
   }
 
   .product__viewport {
