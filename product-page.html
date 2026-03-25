@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="sidebar" aria-hidden="true">
-        <div class="sidebar-header">
+        <div class="sidebar__header">
           <a href="/" class="header-area__logo-bottom">
             <img
               class="header-area__img"
@@ -170,7 +170,7 @@
           </div>
         </div>
       </div>
-      <div class="sidebar-overlay"></div>
+      <div class="sidebar__overlay"></div>
 
       <div class="header-area__bottom">
         <div class="container header-area__inner">
@@ -1112,7 +1112,7 @@
       });
       const menuBtn = document.querySelector(".header-area__menu");
       const Sidebar = document.querySelector(".sidebar");
-      const SidebarOverlay = document.querySelector(".sidebar-overlay");
+      const SidebarOverlay = document.querySelector(".sidebar__overlay");
       const navLinks = document.querySelectorAll(".nav__link");
 
       let startX = 0;
@@ -1120,17 +1120,17 @@
 
       function openSidebar() {
         Sidebar.classList.add("sidebar--active");
-        SidebarOverlay.classList.add("sidebar-overlay--active");
+        SidebarOverlay.classList.add("sidebar__overlay--active");
       }
 
       function closeSidebar() {
         Sidebar.classList.remove("sidebar--active");
-        SidebarOverlay.classList.remove("sidebar-overlay--active");
+        SidebarOverlay.classList.remove("sidebar__overlay--active");
       }
 
       function toggleSidebar() {
         Sidebar.classList.toggle("sidebar--active");
-        SidebarOverlay.classList.toggle("sidebar-overlay--active");
+        SidebarOverlay.classList.toggle("sidebar__overlay--active");
       }
 
       menuBtn.addEventListener("click", (e) => {
