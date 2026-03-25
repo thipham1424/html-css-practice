@@ -86,11 +86,10 @@
 
   .product-detail__btn {
     padding: 12px 79px;
-    height: 48px;
   }
 
   .product-detail__info {
-    width: 551px;
+    width: 75%;
     display: flex;
     flex-direction: column;
   }
@@ -124,17 +123,16 @@
   .product-detail {
     margin-top: 32px;
     margin-bottom: 60px;
-    height: 656px;
   }
 
   .product-detail__info {
-    width: 100%;
+    width: 95%;
   }
 
   .product-detail__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 60px;
   }
 
   .product-detail__divider {
@@ -143,5 +141,6 @@
 
   .product-detail__meta-item {
     margin-top: 19px;
+    margin-bottom: 0;
   }
 }
