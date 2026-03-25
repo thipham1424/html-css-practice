@@ -61,15 +61,14 @@
   .product__control {
     display: flex;
     position: absolute;
+    top: 191px;
   }
 
   .product__control--prev {
-    top: 191px;
     left: -72px;
   }
 
   .product__control--next {
-    top: 191px;
     right: -72px;
   }
 
