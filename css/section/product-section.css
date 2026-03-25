@@ -10,6 +10,7 @@
 .product__slider {
   position: relative;
   margin-bottom: 43px;
+  padding-right: 16px;
 }
 
 .product__viewport {
@@ -36,6 +37,10 @@
   .product-container {
     padding-left: 20px;
   }
+
+  .product__slider {
+    padding-right: 20px;
+  }
 }
 
 @media (width >= 992px) {
@@ -43,6 +48,10 @@
     max-width: 1200px;
     padding: 0;
     margin: 0 auto 110px;
+  }
+
+  .product__slider {
+    padding: 0;
   }
 
   .product__viewport {
