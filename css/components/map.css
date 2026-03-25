@@ -1,5 +1,4 @@
 .map {
-  border-radius: 5.1px;
   overflow: hidden;
 }
 
@@ -12,4 +11,10 @@
   font-size: var(--fs-badge);
   font-weight: var(--fw-regular);
   white-space: nowrap;
+}
+
+@media (width >= 992px) {
+  .map {
+    border-radius: 5px;
+  }
 }

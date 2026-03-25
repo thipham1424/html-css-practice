@@ -87,7 +87,7 @@
   opacity: 1;
 }
 
-.sidebar-overlay--active {
+.sidebar__overlay--active {
   height: 100vh;
   position: fixed;
   inset: 0;
@@ -103,7 +103,7 @@
   color: var(--primary-color);
 }
 
-.sidebar-header {
+.sidebar__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
