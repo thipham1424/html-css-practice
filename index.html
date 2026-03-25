@@ -1082,26 +1082,26 @@
         });
       });
       const menuBtn = document.querySelector(".header-area__menu");
-      const mobileSidebar = document.querySelector(".sidebar");
-      const mobileSidebarOverlay = document.querySelector(".sidebar-overlay");
+      const Sidebar = document.querySelector(".sidebar");
+      const SidebarOverlay = document.querySelector(".sidebar-overlay");
       const navLinks = document.querySelectorAll(".nav__link");
 
       let startX = 0;
       let endX = 0;
 
       function openSidebar() {
-        mobileSidebar.classList.add("sidebar--active");
-        mobileSidebarOverlay.classList.add("sidebar-overlay--active");
+        Sidebar.classList.add("sidebar--active");
+        SidebarOverlay.classList.add("sidebar-overlay--active");
       }
 
       function closeSidebar() {
-        mobileSidebar.classList.remove("sidebar--active");
-        mobileSidebarOverlay.classList.remove("sidebar-overlay--active");
+        Sidebar.classList.remove("sidebar--active");
+        SidebarOverlay.classList.remove("sidebar-overlay--active");
       }
 
       function toggleSidebar() {
-        mobileSidebar.classList.toggle("sidebar--active");
-        mobileSidebarOverlay.classList.toggle("sidebar-overlay--active");
+        Sidebar.classList.toggle("sidebar--active");
+        SidebarOverlay.classList.toggle("sidebar-overlay--active");
       }
 
       menuBtn.addEventListener("click", (e) => {
@@ -1120,7 +1120,7 @@
       });
 
       document.addEventListener("click", (e) => {
-        const isInsideSidebar = mobileSidebar?.contains(e.target);
+        const isInsideSidebar = Sidebar?.contains(e.target);
         const isMenuBtn = menuBtn?.contains(e.target);
 
         if (!isInsideSidebar && !isMenuBtn) {
@@ -1128,8 +1128,8 @@
         }
       });
 
-      mobileSidebar?.addEventListener("scroll", () => {
-        if (mobileSidebar?.classList.contains("mobile-sidebar--active")) {
+      Sidebar?.addEventListener("scroll", () => {
+        if (Sidebar?.classList.contains("sidebar--active")) {
           closeSidebar();
         }
       });
