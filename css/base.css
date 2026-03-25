@@ -15,17 +15,20 @@
   --bg-color: #fff;
 
   /* LAYOUT */
-  --container-width: 1200px;
+  --container-width: 100%;
 
-  /* TYPOGRAPHY */
-  --fs-xl: 48px;
-  --fs-lg: 38px;
-  --fs-md: 28px;
-  --fs-price: 24px;
-  --fs-sm: 20px;
-  --fs-author: 18px;
-  --fs-typ: 14px;
+  /* FONT SIZE */
+  --fs-xl: 28px;
+  --fs-lg: 24px;
+  --fs-md: 20px;
+  --fs-price: 18px;
+  --fs-sm: 16px;
+  --fs-author: 14px;
+  --fs-regular: 14px;
+  --fs-typ: 12px;
   --fs-badge: 12px;
+
+  /* FONT WEIGHT */
   --fw-bold: 700;
   --fw-semibold: 600;
   --fw-medium: 500;
@@ -43,7 +46,22 @@ body {
   line-height: var(--lh-normal);
 }
 
-/* TYPOGRAPHY */
+.no-scroll {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
 .text--xl {
   font-size: var(--fs-xl);
   color: var(--heading-color-primary);
@@ -73,6 +91,7 @@ body {
 }
 
 .body--text {
+  font-size: var(--fs-regular);
   color: var(--text-color);
   font-weight: var(--fw-regular);
   line-height: var(--lh-normal);
@@ -84,4 +103,30 @@ body {
   line-height: var(--lh-tight);
   font-weight: var(--fw-semibold);
   margin-bottom: 7px;
+}
+
+/* TABLET */
+@media (width >= 768px) {
+  :root {
+    --fs-xl: 48px;
+    --fs-lg: 38px;
+    --fs-md: 28px;
+    --fs-price: 24px;
+    --fs-sm: 20px;
+    --fs-author: 18px;
+    --fs-regular: 16px;
+    --fs-typ: 14px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* DESKTOP */
+@media (width >= 992px) {
+  .container {
+    max-width: 1200px;
+    padding: 0;
+  }
 }

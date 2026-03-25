@@ -1,11 +1,5 @@
 .search {
-  width: 376px;
-  height: 36px;
-  border-radius: 2px;
-  background: var(--gray-color);
-  display: flex;
-  align-items: center;
-  padding: 8px 12px;
+  background: var(--bg-color);
 }
 
 .search__btn {
@@ -21,4 +15,15 @@
 
 .search__btn-icon {
   opacity: 0.6;
+}
+
+@media (width >= 992px) {
+  .search {
+    width: 376px;
+    border-radius: 2px;
+    background: var(--gray-color);
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+  }
 }

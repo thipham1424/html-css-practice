@@ -17,17 +17,18 @@
   transition: 0.3s ease;
 }
 
-.slider-control__btn:hover {
-  background: var(--primary-color);
-  color: var(--bg-color);
-}
-
 .slider-control__icon {
   width: 24px;
   height: 24px;
   color: var(--primary-color);
 }
 
-.slider-control__icon:hover {
-  color: var(--bg-color);
+@media (width >= 992px) {
+  .slider-control__btn:hover {
+    background: var(--primary-color);
+  }
+
+  .slider-control__btn:hover .slider-control__icon {
+    color: var(--bg-color);
+  }
 }

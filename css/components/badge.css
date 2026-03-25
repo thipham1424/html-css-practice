@@ -10,3 +10,9 @@
   background-color: var(--tertiary-color);
   color: var(--bg-color);
 }
+
+@media (width >= 768px) {
+  .badge {
+    display: inline-flex;
+  }
+}
