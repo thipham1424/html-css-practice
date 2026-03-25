@@ -1082,26 +1082,26 @@
         });
       });
       const menuBtn = document.querySelector(".header-area__menu");
-      const Sidebar = document.querySelector(".sidebar");
-      const SidebarOverlay = document.querySelector(".sidebar__overlay");
+      const sidebar = document.querySelector(".sidebar");
+      const sidebarOverlay = document.querySelector(".sidebar__overlay");
       const navLinks = document.querySelectorAll(".nav__link");
 
       let startX = 0;
       let endX = 0;
 
       function openSidebar() {
-        Sidebar.classList.add("sidebar--active");
-        SidebarOverlay.classList.add("sidebar__overlay--active");
+        sidebar.classList.add("sidebar--active");
+        sidebarOverlay.classList.add("sidebar__overlay--active");
       }
 
       function closeSidebar() {
-        Sidebar.classList.remove("sidebar--active");
-        SidebarOverlay.classList.remove("sidebar__overlay--active");
+        sidebar.classList.remove("sidebar--active");
+        sidebarOverlay.classList.remove("sidebar__overlay--active");
       }
 
       function toggleSidebar() {
-        Sidebar.classList.toggle("sidebar--active");
-        SidebarOverlay.classList.toggle("sidebar__overlay--active");
+        sidebar.classList.toggle("sidebar--active");
+        sidebarOverlay.classList.toggle("sidebar__overlay--active");
       }
 
       menuBtn.addEventListener("click", (e) => {
