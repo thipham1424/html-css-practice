@@ -255,6 +255,10 @@
     height: 32px;
   }
 
+  .footer-area__payments-icon-mastercard {
+    height: 32px;
+  }
+
   .footer-area__payments-secondary {
     gap: 14px;
   }
