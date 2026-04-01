@@ -3,219 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>B-World | Ecommerce Book Store</title>
+    <meta
+      name="description"
+      content="Online bookstore - discover and buy your favorite books."
+    />
+
+    <link rel="icon" href="assets/icons/book-world.svg" type="image/svg+xml" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>B-World | Ecommerce Book Store</title>
-    <link rel="icon" href="assets/icons/book-world.svg" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <body>
-    <header class="header-area">
-      <div class="header-area__top container">
-        <div class="header-area__inner">
-          <a href="/" class="header-area__logo">
-            <img
-              class="header-area__img"
-              src="assets/images/logo.png"
-              alt="logo"
-            />
-            <span class="logo__divider"></span>
-
-            <span class="logo__tagline">
+    <header class="header-border">
+      <div class="container py-3">
+        <div class="d-flex align-items-center">
+          <a
+            href="/"
+            class="d-flex align-items-center text-decoration-none me-3"
+          >
+            <img src="assets/images/logo.png" alt="logo" width="60" />
+            <span class="vr mx-2"></span>
+            <span class="logo-tagline small">
               We love <br />
               books
             </span>
           </a>
 
-          <div class="search">
+          <div
+            class="search-box d-none d-lg-flex align-items-center bg-light px-3 py-2 rounded flex-grow-1 me-3"
+          >
             <input
-              class="search__input"
               type="text"
+              class="form-control border-0 bg-transparent p-0"
               placeholder="Type any book here"
             />
-            <button class="search__btn">
-              <img
-                src="assets/icons/search.svg"
-                alt="Search icon"
-                class="icon search__btn-icon"
-              />
+            <button class="btn p-0 ms-2">
+              <img src="assets/icons/search.svg" class="icon" />
             </button>
           </div>
 
-          <nav class="header-area__navigation">
-            <ul class="header-area__policy">
-              <li>
-                <a class="header-area__policy-text" href="#">Privacy policy</a>
-              </li>
-              <li><a class="header-area__policy-text" href="#">Warranty</a></li>
-              <li><a class="header-area__policy-text" href="#">Shipping</a></li>
-              <li><a class="header-area__policy-text" href="#">Returns</a></li>
-            </ul>
-          </nav>
+          <ul class="d-none d-lg-flex list-unstyled mb-0 gap-4">
+            <li>
+              <a href="#" class="text-muted text-decoration-none privacy"
+                >Privacy policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-muted text-decoration-none privacy"
+                >Warranty</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-muted text-decoration-none privacy"
+                >Shipping</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-muted text-decoration-none privacy"
+                >Returns</a
+              >
+            </li>
+          </ul>
 
-          <div class="header-area__actions">
-            <button class="header-area__icon">
+          <div class="d-flex align-items-center ms-auto gap-3">
+            <button class="btn p-0 devider-icon">
               <img
-                class="icon"
                 src="assets/icons/purple-cart.svg"
-                alt="Cart icon"
+                class="icon header-icon"
               />
             </button>
 
-            <button class="header-area__icon header-area__wishlist">
-              <img
-                class="icon"
-                src="assets/icons/wish-list.svg"
-                alt="Wishlist"
-              />
-              <span class="badge header-area__badge">3</span>
+            <button
+              class="btn p-0 position-relative d-none d-md-inline devider-icon"
+            >
+              <img src="assets/icons/wish-list.svg" class="icon header-icon" />
+              <span
+                class="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+              >
+                3
+              </span>
             </button>
 
-            <button class="header-area__icon header-area__user">
-              <img class="icon" src="assets/icons/user.svg" alt="User icon" />
+            <button class="btn p-0 d-none d-md-inline">
+              <img src="assets/icons/user.svg" class="icon header-icon" />
             </button>
 
-            <button class="header-area__icon header-area__menu">
-              <img
-                class="header-area__icon-img"
-                src="assets/icons/menu.svg"
-                alt="Menu icon"
-              />
+            <button
+              class="btn p-0 d-lg-none"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+            >
+              <img src="assets/icons/menu.svg" class="icon" />
             </button>
           </div>
         </div>
       </div>
 
-      <div class="sidebar" aria-hidden="true">
-        <div class="sidebar__header">
-          <a href="/" class="header-area__logo-bottom">
-            <img
-              class="header-area__img"
-              src="assets/images/logo.png"
-              alt="logo"
-            />
-          </a>
-          <button class="icon sidebar__wishlist">
-            <img class="icon" src="assets/icons/wish-list.svg" alt="Wishlist" />
-            <span class="badge sidebar__badge">3</span>
-          </button>
-        </div>
-
-        <p class="sidebar__title">Menu</p>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#hero" class="nav__link">The must read</a>
+      <div class="header-border-top d-none d-lg-block">
+        <div class="container d-flex align-items-center py-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">The must read</a>
             </li>
-            <li class="nav__item">
-              <a href="#benefit" class="nav__link">News</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#benefit">News</a>
             </li>
-            <li class="nav__item">
-              <a href="#selected-for-you" class="nav__link"
+            <li class="nav-item">
+              <a class="nav-link" href="#selected-for-you"
                 >Promotion of the mount</a
               >
             </li>
-            <li class="nav__item">
-              <a href="#you-must-buy-it-now" class="nav__link">Publishes</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
             </li>
-            <li class="nav__item">
-              <a href="#newsletter" class="nav__link"
+            <li class="nav-item">
+              <a class="nav-link" href="#newsletter"
                 >Subscribe to the newsletter</a
               >
             </li>
           </ul>
-        </nav>
 
-        <p class="sidebar__title">Policies</p>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Privacy policy</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Warranty</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Shipping</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Returns</a>
-            </li>
-          </ul>
-        </nav>
+          <div class="ms-auto d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center">
+              <img src="assets/icons/phone.svg" class="icon" />
+              <a
+                href="tel:+44587999000"
+                class="ms-2 text-decoration-none text-dark"
+              >
+                +445 87 999 000
+              </a>
+            </div>
 
-        <div class="sidebar__contact">
-          <span>
-            <img class="icon" src="assets/icons/phone.svg" alt="Phone icon" />
-            <a href="tel:+44587999000" class="sidebar__phone"
-              >+445 87 999 000</a
-            >
-          </span>
-        </div>
-
-        <div class="sidebar__user">
-          <div class="sidebar__user-avatar">
-            <img class="icon" src="assets/icons/user.svg" alt="User avatar" />
-          </div>
-          <div>
-            <p class="sidebar__user-name">User Name</p>
-            <p class="sidebar__user-action">View profile</p>
+            <button class="btn btn-outline-primary">Request a call</button>
           </div>
         </div>
       </div>
-      <div class="sidebar__overlay"></div>
 
-      <div class="header-area__bottom">
-        <div class="container header-area__inner">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#hero" class="nav__link body-text">The must read</a>
+      <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+          <img src="assets/images/logo.png" width="60" />
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column h-100">
+          <div>
+            <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
+            <ul class="nav flex-column gap-3 mb-4">
+              <li>
+                <a class="nav-link" href="#hero"
+                  >The must read</a
+                >
               </li>
-              <li class="nav__item">
-                <a href="#benefit" class="nav__link body-text">News</a>
+              <li>
+                <a class="nav-link" href="#benefit">News</a>
               </li>
-              <li class="nav__item">
-                <a href="#selected-for-you" class="nav__link body-text"
+              <li>
+                <a class="nav-link" href="#selected-for-you"
                   >Promotion of the mount</a
                 >
               </li>
-              <li class="nav__item">
-                <a href="#you-must-buy-it-now" class="nav__link body-text"
+              <li>
+                <a class="nav-link" href="#you-must-buy-it-now"
                   >Publishes</a
                 >
               </li>
-              <li class="nav__item">
-                <a href="#newsletter" class="nav__link body-text"
+              <li>
+                <a class="nav-link" href="#newsletter"
                   >Subscribe to the newsletter</a
                 >
               </li>
             </ul>
-          </nav>
 
-          <div class="header-area__contact">
-            <span>
-              <img class="icon" src="assets/icons/phone.svg" alt="Phone icon" />
-              <a href="tel:+44587999000" class="header-area__phone">
-                +445 87 999 000
-              </a>
-            </span>
+            <h6 class="text-uppercase fw-semibold mb-3">
+              Policies
+            </h6>
+            <ul class="nav flex-column gap-3 mb-4">
+              <li>
+                <a class="nav-link px-0 text-muted" href="#">Privacy policy</a>
+              </li>
+              <li><a class="nav-link px-0 text-muted" href="#">Warranty</a></li>
+              <li><a class="nav-link px-0 text-muted" href="#">Shipping</a></li>
+              <li><a class="nav-link px-0 text-muted" href="#">Returns</a></li>
+            </ul>
 
-            <button class="btn btn--outline">Request a call</button>
+            <div class="border-top pt-3 mb-4">
+              <div class="d-flex align-items-center">
+                <img src="assets/icons/phone.svg" class="icon" />
+                <a
+                  href="tel:+44587999000"
+                  class="ms-2 text-decoration-none phone"
+                >
+                  +445 87 999 000
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-auto">
+            <div class="d-flex align-items-center border rounded-4 p-1 gap-4">
+              <div
+                class="d-flex align-items-center justify-content-center ps-2"
+              >
+                <img src="assets/icons/user.svg" class="icon" />
+              </div>
+              <div>
+                <div class="fw-semibold">User Name</div>
+                <small class="text-muted">View profile</small>
+              </div>
+            </div>
           </div>
         </div>
-        <a href="/" class="header-area__logo-bottom">
-          <img
-            class="header-area__img-bottom"
-            src="assets/images/white-logo.png"
-            alt="logo"
-          />
-        </a>
       </div>
     </header>
 
@@ -1084,91 +1099,6 @@
           updatePagination(heroIndex);
         });
       });
-      const menuBtn = document.querySelector(".header-area__menu");
-      const sidebar = document.querySelector(".sidebar");
-      const sidebarOverlay = document.querySelector(".sidebar__overlay");
-      const navLinks = document.querySelectorAll(".nav__link");
-
-      let startX = 0;
-      let endX = 0;
-
-      function openSidebar() {
-        sidebar.classList.add("sidebar--active");
-        sidebarOverlay.classList.add("sidebar__overlay--active");
-      }
-
-      function closeSidebar() {
-        sidebar.classList.remove("sidebar--active");
-        sidebarOverlay.classList.remove("sidebar__overlay--active");
-      }
-
-      function toggleSidebar() {
-        sidebar.classList.toggle("sidebar--active");
-        sidebarOverlay.classList.toggle("sidebar__overlay--active");
-      }
-
-      menuBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        toggleSidebar();
-      });
-
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          document.querySelectorAll(".nav__item").forEach((item) => {
-            item.classList.remove("nav__item--active");
-          });
-          link.closest(".nav__item").classList.add("nav__item--active");
-          closeSidebar();
-        });
-      });
-
-      document.addEventListener("click", (e) => {
-        const isInsideSidebar = sidebar?.contains(e.target);
-        const isMenuBtn = menuBtn?.contains(e.target);
-
-        if (!isInsideSidebar && !isMenuBtn) {
-          closeSidebar();
-        }
-      });
-
-      sidebar?.addEventListener("scroll", () => {
-        if (sidebar?.classList.contains("sidebar--active")) {
-          closeSidebar();
-        }
-      });
-
-      document.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX;
-      });
-
-      document.addEventListener("touchend", (e) => {
-        endX = e.changedTouches[0].clientX;
-        if (startX < 50 && endX - startX > 80) {
-          openSidebar();
-        }
-      });
-
-      const navItems = document.querySelectorAll(".nav__item");
-      function setActiveNav() {
-        const scrollY = window.scrollY + 100;
-        navItems.forEach((item) => {
-          item.classList.remove("nav__item--active");
-          const link = item.querySelector(".nav__link");
-          if (link) {
-            const targetId = link.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-              const rect = targetSection.getBoundingClientRect();
-              if (rect.top <= 100 && rect.bottom > 100) {
-                item.classList.add("nav__item--active");
-              }
-            }
-          }
-        });
-      }
-
-      window.addEventListener("scroll", setActiveNav);
-      setActiveNav();
     </script>
   </body>
 </html>

@@ -9,17 +9,13 @@
   transition: 0.3s ease;
 }
 
-.btn--primary {
-  background-color: var(--primary-color);
-  color: var(--bg-color);
-}
-
-.btn--primary:hover {
-  opacity: 0.9;
-}
-
-.btn--outline {
+.btn-outline-primary {
   background: none;
   color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color)!important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
