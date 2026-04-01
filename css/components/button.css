@@ -16,7 +16,20 @@
   border: 1px solid var(--primary-color) !important;
 }
 
-.btn-outline-primary:hover {
-  background-color: var(--primary-color);
+.btn-outline-secondary {
+  background: none;
   color: var(--bg-color);
+  border: 1px solid var(--bg-color) !important;
+}
+
+@media (width >= 992px) {
+  .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+  }
+
+  .btn-outline-secondary:hover {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+  }
 }
