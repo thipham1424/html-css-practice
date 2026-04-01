@@ -3,6 +3,6 @@
   font-size: var(--fs-badge);
   line-height: var(--lh-tight);
   font-weight: var(--fw-medium);
-  background-color: var(--tertiary-color)!important;
+  background-color: var(--tertiary-color) !important;
   color: var(--bg-color);
 }
