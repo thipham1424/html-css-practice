@@ -355,51 +355,51 @@
 
       <section
         id="selected-for-you"
-        class="layout-section container product__container"
+        class="layout-section container product"
       >
-        <div class="product__header">
-          <h2 class="text--lg product__title">Selected for you</h2>
+        <div class="product-header">
+          <h2 class="text-lg product-title">Selected for you</h2>
         </div>
 
-        <div class="product__slider">
+        <div class="position-relative p-lg-0 product-slider">
           <button
-            class="slider-control__btn product__control product__control--prev"
+            class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-prev"
           >
-            <svg class="slider-control__icon" viewBox="0 0 25 25">
+            <svg class="icon" viewBox="0 0 25 25">
               <use href="assets/icons/sprite.svg#chevron-left"></use>
             </svg>
           </button>
 
-          <div class="product__viewport">
-            <div class="product__track">
+          <div class="product-viewport">
+            <div class="d-flex justify-content-lg-between product-track">
               <div class="product-card">
                 <div
-                  class="product-card__image"
+                  class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
                     src="assets/images/financial-feminist.png"
                     alt="Financial Feminist"
-                    class="product-card__img"
+                    class="d-block product-card-img"
                   />
                 </div>
 
-                <div class="product-card__content">
-                  <h3 class="text--name-card">Financial Feminist</h3>
-                  <p class="body--text product-card__author">Tori Dunlap</p>
-                  <div class="product-card__bottom">
-                    <span class="text--sm product-card__price">$20.46</span>
+                <div class="product-card-content">
+                  <h3 class="text-name-card">Financial Feminist</h3>
+                  <p class="body-text product-card-author">Tori Dunlap</p>
+                  <div class="d-flex align-items-end justify-content-between product-card-bottom">
+                    <span class="text-sm product-card-price">$20.46</span>
                     <button
-                      class="product-card__wishlist"
+                      class="product-card-wishlist"
                       aria-lable="Add to wishlist"
                     >
-                      <svg class="product-card__wishlist-icon">
+                      <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
                   </div>
 
-                  <button class="btn btn--primary product-card__cart">
+                  <button class="btn btn-primary product-card-cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -412,32 +412,32 @@
 
               <div class="product-card">
                 <div
-                  class="product-card__image"
+                  class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
                     src="assets/images/no-more-police.png"
                     alt="No More Police"
-                    class="product-card__img"
+                    class="d-block product-card-img"
                   />
                 </div>
 
-                <div class="product-card__content">
-                  <h3 class="text--name-card">No More Police</h3>
-                  <p class="body--text product-card__author">Andrea Ritchie</p>
-                  <div class="product-card__bottom">
-                    <span class="text--sm product-card__price">$20.46</span>
+                <div class="product-card-content">
+                  <h3 class="text-name-card">No More Police</h3>
+                  <p class="body-text product-card-author">Andrea Ritchie</p>
+                  <div class="d-flex align-items-end justify-content-between product-card-bottom">
+                    <span class="text-sm product-card-price">$20.46</span>
                     <button
-                      class="product-card__wishlist"
+                      class="product-card-wishlist"
                       aria-lable="Add to wishlist"
                     >
-                      <svg class="product-card__wishlist-icon">
+                      <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
                   </div>
 
-                  <button class="btn btn--primary product-card__cart">
+                  <button class="btn btn-primary product-card-cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -450,34 +450,34 @@
 
               <div class="product-card">
                 <div
-                  class="product-card__image"
+                  class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
                     src="assets/images/im-glad-my-mom-died.png"
                     alt="I' Glad My Mom Died"
-                    class="product-card__img"
+                    class="d-block product-card-img"
                   />
                 </div>
 
-                <div class="product-card__content">
-                  <h3 class="text--name-card">I'm Glad My Mom Died</h3>
-                  <p class="body--text product-card__author">
+                <div class="product-card-content">
+                  <h3 class="text-name-card">I'm Glad My Mom Died</h3>
+                  <p class="body-text product-card-author">
                     Jennette McCurdy
                   </p>
-                  <div class="product-card__bottom">
-                    <span class="text--sm product-card__price">$20.46</span>
+                  <div class="d-flex align-items-end justify-content-between product-card-bottom">
+                    <span class="text-sm product-card-price">$20.46</span>
                     <button
-                      class="product-card__wishlist"
+                      class="product-card-wishlist"
                       aria-lable="Add to wishlist"
                     >
-                      <svg class="product-card__wishlist-icon">
+                      <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
                   </div>
 
-                  <button class="btn btn--primary product-card__cart">
+                  <button class="btn btn-primary product-card-cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -492,30 +492,30 @@
                 class="product-card"
                 onclick="window.location.href = 'product-page.html'"
               >
-                <div class="product-card__image">
+                <div class="product-card-image">
                   <img
                     src="assets/images/chain-of-gold.png"
                     alt="Chain of Gold"
-                    class="product-card__img"
+                    class="d-block product-card-img"
                   />
                 </div>
 
-                <div class="product-card__content">
-                  <h3 class="text--name-card">Chain of Gold</h3>
-                  <p class="body--text product-card__author">Cassandra Clare</p>
-                  <div class="product-card__bottom">
-                    <span class="text--sm product-card__price">$20.46</span>
+                <div class="product-card-content">
+                  <h3 class="text-name-card">Chain of Gold</h3>
+                  <p class="body-text product-card-author">Cassandra Clare</p>
+                  <div class="d-flex align-items-end justify-content-between product-card-bottom">
+                    <span class="text-sm product-card-price">$20.46</span>
                     <button
-                      class="product-card__wishlist"
+                      class="product-card-wishlist"
                       aria-lable="Add to wishlist"
                     >
-                      <svg class="product-card__wishlist-icon">
+                      <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
                   </div>
 
-                  <button class="btn btn--primary product-card__cart">
+                  <button class="btn btn-primary product-card-cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -529,74 +529,74 @@
           </div>
 
           <button
-            class="slider-control__btn product__control product__control--next"
+            class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-next"
           >
-            <svg class="slider-control__icon">
+            <svg class="icon">
               <use href="assets/icons/sprite.svg#chevron-right"></use>
             </svg>
           </button>
         </div>
 
-        <div class="product__pagination">
-          <div class="pagination">
-            <span class="pagination__dot pagination__dot--active"></span>
-            <span class="pagination__dot"></span>
-            <span class="pagination__dot"></span>
-            <span class="pagination__dot"></span>
-            <span class="pagination__dot"></span>
+        <div class="product-pagination">
+          <div class="align-items-center d-flex justify-content-center">
+            <span class="pagination-dot active"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
           </div>
         </div>
       </section>
 
       <section
         id="you-must-buy-it-now"
-        class="layout-section container product__container"
+        class="layout-section container product"
       >
-        <div class="product__header">
-          <h2 class="text--lg product__title">You must buy it now</h2>
+        <div class="product-header">
+          <h2 class="text-lg product-title">You must buy it now</h2>
         </div>
 
-        <div class="product__slider">
+        <div class="position-relative p-lg-0 product-slider">
           <button
-            class="slider-control__btn product__control product__control--prev"
+            class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-prev"
           >
-            <svg class="slider-control__icon" viewBox="0 0 25 25">
+            <svg class="icon" viewBox="0 0 25 25">
               <use href="assets/icons/sprite.svg#chevron-left"></use>
             </svg>
           </button>
 
-          <div class="product__viewport">
-            <div class="product__track">
+          <div class="product-viewport">
+            <div class="d-flex justify-content-lg-between product-track">
               <div class="product-card">
                 <div
-                  class="product-card__image"
+                  class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
                     src="assets/images/harlem-shuffle.jpg"
                     alt="Harlem Shuffle"
-                    class="product-card__img"
+                    class="d-block product-card-img"
                   />
                 </div>
 
-                <div class="product-card__content">
-                  <h3 class="text--name-card">Harlem Shuffle</h3>
-                  <p class="body--text product-card__author">
+                <div class="product-card-content">
+                  <h3 class="text-name-card">Harlem Shuffle</h3>
+                  <p class="body-text product-card-author">
                     Colson Whitehead
                   </p>
-                  <div class="product-card__bottom">
-                    <span class="text--sm product-card__price">$20.46</span>
+                  <div class="d-flex align-items-end justify-content-between product-card-bottom">
+                    <span class="text-sm product-card-price">$20.46</span>
                     <button
-                      class="product-card__wishlist"
+                      class="product-card-wishlist"
                       aria-lable="Add to wishlist"
                     >
-                      <svg class="product-card__wishlist-icon">
+                      <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
                   </div>
 
-                  <button class="btn btn--primary product-card__cart">
+                  <button class="btn btn-primary product-card-cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -609,32 +609,32 @@
 
               <div class="product-card">
                 <div
-                  class="product-card__image"
+                  class="product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
                     src="assets/images/two-old-women.jpg"
                     alt="Two Old Women"
-                    class="product-card__img"
+                    class="d-block product-card-img"
                   />
                 </div>
 
-                <div class="product-card__content">
-                  <h3 class="text--name-card">Two Old Women</h3>
-                  <p class="body--text product-card__author">Velma Wallis</p>
-                  <div class="product-card__bottom">
-                    <span class="text--sm product-card__price">$20.46</span>
+                <div class="product-card-content">
+                  <h3 class="text-name-card">Two Old Women</h3>
+                  <p class="body-text product-card-author">Velma Wallis</p>
+                  <div class="d-flex align-items-end justify-content-between product-card-bottom">
+                    <span class="text-sm product-card-price">$20.46</span>
                     <button
-                      class="product-card__wishlist"
+                      class="product-card-wishlist"
                       aria-lable="Add to wishlist"
                     >
-                      <svg class="product-card__wishlist-icon">
+                      <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
                   </div>
 
-                  <button class="btn btn--primary product-card__cart">
+                  <button class="btn btn-primary product-card-cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -647,34 +647,34 @@
 
               <div class="product-card">
                 <div
-                  class="product-card__image"
+                  class="product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
                     src="assets/images/carrie-soto-is-back.jpg"
                     alt="Carrie Soto Is Back"
-                    class="product-card__img"
+                    class="d-block product-card-img"
                   />
                 </div>
 
-                <div class="product-card__content">
-                  <h3 class="text--name-card">Carrie Soto Is Back</h3>
-                  <p class="body--text product-card__author">
+                <div class="product-card-content">
+                  <h3 class="text-name-card">Carrie Soto Is Back</h3>
+                  <p class="body-text product-card-author">
                     Taylor Jenkins Reid
                   </p>
-                  <div class="product-card__bottom">
-                    <span class="text--sm product-card__price">$20.46</span>
+                  <div class="d-flex align-items-end justify-content-between product-card-bottom">
+                    <span class="text-sm product-card-price">$20.46</span>
                     <button
-                      class="product-card__wishlist"
+                      class="product-card-wishlist"
                       aria-lable="Add to wishlist"
                     >
-                      <svg class="product-card__wishlist-icon">
+                      <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
                   </div>
 
-                  <button class="btn btn--primary product-card__cart">
+                  <button class="btn btn-primary product-card-cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -687,32 +687,32 @@
 
               <div class="product-card">
                 <div
-                  class="product-card__image"
+                  class="product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
                     src="assets/images/book-lovers.png"
                     alt="Book Loves"
-                    class="product-card__img"
+                    class="d-block product-card-img"
                   />
                 </div>
 
-                <div class="product-card__content">
-                  <h3 class="text--name-card">Book Lovers</h3>
-                  <p class="body--text product-card__author">Emily Henry</p>
-                  <div class="product-card__bottom">
-                    <span class="text--sm product-card__price">$20.46</span>
+                <div class="product-card-content">
+                  <h3 class="text-name-card">Book Lovers</h3>
+                  <p class="body-text product-card-author">Emily Henry</p>
+                  <div class="d-flex align-items-end justify-content-between product-card-bottom">
+                    <span class="text-sm product-card-price">$20.46</span>
                     <button
-                      class="product-card__wishlist"
+                      class="product-card-wishlist"
                       aria-lable="Add to wishlist"
                     >
-                      <svg class="product-card__wishlist-icon">
+                      <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
                   </div>
 
-                  <button class="btn btn--primary product-card__cart">
+                  <button class="btn btn-primary product-card-cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -726,21 +726,21 @@
           </div>
 
           <button
-            class="slider-control__btn product__control product__control--next"
+            class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-next"
           >
-            <svg class="slider-control__icon">
+            <svg class="icon">
               <use href="assets/icons/sprite.svg#chevron-right"></use>
             </svg>
           </button>
         </div>
 
-        <div class="product__pagination">
-          <div class="pagination">
-            <span class="pagination__dot pagination__dot--active"></span>
-            <span class="pagination__dot"></span>
-            <span class="pagination__dot"></span>
-            <span class="pagination__dot"></span>
-            <span class="pagination__dot"></span>
+        <div class="product-pagination">
+          <div class="align-items-center d-flex justify-content-center">
+            <span class="pagination-dot active"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
           </div>
         </div>
       </section>
