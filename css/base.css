@@ -116,14 +116,14 @@ img {
   }
 
   .container {
-    padding: 0 20px;
+    padding: 0 20px !important;
   }
 }
 
 /* DESKTOP */
 @media (width >= 992px) {
   .container {
-    max-width: 1200px;
-    padding: 0;
+    max-width: 1200px !important;
+    padding: 0 !important;
   }
 }
