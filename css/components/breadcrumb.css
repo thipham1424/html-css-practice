@@ -6,16 +6,16 @@
     font-size: var(--fs-typ);
   }
 
-  .breadcrumb__link {
+  .breadcrumb-link {
     color: var(--dark-color-alpha-50);
     text-decoration: none;
   }
 
-  .breadcrumb__current {
+  .breadcrumb-current {
     color: var(--dark-color);
   }
 
-  .breadcrumb__separator {
+  .breadcrumb-separator {
     color: var(--primary-color);
   }
 }
