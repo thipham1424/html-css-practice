@@ -29,7 +29,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <body>
     <header class="header-border">
-      <div class="container py-3">
+      <div class="container header-area">
         <div class="d-flex align-items-center">
           <a
             href="/"
@@ -114,7 +114,7 @@
       </div>
 
       <div class="header-border-top d-none d-lg-block">
-        <div class="container d-flex align-items-center py-3">
+        <div class="container header-area d-flex align-items-center">
           <ul class="nav">
             <li class="nav-item">
               <a class="nav-link" href="#hero">The must read</a>
@@ -1146,91 +1146,6 @@
           this.classList.toggle("product-card__wishlist--active");
         });
       });
-      const menuBtn = document.querySelector(".header-area__menu");
-      const sidebar = document.querySelector(".sidebar");
-      const sidebarOverlay = document.querySelector(".sidebar__overlay");
-      const navLinks = document.querySelectorAll(".nav__link");
-
-      let startX = 0;
-      let endX = 0;
-
-      function openSidebar() {
-        sidebar.classList.add("sidebar--active");
-        sidebarOverlay.classList.add("sidebar__overlay--active");
-      }
-
-      function closeSidebar() {
-        sidebar.classList.remove("sidebar--active");
-        sidebarOverlay.classList.remove("sidebar__overlay--active");
-      }
-
-      function toggleSidebar() {
-        sidebar.classList.toggle("sidebar--active");
-        sidebarOverlay.classList.toggle("sidebar__overlay--active");
-      }
-
-      menuBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        toggleSidebar();
-      });
-
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          document.querySelectorAll(".nav__item").forEach((item) => {
-            item.classList.remove("nav__item--active");
-          });
-          link.closest(".nav__item").classList.add("nav__item--active");
-          closeSidebar();
-        });
-      });
-
-      document.addEventListener("click", (e) => {
-        const isInsideSidebar = sidebar?.contains(e.target);
-        const isMenuBtn = menuBtn?.contains(e.target);
-
-        if (!isInsideSidebar && !isMenuBtn) {
-          closeSidebar();
-        }
-      });
-
-      sidebar?.addEventListener("scroll", () => {
-        if (sidebar?.classList.contains("sidebar--active")) {
-          closeSidebar();
-        }
-      });
-
-      document.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX;
-      });
-
-      document.addEventListener("touchend", (e) => {
-        endX = e.changedTouches[0].clientX;
-        if (startX < 50 && endX - startX > 80) {
-          openSidebar();
-        }
-      });
-
-      const navItems = document.querySelectorAll(".nav__item");
-      function setActiveNav() {
-        const scrollY = window.scrollY + 100;
-        navItems.forEach((item) => {
-          item.classList.remove("nav__item--active");
-          const link = item.querySelector(".nav__link");
-          if (link) {
-            const targetId = link.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-              const rect = targetSection.getBoundingClientRect();
-              if (rect.top <= 100 && rect.bottom > 100) {
-                item.classList.add("nav__item--active");
-              }
-            }
-          }
-        });
-      }
-
-      window.addEventListener("scroll", setActiveNav);
-      setActiveNav();
     </script>
   </body>
 </html>

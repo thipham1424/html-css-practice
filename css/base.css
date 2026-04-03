@@ -57,47 +57,45 @@ img {
 }
 
 .container {
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
+  max-width: var(--container-width) !important;
+  padding: 0 16px !important;
+  margin: 0 auto!important;
 }
 
-.text--xl {
+.text-xl {
   font-size: var(--fs-xl);
   color: var(--heading-color-primary);
   font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
 }
 
-.text--lg {
+.text-lg {
   font-size: var(--fs-lg);
   color: var(--heading-color-secondary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
-.text--md {
+.text-md {
   font-size: var(--fs-md);
   color: var(--heading-color-primary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
-.text--sm {
+.text-sm {
   font-size: var(--fs-sm);
   color: var(--heading-color-primary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
-.body--text {
+.body-text {
   font-size: var(--fs-regular);
   color: var(--text-color);
-  font-weight: var(--fw-regular);
-  line-height: var(--lh-normal);
 }
 
-.text--name-card {
+.text-name-card {
   font-size: var(--fs-price);
   color: var(--heading-color-primary);
   line-height: var(--lh-tight);
@@ -119,14 +117,14 @@ img {
   }
 
   .container {
-    padding: 0 20px;
+    padding: 0 20px !important;
   }
 }
 
 /* DESKTOP */
 @media (width >= 992px) {
   .container {
-    max-width: 1200px;
-    padding: 0;
+    max-width: 1200px !important;
+    padding: 0 !important;
   }
 }
