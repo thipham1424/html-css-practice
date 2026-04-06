@@ -12,7 +12,7 @@
   },
   "scripts": {
     "prepare": "husky",
-    "format": "prettier --write .",
+    "format": "prettier --write \"**/*.{css,js,json}\"",
     "lint:css": "stylelint \"**/*.css\""
   },
   "prettier": {
