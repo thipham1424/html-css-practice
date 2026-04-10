@@ -2,14 +2,14 @@
   background: var(--bg-color);
 }
 
-.search__btn {
+.search-btn {
   width: 20px;
   height: 20px;
   border: none;
   background: transparent;
 }
 
-.search__btn-icon {
+.search-btn-icon {
   opacity: 0.6;
 }
 
