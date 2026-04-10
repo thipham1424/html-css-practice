@@ -104,7 +104,7 @@ img {
   margin-bottom: 0.5rem;
 }
 
-@media (width >= 48em) {
+@media (width >= 768px) {
   :root {
     --fs-xl: 48px;
     --fs-lg: 38px;
@@ -121,7 +121,7 @@ img {
   }
 }
 
-@media (width >= 62em) {
+@media (width >= 992px) {
   .container {
     max-width: 1200px;
     padding: 0;
