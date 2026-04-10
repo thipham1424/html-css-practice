@@ -1,49 +1,49 @@
 :root {
   /* COLORS */
-  --primary-color:          #937dc2;
-  --secondary-color:        #937dc299;
-  --tertiary-color:         #c689c6;
-  --text-color:             #4d4c4c;
-  --text-color-primary:     #4f4c57;
-  --text-color-badge:       #313131;
-  --text-color-secondary:   #b8b8b8;
-  --text-color-nav:         #7b7881;
-  --heading-color-primary:  #382c2c;
-  --heading-color-secondary:#313131;
-  --dark-color:             #231f2d;
-  --dark-color-alpha-50:    #231f2d80;
-  --gray-color:             #f1f1f1;
-  --bg-color:               #fff;
+  --primary-color: #937dc2;
+  --secondary-color: #937dc299;
+  --tertiary-color: #c689c6;
+  --text-color: #4d4c4c;
+  --text-color-primary: #4f4c57;
+  --text-color-badge: #313131;
+  --text-color-secondary: #b8b8b8;
+  --text-color-nav: #7b7881;
+  --heading-color-primary: #382c2c;
+  --heading-color-secondary: #313131;
+  --dark-color: #231f2d;
+  --dark-color-alpha-50: #231f2d80;
+  --gray-color: #f1f1f1;
+  --bg-color: #fff;
 
   /* LAYOUT */
-  --container-max-width:    75rem;
-  --container-padding:      clamp(1rem, 4vw, 1.25rem);
+  --container-max-width: 75rem;
+  --container-padding: clamp(1rem, 4vw, 1.25rem);
 
   /* FONT SIZE */
-  --fs-xl:      clamp(1.75rem,  1rem + 2.5vw, 3rem);
-  --fs-lg:      clamp(1.5rem,   1rem + 2vw,   2.375rem);
-  --fs-md:      clamp(1.25rem,  1rem + 1.5vw, 1.75rem);
-  --fs-price:   clamp(1.125rem, 1rem + 1vw,   1.5rem);
-  --fs-sm:      clamp(1rem,     1rem + 0.5vw, 1.25rem);
-  --fs-author:  clamp(0.875rem, 1rem + 0.3vw, 1.125rem);
+  --fs-xl: clamp(1.75rem, 1rem + 2.5vw, 3rem);
+  --fs-lg: clamp(1.5rem, 1rem + 2vw, 2.375rem);
+  --fs-md: clamp(1.25rem, 1rem + 1.5vw, 1.75rem);
+  --fs-price: clamp(1.125rem, 1rem + 1vw, 1.5rem);
+  --fs-sm: clamp(1rem, 1rem + 0.5vw, 1.25rem);
+  --fs-author: clamp(0.875rem, 1rem + 0.3vw, 1.125rem);
   --fs-regular: clamp(0.875rem, 1rem + 0.3vw, 1rem);
-  --fs-typ:     0.75rem;
-  --fs-badge:   0.75rem;
+  --fs-typ: 0.75rem;
+  --fs-badge: 0.75rem;
 
   /* FONT WEIGHT */
-  --fw-bold:     700;
+  --fw-bold: 700;
   --fw-semibold: 600;
-  --fw-medium:   500;
-  --fw-regular:  400;
+  --fw-medium: 500;
+  --fw-regular: 400;
 
   /* LINE HEIGHT */
-  --lh-tight:  1.25;
+  --lh-tight: 1.25;
   --lh-normal: 1.5;
 }
 
 body {
   font-family: Inter, sans-serif;
-  color:       var(--text-color);
+  color: var(--text-color);
   background-color: var(--bg-color);
   line-height: var(--lh-normal);
 }
@@ -54,8 +54,8 @@ body {
 
 img {
   max-width: 100%;
-  height:    auto;
-  display:   block;
+  height: auto;
+  display: block;
 }
 
 .container {
@@ -64,43 +64,43 @@ img {
 }
 
 .text-xl {
-  font-size:   var(--fs-xl);
-  color:       var(--heading-color-primary);
+  font-size: var(--fs-xl);
+  color: var(--heading-color-primary);
   font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
 }
 
 .text-lg {
-  font-size:   var(--fs-lg);
-  color:       var(--heading-color-secondary);
+  font-size: var(--fs-lg);
+  color: var(--heading-color-secondary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
 .text-md {
-  font-size:   var(--fs-md);
-  color:       var(--heading-color-primary);
+  font-size: var(--fs-md);
+  color: var(--heading-color-primary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
 .text-sm {
-  font-size:   var(--fs-sm);
-  color:       var(--heading-color-primary);
+  font-size: var(--fs-sm);
+  color: var(--heading-color-primary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
 .body-text {
   font-size: var(--fs-regular);
-  color:     var(--text-color);
+  color: var(--text-color);
 }
 
 .text-name-card {
-  font-size:     var(--fs-price);
-  color:         var(--heading-color-primary);
-  line-height:   var(--lh-tight);
-  font-weight:   var(--fw-semibold);
+  font-size: var(--fs-price);
+  color: var(--heading-color-primary);
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-semibold);
   margin-bottom: 0.5rem;
 }
 
