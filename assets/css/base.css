@@ -32,19 +32,19 @@
   --fs-badge: 0.75rem;
 
   /* FONT WEIGHT */
-  --fw-bold:     700;
+  --fw-bold: 700;
   --fw-semibold: 600;
-  --fw-medium:   500;
-  --fw-regular:  400;
+  --fw-medium: 500;
+  --fw-regular: 400;
 
   /* LINE HEIGHT */
-  --lh-tight:  1.25;
+  --lh-tight: 1.25;
   --lh-normal: 1.5;
 }
 
 body {
   font-family: Inter, sans-serif;
-  color:       var(--text-color);
+  color: var(--text-color);
   background-color: var(--bg-color);
   line-height: var(--lh-normal);
 }
@@ -55,8 +55,8 @@ body {
 
 img {
   max-width: 100%;
-  height:    auto;
-  display:   block;
+  height: auto;
+  display: block;
 }
 
 .container {
@@ -65,36 +65,36 @@ img {
 }
 
 .text-xl {
-  font-size:   var(--fs-xl);
-  color:       var(--heading-color-primary);
+  font-size: var(--fs-xl);
+  color: var(--heading-color-primary);
   font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
 }
 
 .text-lg {
-  font-size:   var(--fs-lg);
-  color:       var(--heading-color-secondary);
+  font-size: var(--fs-lg);
+  color: var(--heading-color-secondary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
 .text-md {
-  font-size:   var(--fs-md);
-  color:       var(--heading-color-primary);
+  font-size: var(--fs-md);
+  color: var(--heading-color-primary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
 .text-sm {
-  font-size:   var(--fs-sm);
-  color:       var(--heading-color-primary);
+  font-size: var(--fs-sm);
+  color: var(--heading-color-primary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
 .body-text {
   font-size: var(--fs-regular);
-  color:     var(--text-color);
+  color: var(--text-color);
 }
 
 .text-name-card {
