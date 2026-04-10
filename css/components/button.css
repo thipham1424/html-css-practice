@@ -16,6 +16,12 @@
   border: 1px solid var(--primary-color) !important;
 }
 
+.btn-outline-primary {
+  background: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color) !important;
+}
+
 .btn-outline-secondary {
   background: none;
   color: var(--bg-color);
