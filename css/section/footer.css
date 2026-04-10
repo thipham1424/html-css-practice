@@ -47,10 +47,10 @@
 }
 
 @media (width >= 768px) {
-  .footer-support {
-    justify-content: end !important;
+  .footer-logo {
+    margin-right: 126px;
   }
-
+  
   .footer-payments-icon {
     width: 44px;
     height: 28px;
