@@ -43,37 +43,39 @@
             </span>
           </a>
 
-          <div
-            class="search-box d-none d-lg-flex align-items-center bg-light px-3 py-2 rounded flex-grow-1 me-3"
-          >
+          <div class="d-none d-lg-flex align-items-center search">
             <input
+              class="search__input"
               type="text"
-              class="form-control border-0 bg-transparent p-0"
               placeholder="Type any book here"
             />
-            <button class="btn p-0 ms-2">
-              <img src="assets/icons/search.svg" class="icon" />
+            <button class="d-flex align-items-center justify-content-center cursor-pointer search__btn">
+              <img
+                src="assets/icons/search.svg"
+                alt="Search icon"
+                class="icon search__btn-icon"
+              />
             </button>
           </div>
 
           <ul class="d-none d-lg-flex list-unstyled mb-0 gap-4">
             <li>
-              <a href="#" class="text-muted text-decoration-none privacy"
+              <a href="#" class="text-decoration-none privacy"
                 >Privacy policy</a
               >
             </li>
             <li>
-              <a href="#" class="text-muted text-decoration-none privacy"
+              <a href="#" class="text-decoration-none privacy"
                 >Warranty</a
               >
             </li>
             <li>
-              <a href="#" class="text-muted text-decoration-none privacy"
+              <a href="#" class="text-decoration-none privacy"
                 >Shipping</a
               >
             </li>
             <li>
-              <a href="#" class="text-muted text-decoration-none privacy"
+              <a href="#" class= "text-decoration-none privacy"
                 >Returns</a
               >
             </li>
@@ -92,14 +94,14 @@
             >
               <img src="assets/icons/wish-list.svg" class="icon header-icon" />
               <span
-                class="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+                class="position-absolute top-0 translate-middle badge rounded-pill"
               >
                 3
               </span>
             </button>
 
             <button class="btn p-0 d-none d-md-inline">
-              <img src="assets/icons/user.svg" class="icon header-icon" />
+              <img src="assets/icons/user.svg" class="icon me-lg-0 header-icon" />
             </button>
 
             <button
@@ -117,21 +119,21 @@
         <div class="container header-area d-flex align-items-center">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="#hero">The must read</a>
+              <a class="p-0 nav-link" href="#hero">The must read</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#benefit">News</a>
+              <a class="p-0 nav-link" href="#benefit">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#selected-for-you"
+              <a class="p-0 nav-link" href="#selected-for-you"
                 >Promotion of the mount</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
+              <a class="p-0 nav-link" href="#you-must-buy-it-now">Publishes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#newsletter"
+              <a class="p-0 nav-link" href="#newsletter"
                 >Subscribe to the newsletter</a
               >
             </li>
@@ -148,13 +150,13 @@
               </a>
             </div>
 
-            <button class="btn btn-outline-primary">Request a call</button>
+            <button class="d-inline-flex align-items-center justify-content-center btn btn-outline-primary">Request a call</button>
           </div>
         </div>
       </div>
 
       <div
-        class="offcanvas offcanvas-start sidebar"
+        class="offcanvas offcanvas-start d-lg-none sidebar"
         tabindex="-1"
         id="mobileMenu"
       >
@@ -170,7 +172,7 @@
         <div class="offcanvas-body d-flex flex-column h-100">
           <div>
             <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
-            <ul class="nav flex-column gap-3 mb-4">
+            <ul class="nav flex-column gap-2 mb-4">
               <li>
                 <a class="nav-link" href="#hero">The must read</a>
               </li>
@@ -193,13 +195,13 @@
             </ul>
 
             <h6 class="text-uppercase fw-semibold mb-3">Policies</h6>
-            <ul class="nav flex-column gap-3 mb-4">
+            <ul class="nav flex-column gap-2 mb-4">
               <li>
-                <a class="nav-link px-0 text-muted" href="#">Privacy policy</a>
+                <a class="nav-link" href="#">Privacy policy</a>
               </li>
-              <li><a class="nav-link px-0 text-muted" href="#">Warranty</a></li>
-              <li><a class="nav-link px-0 text-muted" href="#">Shipping</a></li>
-              <li><a class="nav-link px-0 text-muted" href="#">Returns</a></li>
+              <li><a class="nav-link" href="#">Warranty</a></li>
+              <li><a class="nav-link" href="#">Shipping</a></li>
+              <li><a class="nav-link" href="#">Returns</a></li>
             </ul>
 
             <div class="border-top pt-3 mb-4">

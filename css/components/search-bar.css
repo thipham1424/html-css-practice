@@ -1,11 +1,24 @@
-.search-box {
-  max-width: 377px;
-  margin: 0 70px !important;
-  background: var(--gray-color) !important;
-  border-radius: 2px !important;
+.search {
+  background: var(--bg-color);
 }
 
-.search-box input {
-  box-shadow: none !important;
-  font-size: var(--fs-typ) !important;
+.search__btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+}
+
+.search__btn-icon {
+  opacity: 0.6;
+}
+
+@media (width >= 992px) {
+  .search {
+    width: 376px;
+    border-radius: 2px;
+    background: var(--gray-color);
+    padding: 8px 12px;
+    margin: 0 70px;
+  }
 }

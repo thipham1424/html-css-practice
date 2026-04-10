@@ -1,5 +1,5 @@
 .header-area {
-  padding-top: 16px !important;
+  padding-top: 16px!important;
   padding-bottom: 16px !important;
 }
 
@@ -17,56 +17,38 @@
 }
 
 .privacy {
-  font-size: var(--fs-typ) !important;
-  color: var(--text-color-nav) !important;
+  font-size: var(--fs-typ);
+  color: var(--text-color-nav);
 }
 
 .phone {
-  color: var(--text-color) !important;
+  color: var(--text-color);
 }
 
 .phone:hover {
-  color: var(--primary-color) !important;
-}
-
-.border-end {
-  display: none !important;
+  color: var(--primary-color);
 }
 
 .sidebar {
-  width: 60% !important;
+  width: 280px!important;
 }
 
 .header-border {
-  border-bottom: 1px solid var(--primary-color) !important;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 @media (width >= 768px) {
   .devider-icon {
-    border-right: 1px solid var(--primary-color) !important;
+    border-right: 1px solid var(--primary-color);
   }
 
   .header-icon {
     margin-right: 16px;
   }
-
-  .sidebar {
-    width: 50% !important;
-  }
 }
 
 @media (width >= 992px) {
-  .border-end {
-    height: 20px;
-    display: inline-block !important;
-    border-right: 1px solid var(--primary-color) !important;
-  }
-
-  .sidebar {
-    display: none !important;
-  }
-
   .header-border-top {
-    border-top: 1px solid var(--primary-color) !important;
+    border-top: 1px solid var(--primary-color);
   }
 }
