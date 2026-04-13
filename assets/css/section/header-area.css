@@ -37,6 +37,14 @@
   border-bottom: 1px solid var(--primary-color);
 }
 
+.home-link{
+  background: var(--secondary-color);
+  border-radius: 5px;
+  padding: 12px;
+  color: var(--bg-color);
+  align-items: center;
+}
+
 @media (width >= 768px) {
   .devider-icon {
     border-right: 1px solid var(--primary-color);

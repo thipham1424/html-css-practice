@@ -122,22 +122,14 @@
         <div class="container header-area d-flex align-items-center">
           <ul class="nav">
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#hero">The must read</a>
+              <a class="p-0 nav-link" href="#detail-book">About the Book</a>
             </li>
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#benefit">News</a>
+              <a class="p-0 nav-link" href="#collection">Collection</a>
             </li>
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#selected-for-you"
-                >Promotion of the mount</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#you-must-buy-it-now">Publishes</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#newsletter"
-                >Subscribe to the newsletter</a
+              <a class="p-0 nav-link" href="last-viewed"
+                >Your History</a
               >
             </li>
           </ul>
@@ -169,8 +161,19 @@
         tabindex="-1"
         id="mobileMenu"
       >
-        <div class="offcanvas-header">
-          <img src="assets/images/logo.png" width="60" alt="logo">
+        <div class="offcanvas-header gap-2 border-bottom pt-3 mb-4">
+          <img src="assets/images/logo.png" width="60" alt="logo" href="./index.html">
+          <button
+              type="button"
+              class="btn p-1 position-relative d-inline"
+            >
+              <img src="assets/icons/wish-list.svg" class="icon header-icon" alt="Wishlist" >
+              <span
+                class="position-absolute top-0 badge rounded-pill"
+              >
+                3
+              </span>
+            </button>
           <button
             type="button"
             class="btn-close"
@@ -179,33 +182,36 @@
           ></button>
         </div>
 
+        <a
+          href="./index.html"
+          class="d-inline-flex mx-3 gap-2 home-link"
+          aria-label="Home">
+            <img
+              src="assets/icons/home.svg"
+              class="icon header-icon"
+              alt="Home icon">
+              <h6 class="text-uppercase fw-semibold m-0">HOME</h6>
+        </a>
+
         <div class="offcanvas-body d-flex flex-column h-100">
           <div>
             <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
-            <ul class="nav flex-column gap-2 mb-4">
+            <ul class="nav flex-column gap-1 mb-3">
               <li>
-                <a class="nav-link" href="#hero">The must read</a>
+                <a class="nav-link" href="#detail-book">About the Book</a>
               </li>
               <li>
-                <a class="nav-link" href="#benefit">News</a>
+                <a class="nav-link" href="#collection">Collection</a>
               </li>
               <li>
-                <a class="nav-link" href="#selected-for-you">
-                  Promotion of the mount
-                </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#newsletter">
-                  Subscribe to the newsletter
+                <a class="nav-link" href="#last-viewed">
+                  Your History
                 </a>
               </li>
             </ul>
 
             <h6 class="text-uppercase fw-semibold mb-3">Policies</h6>
-            <ul class="nav flex-column gap-2 mb-4">
+            <ul class="nav flex-column gap-0 mb-3">
               <li>
                 <a class="nav-link" href="#">Privacy policy</a>
               </li>
