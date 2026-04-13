@@ -7,7 +7,7 @@
 }
 
 .benefit-text {
-  font-size: var(--fs-price);
+  font-size: var(--fs-benefit);
   color: var(--heading-color-primary);
 }
 
