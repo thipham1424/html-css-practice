@@ -248,9 +248,9 @@
       <section class="container">
         <nav class="d-none d-md-flex fw-regular lh-sm breadcrumb">
           <a href="index.html" class="breadcrumb-link">Home</a>
-          <span class="breadcrumb-separator"></span>
+          <span class="breadcrumb-separator"> &gt; </span>
           <a href="#" class="breadcrumb-link">Fantasy books</a>
-          <span class="breadcrumb-separator"></span>
+          <span class="breadcrumb-separator"> &gt; </span>
           <span class="breadcrumb-current">Chain of Gold</span>
         </nav>
       </section>
@@ -261,6 +261,7 @@
             <div class="d-flex flex-md-column gallery-thumbnails">
               <div
                 class="d-flex justify-content-center align-items-md-center gallery-thumb-box"
+                onclick="document.querySelector('.gallery-main-image').src=this.querySelector('img').src"
               >
                 <img
                   src="assets/images/gallery-after.jpg"
@@ -269,7 +270,10 @@
                 >
               </div>
 
-              <div class="gallery-thumb-box">
+              <div
+                class="d-flex justify-content-center align-items-md-center gallery-thumb-box"
+                onclick="document.querySelector('.gallery-main-image').src=this.querySelector('img').src"
+              >
                 <img
                   src="assets/images/gallery-before.jpg"
                   class="gallery-thumb"
@@ -277,7 +281,10 @@
                 >
               </div>
 
-              <div class="gallery-thumb-box">
+              <div
+                class="d-flex justify-content-center align-items-md-center gallery-thumb-box"
+                onclick="document.querySelector('.gallery-main-image').src=this.querySelector('img').src"
+              >
                 <img
                   src="assets/images/gallery-back.jpg"
                   class="gallery-thumb"
@@ -285,7 +292,10 @@
                 >
               </div>
 
-              <div class="gallery-thumb-box">
+              <div
+                class="d-flex justify-content-center align-items-md-center gallery-thumb-box"
+                onclick="document.querySelector('.gallery-main-image').src=this.querySelector('img').src"
+              >
                 <img
                   src="assets/images/chain-of-gold.png"
                   class="gallery-thumb"
