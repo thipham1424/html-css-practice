@@ -17,11 +17,6 @@
   margin-bottom: 24px;
 }
 
-/* .hero-img {
-  padding-right: 77px;
-  padding-left: 36px;
-} */
-
 @media (width >= 768px) {
   .hero-desc {
     width: 354px;
