@@ -35,6 +35,17 @@
   }
 
   .product-control {
+    display: none!important;
+  }
+
+  .product-track {
+    transition: transform 0.4s ease;
+  }
+}
+
+@media (width > 1300px) {
+  .product-control {
+    display: flex!important;
     top: 191px;
   }
 
@@ -44,9 +55,5 @@
 
   .product-control-next {
     right: -72px;
-  }
-
-  .product-track {
-    transition: transform 0.4s ease;
   }
 }
