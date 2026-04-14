@@ -46,6 +46,11 @@
   font-size: var(--fs-typ);
 }
 
+.footer-logo {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
 @media (width >= 768px) {
   .footer-logo {
     margin-right: 126px;
