@@ -48,8 +48,8 @@
               class="search__input"
               type="text"
               placeholder="Type any book here"
-            />
-            <button class="btn search-btn">
+            >
+            <button type="submit" class="btn search-btn" aria-label="Search">
               <img
                 src="assets/icons/search.svg"
                 alt="Search icon"
@@ -306,13 +306,13 @@
             </span>
 
             <div class="d-none d-lg-inline-flex gap-3 mt-4">
-              <button class="btn-outline-primary slider-btn">
+              <button type="button" class="btn-outline-primary slider-btn" aria-label="Previous slide">
                 <svg class="icon">
                   <use href="assets/icons/sprite.svg#chevron-left"></use>
                 </svg>
               </button>
 
-              <button class="btn-outline-primary slider-btn">
+              <button type="button" class="btn-outline-primary slider-btn" aria-label="Next slide">
                 <svg class="icon">
                   <use href="assets/icons/sprite.svg#chevron-right"></use>
                 </svg>
@@ -323,13 +323,13 @@
         <div
           class="d-flex d-lg-none gap-3 align-items-center justify-content-center hero__slider-secondary"
         >
-          <button class="btn-outline-primary slider-btn">
+          <button type="button" class="btn-outline-primary slider-btn" aria-label="Previous slide">
             <svg class="icon">
               <use href="assets/icons/sprite.svg#chevron-left"></use>
             </svg>
           </button>
 
-          <button class="btn-outline-primary slider-btn">
+          <button type="button" class="btn-outline-primary slider-btn" aria-label="Next slide">
             <svg class="icon">
               <use href="assets/icons/sprite.svg#chevron-right"></use>
             </svg>
@@ -812,13 +812,15 @@
                 type="text"
                 placeholder="Your name"
                 class="newsletter-input"
-              />
+              >
               <input
                 type="email"
                 placeholder="Your e-mail"
                 class="newsletter-input"
-              />
-              <button class="btn btn-primary newsletter-btn">Subscribe</button>
+              >
+              <button type="submit" class="btn btn-primary newsletter-btn" aria-label="Subscribe">
+                Subscribe
+              </button>
             </form>
           </div>
 
@@ -880,7 +882,7 @@
 
               <div class="col-6 col-md-4 col-lg-auto">
                 <h4 class="text-nowrap fw-semibold mb-3 footer-title">
-                  Help & Contacts
+                  Help &amp; Contacts
                 </h4>
                 <ul class="list-unstyled footer-list">
                   <li class="d-flex align-items-center gap-2">
@@ -961,8 +963,8 @@
 
           <div class="d-none d-lg-block ms-lg-auto mt-5 ps-3">
             <p class="small mb-3 text-nowrap">
-              If you have questions, <br />
-              you can contact us or <br />
+              If you have questions, <br>
+              you can contact us or <br>
               we will do it for you.
             </p>
             <button type="button" class="btn btn-outline-secondary" aria-label="Request a call">Request a call</button>
