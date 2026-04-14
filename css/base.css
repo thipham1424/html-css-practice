@@ -58,8 +58,7 @@ img {
 
 .container {
   max-width: var(--container-width);
-  padding-right: 16px;
-  padding-left: 16px;
+  padding: 0 16px;
 }
 
 .text-xl {
@@ -117,8 +116,7 @@ img {
   }
 
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
 }
 
@@ -126,7 +124,6 @@ img {
 @media (width >= 992px) {
   .container {
     max-width: 1200px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 }
