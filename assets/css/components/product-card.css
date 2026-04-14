@@ -21,9 +21,6 @@
 
 .product-card-wishlist {
   color: var(--bg-color);
-  transition:
-    transform 0.2s ease,
-    color 0.2s ease;
 }
 
 .product-card-wishlist-icon {
