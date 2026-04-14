@@ -1,27 +1,21 @@
-.breadcrumb {
-  display: none;
-}
-
 @media (width >= 768px) {
   .breadcrumb {
     display: flex;
     margin: 16px 0;
     gap: 4px;
-    font-weight: var(--fw-regular);
     font-size: var(--fs-typ);
-    line-height: var(--lh-tight);
   }
 
-  .breadcrumb__link {
+  .breadcrumb-link {
     color: var(--dark-color-alpha-50);
     text-decoration: none;
   }
 
-  .breadcrumb__current {
+  .breadcrumb-current {
     color: var(--dark-color);
   }
 
-  .breadcrumb__separator {
+  .breadcrumb-separator {
     color: var(--primary-color);
   }
 }
