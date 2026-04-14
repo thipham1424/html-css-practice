@@ -1,5 +1,5 @@
 .hero {
-  margin-top: 40px;
+  margin-top: clamp(2.5rem, 0.5rem + 6.25vw, 4.5rem);
 }
 
 .hero-badge {
@@ -23,10 +23,6 @@
 }
 
 @media (width >= 768px) {
-  .hero {
-    margin-top: 60px;
-  }
-
   .hero-desc {
     width: 354px;
     margin-bottom: 27px;
@@ -34,10 +30,6 @@
 }
 
 @media (width >= 992px) {
-  .hero {
-    margin-top: 72px;
-  }
-
   .hero-pagination-dot {
     height: 70px;
     border: 1px solid var(--primary-color);
