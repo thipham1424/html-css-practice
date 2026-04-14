@@ -1,22 +1,18 @@
-.newsletter__title {
+.newsletter-title {
   margin-bottom: 24px;
 }
 
-.newsletter__desc {
+.newsletter-desc {
   margin-bottom: 14px;
 }
 
-.newsletter__form {
-  margin-top: 22px;
-  display: flex;
-  flex-direction: column;
+.newsletter-form {
   gap: 32px;
 }
 
-.newsletter__map {
+.newsletter-map {
   margin-top: 40px;
   width: 100vw;
-  position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -26,50 +22,37 @@
 }
 
 @media (width >= 768px) {
-  .newsletter__content {
+  .newsletter-content {
     max-width: 555px;
   }
 
-  .newsletter__title {
+  .newsletter-title {
     margin-bottom: 31px;
   }
 
-  .newsletter__desc {
-    margin-bottom: 16px;
-  }
-
-  .newsletter__form {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .newsletter__btn {
+  .newsletter-btn {
     margin-top: 8px;
   }
 }
 
 @media (width >= 992px) {
-  .newsletter__wrapper {
-    display: flex;
-    align-items: end;
+  .newsletter-wrapper {
     gap: 60px;
   }
 
-  .newsletter__content {
+  .newsletter-content {
     flex: 1;
   }
 
-  .newsletter__desc {
+  .newsletter-desc {
     margin-bottom: 0;
   }
 
-  .newsletter__btn {
+  .newsletter-btn {
     margin-top: 27px;
   }
 
-  .newsletter__map {
+  .newsletter-map {
     flex: 1;
     max-width: 577px;
     left: 0;
