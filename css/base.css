@@ -57,9 +57,9 @@ img {
 }
 
 .container {
-  max-width: var(--container-width) !important;
-  padding-right: 16px !important;
-  padding-left: 16px !important;
+  max-width: var(--container-width);
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .text-xl {
@@ -117,16 +117,16 @@ img {
   }
 
   .container {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 /* DESKTOP */
 @media (width >= 992px) {
   .container {
-    max-width: 1200px !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
