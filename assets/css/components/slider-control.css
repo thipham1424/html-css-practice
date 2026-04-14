@@ -1,0 +1,19 @@
+.slider-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width >= 992px) {
+  .slider-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .slider-btn:hover svg {
+    fill: var(--bg-color);
+  }
+}
