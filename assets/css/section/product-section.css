@@ -35,7 +35,7 @@
   }
 
   .product-control {
-    display: none !important;
+    display: none;
   }
 
   .product-track {
@@ -45,7 +45,7 @@
 
 @media (width > 1300px) {
   .product-control {
-    display: flex !important;
+    display: flex;
     top: 191px;
   }
 
