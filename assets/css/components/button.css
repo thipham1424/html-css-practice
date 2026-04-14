@@ -32,7 +32,7 @@
   .btn-primary:hover {
     background: var(--secondary-color);
   }
-  
+
   .btn-outline-primary:hover {
     background-color: var(--primary-color);
     color: var(--bg-color);
