@@ -2,7 +2,24 @@
 
 Ecommerce Book Store
 
-## Overview
+## AUTHOR
+
+- Thi Pham
+
+## LIVE DEMO
+
+Platform: Vercel
+```bash
+livedemo: https://html-css-practice-pi-eight.vercel.app/index.html
+```
+
+## PERFORMANCE SCORE
+
+- Mobile
+- Tablet
+- Desktop
+
+## OVERVIEW
 
 ```bash
 design: http://figma.com/design/8p6KclP2GuzXknabZrCjoa/E-commerce-%7C-Website-design-%7C-Bookstore--Community-?node-id=1-762&t=Y8EKIbguQDMMDm3E-0
@@ -12,7 +29,11 @@ This project is a practice of HTML and CSS focused on building a webpage from a 
 The goal is to convert a Sketch design of an Ecommerce Book Store into a structured and maintainable HTML/CSS implementation.
 The project emphasizes proper HTML semantics, modern CSS layout techniques, and clean code organization.
 
-## Objectives
+## TASK MANAGEMENT
+
+- Git/GitHub
+
+## OBJECTIVES
 
 - Understand and correctly apply HTML and CSS properties
 - Practice slicing UI design (Sketch) into HTML/CSS
@@ -38,7 +59,7 @@ The UI is based on an Ecommerce Book Store layout with 2 pages (main page and pr
 
 The purpose is to simulate a real-world frontend workflow where developers convert a design file into a working webpage.
 
-## Technologies
+## TECHNOLOGIES
 
 - HTML5
 - CSS3
@@ -48,7 +69,7 @@ The purpose is to simulate a real-world frontend workflow where developers conve
 - GPT and Copilot
 - Visual Studio Code
 
-## Installation
+## INSTALLATION
 
 ```bash
 git clone https://github.com/thipham1424/html-css-practice1
@@ -56,3 +77,11 @@ cd html-css-practice1
 npm install
 Open the index.html file in your browser (Chrome latest version recommended).
 ```
+## MAINTAINERS
+
+This project is maintained by:
+
+- **Thi Pham**
+  - Email: mthi12347@gmail.com
+  - GitHub: [@thipham1424](https://github.com/thipham1424)
+  - Slack: thi.pham
