@@ -1,6 +1,6 @@
-.header-area {
-  padding-top: 16px !important;
-  padding-bottom: 16px !important;
+.header-area.container {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo-tagline {
@@ -29,8 +29,8 @@
   color: var(--primary-color);
 }
 
-.sidebar {
-  width: 280px !important;
+.sidebar.offcanvas {
+  width: 280px;
 }
 
 .header-border {
