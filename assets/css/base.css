@@ -17,6 +17,7 @@
 
   /* LAYOUT */
   --container-max-width: 75rem;
+  --container-padding: clamp(1rem, 4vw, 1.25rem);
 
   /* FONT SIZE */
   --fs-xl: clamp(1.75rem, 1rem + 2.5vw, 3rem);
@@ -60,7 +61,7 @@ img {
 
 .container {
   max-width: var(--container-width);
-  padding: 0 16px;
+  padding: 0 var(--container-padding);
 }
 
 .text-xl {
@@ -106,7 +107,7 @@ img {
 
 @media (width >= 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 var(--container-padding);
   }
 }
 
