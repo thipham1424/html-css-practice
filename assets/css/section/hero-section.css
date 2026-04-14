@@ -1,5 +1,5 @@
 .hero {
-  margin-top: 40px;
+  margin-top: clamp(2.5rem, 0.5rem + 6.25vw, 4.5rem);
 }
 
 .hero-badge {
@@ -10,7 +10,6 @@
 }
 
 .hero-title {
-  font-size: 28px;
   margin: 25px 0;
 }
 
@@ -19,26 +18,21 @@
 }
 
 .hero-img {
-  padding-right: 77px;
-  padding-left: 36px;
+  width: 70%;
 }
 
 @media (width >= 768px) {
-  .hero {
-    margin-top: 60px;
-  }
-
   .hero-desc {
     width: 354px;
     margin-bottom: 27px;
   }
+
+  .hero-img {
+    width: 100%;
+  }
 }
 
 @media (width >= 992px) {
-  .hero {
-    margin-top: 72px;
-  }
-
   .hero-pagination-dot {
     height: 70px;
     border: 1px solid var(--primary-color);
@@ -61,7 +55,6 @@
   .hero-image-block {
     width: 627px;
     height: 533px;
-    position: relative;
   }
 
   .hero-promo {
@@ -75,6 +68,7 @@
   .hero-img {
     margin-right: 55px;
     margin-left: auto;
+    width: 60%;
   }
 
   .hero-note {
