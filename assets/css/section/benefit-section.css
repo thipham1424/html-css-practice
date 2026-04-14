@@ -1,5 +1,6 @@
 .benefit {
-  margin: 40px auto;
+  margin-top: clamp(2.5rem, 0.5rem + 6.25vw, 6.4375rem);
+  margin-bottom: clamp(2.5rem, 0.5rem + 6.25vw, 5rem);
 }
 
 .benefit-icon {
@@ -11,18 +12,7 @@
   color: var(--heading-color-primary);
 }
 
-@media (width >= 768px) {
-  .benefit {
-    margin: 60px auto;
-  }
-}
-
 @media (width >= 992px) {
-  .benefit {
-    margin-bottom: 80px;
-    margin-top: 103px;
-  }
-
   .benefit-divider {
     height: 80px;
     border: 1px solid var(--primary-color);
