@@ -1,32 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
     <title>B-World | Ecommerce Book Store</title>
     <meta
       name="description"
       content="Online bookstore - discover and buy your favorite books."
-    />
+    >
 
-    <link rel="icon" href="assets/icons/book-world.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/icons/book-world.svg" type="image/svg+xml" >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
-    />
+    >
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    />
+    >
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <body>
     <header class="header-border">
       <div class="container header-area">
@@ -35,10 +35,11 @@
             href="/"
             class="d-flex align-items-center text-decoration-none me-3"
           >
-            <img src="assets/images/logo.png" alt="logo" width="60" />
+            <img src="assets/images/logo.png" alt="logo" width="60">
             <span class="vr mx-2"></span>
             <span class="logo-tagline small">
-              We love <br />
+              We love
+              <br>
               books
             </span>
           </a>
@@ -48,13 +49,13 @@
               class="search-input"
               type="text"
               placeholder="Type any book here"
-            />
-            <button class="btn search-btn">
+            >
+            <button type="submit" class="btn search-btn" aria-label="Search">
               <img
                 src="assets/icons/search.svg"
                 alt="Search icon"
                 class="icon search-btn-icon"
-              />
+              >
             </button>
           </div>
 
@@ -76,17 +77,19 @@
           </ul>
 
           <div class="d-flex align-items-center ms-auto gap-3">
-            <button class="btn p-0 devider-icon">
+            <button type="button" class="btn p-0 devider-icon">
               <img
                 src="assets/icons/purple-cart.svg"
                 class="icon header-icon"
-              />
+                alt="Cart"
+              >
             </button>
 
             <button
+              type="button"
               class="btn p-0 position-relative d-none d-md-inline devider-icon"
             >
-              <img src="assets/icons/wish-list.svg" class="icon header-icon" />
+              <img src="assets/icons/wish-list.svg" class="icon header-icon" alt="Wishlist" >
               <span
                 class="position-absolute top-0 translate-middle badge rounded-pill"
               >
@@ -94,19 +97,22 @@
               </span>
             </button>
 
-            <button class="btn p-0 d-none d-md-inline">
+            <button type="button" class="btn p-0 d-none d-md-inline" aria-label="User profile">
               <img
                 src="assets/icons/user.svg"
                 class="icon me-lg-0 header-icon"
-              />
+                alt="User profile"
+              >
             </button>
 
             <button
+              type="button"
               class="btn p-0 d-lg-none"
               data-bs-toggle="offcanvas"
               data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
             >
-              <img src="assets/icons/menu.svg" class="icon" />
+              <img src="assets/icons/menu.svg" class="icon" alt="Menu" >
             </button>
           </div>
         </div>
@@ -116,38 +122,32 @@
         <div class="container header-area d-flex align-items-center">
           <ul class="nav">
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#hero">The must read</a>
+              <a class="p-0 nav-link" href="#detail-book">About the Book</a>
             </li>
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#benefit">News</a>
+              <a class="p-0 nav-link" href="#collection">Collection</a>
             </li>
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#selected-for-you"
-                >Promotion of the mount</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#you-must-buy-it-now">Publishes</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#newsletter"
-                >Subscribe to the newsletter</a
+              <a class="p-0 nav-link" href="last-viewed"
+                >Your History</a
               >
             </li>
           </ul>
 
           <div class="ms-auto d-flex align-items-center gap-4">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/phone.svg" class="icon" />
+              <img src="assets/icons/phone.svg" class="icon" alt="Phone icon">
               <a
                 href="tel:+44587999000"
                 class="ms-2 text-decoration-none text-dark"
               >
-                +445 87 999 000
+                +445&nbsp;87&nbsp;999&nbsp;000
               </a>
             </div>
 
             <button
+              type="button"
+              aria-label="Request a call"
               class="d-inline-flex align-items-center justify-content-center btn btn-outline-primary"
             >
               Request a call
@@ -161,42 +161,57 @@
         tabindex="-1"
         id="mobileMenu"
       >
-        <div class="offcanvas-header">
-          <img src="assets/images/logo.png" width="60" />
+        <div class="offcanvas-header gap-2 border-bottom pt-3 mb-4">
+          <img src="assets/images/logo.png" width="60" alt="logo" href="./index.html">
+          <button
+              type="button"
+              class="btn p-1 position-relative d-inline"
+            >
+              <img src="assets/icons/wish-list.svg" class="icon header-icon" alt="Wishlist" >
+              <span
+                class="position-absolute top-0 badge rounded-pill"
+              >
+                3
+              </span>
+            </button>
           <button
             type="button"
             class="btn-close"
             data-bs-dismiss="offcanvas"
+            aria-label="Close"
           ></button>
         </div>
+
+        <a
+          href="./index.html"
+          class="d-inline-flex mx-3 gap-2 home-link"
+          aria-label="Home">
+            <img
+              src="assets/icons/home.svg"
+              class="icon header-icon"
+              alt="Home icon">
+              <h6 class="text-uppercase fw-semibold m-0">HOME</h6>
+        </a>
 
         <div class="offcanvas-body d-flex flex-column h-100">
           <div>
             <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
-            <ul class="nav flex-column gap-2 mb-4">
+            <ul class="nav flex-column gap-1 mb-3">
               <li>
-                <a class="nav-link" href="#hero">The must read</a>
+                <a class="nav-link" href="#detail-book">About the Book</a>
               </li>
               <li>
-                <a class="nav-link" href="#benefit">News</a>
+                <a class="nav-link" href="#collection">Collection</a>
               </li>
               <li>
-                <a class="nav-link" href="#selected-for-you"
-                  >Promotion of the mount</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#newsletter"
-                  >Subscribe to the newsletter</a
-                >
+                <a class="nav-link" href="#last-viewed">
+                  Your History
+                </a>
               </li>
             </ul>
 
             <h6 class="text-uppercase fw-semibold mb-3">Policies</h6>
-            <ul class="nav flex-column gap-2 mb-4">
+            <ul class="nav flex-column gap-0 mb-3">
               <li>
                 <a class="nav-link" href="#">Privacy policy</a>
               </li>
@@ -207,12 +222,12 @@
 
             <div class="border-top pt-3 mb-4">
               <div class="d-flex align-items-center">
-                <img src="assets/icons/phone.svg" class="icon" />
+                <img src="assets/icons/phone.svg" class="icon" alt="Phone icon">
                 <a
                   href="tel:+44587999000"
                   class="ms-2 text-decoration-none phone"
                 >
-                  +445 87 999 000
+                  +445&nbsp;87&nbsp;999&nbsp;000
                 </a>
               </div>
             </div>
@@ -223,7 +238,7 @@
               <div
                 class="d-flex align-items-center justify-content-center ps-2"
               >
-                <img src="assets/icons/user.svg" class="icon" />
+                <img src="assets/icons/user.svg" class="icon" alt="User icon">
               </div>
               <div>
                 <div class="fw-semibold">User Name</div>
@@ -239,72 +254,90 @@
       <section class="container">
         <nav class="d-none d-md-flex fw-regular lh-sm breadcrumb">
           <a href="index.html" class="breadcrumb-link">Home</a>
-          <span class="breadcrumb-separator">></span>
+          <span class="breadcrumb-separator"> &gt; </span>
           <a href="#" class="breadcrumb-link">Fantasy books</a>
-          <span class="breadcrumb-separator">></span>
+          <span class="breadcrumb-separator"> &gt; </span>
           <span class="breadcrumb-current">Chain of Gold</span>
         </nav>
       </section>
 
-      <section id="detail-book" class="product-detail layout-section container">
+      <article id="detail-book" class="product-detail layout-section container">
         <div class="d-lg-grid product-detail-wrapper">
           <div class="d-flex flex-column flex-md-row gallery">
             <div class="d-flex flex-md-column gallery-thumbnails">
               <div
                 class="d-flex justify-content-center align-items-md-center gallery-thumb-box"
+                onclick="document.querySelector('.gallery-main-image').src=this.querySelector('img').src"
               >
                 <img
                   src="assets/images/gallery-after.jpg"
                   class="gallery-thumb"
-                />
+                  alt="Gallery image"
+                >
               </div>
 
-              <div class="gallery-thumb-box">
+              <div
+                class="d-flex justify-content-center align-items-md-center gallery-thumb-box"
+                onclick="document.querySelector('.gallery-main-image').src=this.querySelector('img').src"
+              >
                 <img
                   src="assets/images/gallery-before.jpg"
                   class="gallery-thumb"
-                />
+                  alt="Gallery image"
+                >
               </div>
 
-              <div class="gallery-thumb-box">
+              <div
+                class="d-flex justify-content-center align-items-md-center gallery-thumb-box"
+                onclick="document.querySelector('.gallery-main-image').src=this.querySelector('img').src"
+              >
                 <img
                   src="assets/images/gallery-back.jpg"
                   class="gallery-thumb"
-                />
+                  alt="Gallery image"
+                >
               </div>
 
-              <div class="gallery-thumb-box">
+              <div
+                class="d-flex justify-content-center align-items-md-center gallery-thumb-box"
+                onclick="document.querySelector('.gallery-main-image').src=this.querySelector('img').src"
+              >
                 <img
                   src="assets/images/chain-of-gold.png"
                   class="gallery-thumb"
-                />
+                  alt="Gallery image"
+                >
               </div>
             </div>
 
             <div class="position-relative gallery-main">
               <div class="position-absolute d-inline-flex gallery-badge">
                 <span class="icon">
-                  <img src="assets/icons/bi-book.svg" alt="Book icon" />
+                  <img src="assets/icons/bi-book.svg" alt="Book icon" >
                 </span>
                 <span>flips a few pages</span>
               </div>
               <img
                 src="assets/images/chain-of-gold.png"
                 class="d-block gallery-main-image"
-              />
+                alt="Chain of Gold main image">
               <div
                 class="gap-2 d-none d-md-flex position-absolute gallery-slider"
               >
                 <button
+                  type="button"
                   class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn gallery-slider-btn"
-                >
+                  aria-label="Next slider"
+                  >
                   <svg class="icon slider-prev" viewBox="0 0 25 25">
                     <use href="assets/icons/sprite.svg#chevron-left"></use>
                   </svg>
                 </button>
 
                 <button
+                  type="button"
                   class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn gallery-slider-btn"
+                  aria-label="Previous slider"
                 >
                   <svg class="icon slider-next" viewBox="0 0 25 25">
                     <use href="assets/icons/sprite.svg#chevron-right"></use>
@@ -325,15 +358,15 @@
             <div
               class="fw-regular lh-normal d-inline-flex align-items-center gap-2 product-detail-rating"
             >
-              <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
-              <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
-              <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
-              <img src="assets/icons/rate-star.svg" alt="star" class="icon" />
+              <img src="assets/icons/rate-star.svg" alt="star" class="icon">
+              <img src="assets/icons/rate-star.svg" alt="star" class="icon">
+              <img src="assets/icons/rate-star.svg" alt="star" class="icon">
+              <img src="assets/icons/rate-star.svg" alt="star" class="icon">
               <img
                 src="assets/icons/half-star.svg"
                 alt="half start"
                 class="icon"
-              />
+              >
               4.5
             </div>
 
@@ -352,26 +385,30 @@
               data-max="10"
             >
               <button
+                type="button"
                 class="d-flex align-items-center justify-content-center quantity-btn quantity-btn-minus"
+                aria-label="Decrease quantity"
               >
                 -
               </button>
-              <span class="text-center fw-regular lh-normal quantity-number"
-                >1</span
-              >
+              <span class="text-center fw-regular lh-normal quantity-number">
+                1
+              </span>
               <button
+                type="button"
                 class="d-flex align-items-center justify-content-center quantity-btn quantity-btn-plus"
+                aria-label="Increase quantity"
               >
                 +
               </button>
             </div>
 
             <div class="d-md-flex product-detail-actions">
-              <button class="btn btn-primary product-detail-btn">
+              <button type="button" class="btn btn-primary product-detail-btn" aria-label="Add to cart">
                 Add to cart
               </button>
 
-              <button class="btn btn-outline-primary product-detail-btn">
+              <button type="button" class="btn btn-outline-primary product-detail-btn" aria-label="Add to favorites">
                 Favorite
               </button>
             </div>
@@ -381,69 +418,71 @@
             <div class="row g-0 product-detail-meta">
               <div class="col-12 col-md-6 product-detail-meta-item-primary">
                 <div class="row mb-4 p-0 mx-0">
-                  <span class="col-6 col-md-4 p-0 product-detail-meta-label"
-                    >Publisher:</span
-                  >
-                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value"
-                    >Margaret K.Books</span
-                  >
+                  <span class="col-6 col-md-5 p-0 product-detail-meta-label flex-wrap">
+                    Publisher:
+                  </span>
+                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value flex-wrap">
+                    Margaret K.Books
+                  </span>
                 </div>
                 <div class="row mb-4 p-0 mx-0">
-                  <span class="col-6 col-md-4 p-0 product-detail-meta-label"
-                    >Language:</span
-                  >
-                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value"
-                    >English</span
-                  >
+                  <span class="col-6 col-md-5 p-0 product-detail-meta-label flex-wrap">
+                    Language:
+                  </span>
+                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value flex-wrap">
+                    English
+                  </span>
                 </div>
                 <div class="row mb-4 mb-md-0 p-0 mx-0">
-                  <span class="col-6 col-md-4 p-0 product-detail-meta-label"
-                    >Print length:</span
-                  >
-                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value"
-                    >592 pages</span
-                  >
+                  <span class="col-6 col-md-5 p-0 product-detail-meta-label flex-wrap">
+                    Print length:
+                  </span>
+                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value flex-wrap">
+                    592 pages
+                  </span>
                 </div>
               </div>
 
               <div class="col-12 col-md-6 product-detail-meta-item-secondary">
                 <div class="row mb-4 p-0 mx-0">
-                  <span class="col-6 col-md-6 p-0 product-detail-meta-label"
-                    >Publication date:</span
-                  >
-                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value"
-                    >March 3, 2020</span
-                  >
+                  <span class="col-6 col-md-6 p-0 product-detail-meta-label flex-wrap">
+                    Publication date:
+                  </span>
+                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value flex-wrap">
+                    March 3, 2020
+                  </span>
                 </div>
                 <div class="row mb-4 p-0 mx-0">
-                  <span class="col-6 col-md-6 p-0 product-detail-meta-label"
-                    >Reading age:</span
-                  >
-                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value"
-                    >14+</span
-                  >
+                  <span class="col-6 col-md-6 p-0 product-detail-meta-label flex-wrap">
+                    Reading age:
+                  </span>
+                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value flex-wrap">
+                    14+
+                  </span>
                 </div>
                 <div class="row mb-4 mb-md-0 p-0 mx-0">
-                  <span class="col-6 col-md-6 p-0 product-detail-meta-label"
-                    >Dimensions:</span
-                  >
-                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value"
-                    >6 x 1.8 x 9 inches</span
-                  >
+                  <span class="col-6 col-md-6 p-0 product-detail-meta-label flex-wrap">
+                    Dimensions:
+                  </span>
+                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value flex-wrap">
+                    6 x 1.8 x 9 inches
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </article>
       <section id="collection" class="layout-section container product">
         <div class="product-header">
           <h2 class="text-lg product-title">Collection</h2>
         </div>
 
-        <div class="position-relative p-lg-0 product-slide">
+        <div class="position-relative p-lg-0 product-slider">
           <button
+            type="button"
             class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-prev"
+            aria-label="Previous slider"
           >
             <svg class="icon" viewBox="0 0 25 25">
               <use href="assets/icons/sprite.svg#chevron-left"></use>
@@ -452,7 +491,7 @@
 
           <div class="product-viewport">
             <div class="d-flex justify-content-lg-between product-track">
-              <div class="product-card">
+              <article class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -461,7 +500,7 @@
                     src="assets/images/chain-of-iron.jpg"
                     alt="Chain of Iron"
                     class="d-block product-card-img"
-                  />
+                  >
                 </div>
 
                 <div class="product-card-content">
@@ -472,8 +511,9 @@
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
+                      type="button"
                       class="product-card-wishlist"
-                      aria-lable="Add to wishlist"
+                      aria-label="Add to wishlist"
                     >
                       <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
@@ -481,18 +521,18 @@
                     </button>
                   </div>
 
-                  <button class="btn btn-primary product-card-cart">
+                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
                       class="icon"
-                    />
+                    >
                     Add to cart
                   </button>
                 </div>
-              </div>
+              </article>
 
-              <div class="product-card">
+              <article class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -501,7 +541,7 @@
                     src="assets/images/chain-of-thorns.jpg"
                     alt="Chain of Thorns"
                     class="d-block product-card-img"
-                  />
+                  >
                 </div>
 
                 <div class="product-card-content">
@@ -512,8 +552,9 @@
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
+                      type="button"
                       class="product-card-wishlist"
-                      aria-lable="Add to wishlist"
+                      aria-label="Add to wishlist"
                     >
                       <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
@@ -521,18 +562,18 @@
                     </button>
                   </div>
 
-                  <button class="btn btn-primary product-card-cart">
+                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
                       class="icon"
-                    />
+                    >
                     Add to cart
                   </button>
                 </div>
-              </div>
+              </article>
 
-              <div class="product-card">
+              <article class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -541,7 +582,7 @@
                     src="assets/images/city-of-failen-angles.jpg"
                     alt="City of Fallen Angles"
                     class="d-block product-card-img"
-                  />
+                  >
                 </div>
 
                 <div class="product-card-content">
@@ -552,8 +593,9 @@
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
+                      type="button"
                       class="product-card-wishlist"
-                      aria-lable="Add to wishlist"
+                      aria-label="Add to wishlist"
                     >
                       <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
@@ -561,18 +603,18 @@
                     </button>
                   </div>
 
-                  <button class="btn btn-primary product-card-cart">
+                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
                       class="icon"
-                    />
+                    >
                     Add to cart
                   </button>
                 </div>
-              </div>
+              </article>
 
-              <div class="product-card">
+              <article class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -581,7 +623,7 @@
                     src="assets/images/nona-the-ninth-collection.jpg"
                     alt="Nona The Ninth"
                     class="d-block product-card-img"
-                  />
+                  >
                 </div>
 
                 <div class="product-card-content">
@@ -592,8 +634,9 @@
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
+                      type="button"
                       class="product-card-wishlist"
-                      aria-lable="Add to wishlist"
+                      aria-label="Add to wishlist"
                     >
                       <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
@@ -601,21 +644,23 @@
                     </button>
                   </div>
 
-                  <button class="btn btn-primary product-card-cart">
+                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
                       class="icon"
-                    />
+                    >
                     Add to cart
                   </button>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
 
           <button
+            type="button"
             class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-next"
+            aria-label="Next slider"
           >
             <svg class="icon">
               <use href="assets/icons/sprite.svg#chevron-right"></use>
@@ -639,9 +684,11 @@
           <h2 class="text-lg product-title">Last viewed</h2>
         </div>
 
-        <div class="position-relative p-lg-0 product-slide">
+        <div class="position-relative p-lg-0 product-slider">
           <button
+            type="button"
             class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-prev"
+            aria-label="Previous slider"
           >
             <svg class="icon" viewBox="0 0 25 25">
               <use href="assets/icons/sprite.svg#chevron-left"></use>
@@ -650,7 +697,7 @@
 
           <div class="product-viewport">
             <div class="d-flex justify-content-lg-between product-track">
-              <div class="product-card">
+              <article class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -659,7 +706,7 @@
                     src="assets/images/the-librarian-spy.jpg"
                     alt="The Librarian Spy"
                     class="d-block product-card-img"
-                  />
+                  >
                 </div>
 
                 <div class="product-card-content">
@@ -670,8 +717,9 @@
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
+                      type="button"
                       class="product-card-wishlist"
-                      aria-lable="Add to wishlist"
+                      aria-label="Add to wishlist"
                     >
                       <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
@@ -679,18 +727,18 @@
                     </button>
                   </div>
 
-                  <button class="btn btn-primary product-card-cart">
+                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
                       class="icon"
-                    />
+                    >
                     Add to cart
                   </button>
                 </div>
-              </div>
+              </article>
 
-              <div class="product-card">
+              <article class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -699,7 +747,7 @@
                     src="assets/images/other-birds.jpg"
                     alt="Other-Birds"
                     class="d-block product-card-img"
-                  />
+                  >
                 </div>
 
                 <div class="product-card-content">
@@ -712,8 +760,9 @@
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
+                      type="button"
                       class="product-card-wishlist"
-                      aria-lable="Add to wishlist"
+                      aria-label="Add to wishlist"
                     >
                       <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
@@ -721,18 +770,18 @@
                     </button>
                   </div>
 
-                  <button class="btn btn-primary product-card-cart">
+                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
                       class="icon"
-                    />
+                    >
                     Add to cart
                   </button>
                 </div>
-              </div>
+              </article>
 
-              <div class="product-card">
+              <article class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -741,7 +790,7 @@
                     src="assets/images/the-ways-we-hide.jpg"
                     alt="The Ways We Hide"
                     class="d-block product-card-img"
-                  />
+                  >
                 </div>
 
                 <div class="product-card-content">
@@ -752,8 +801,9 @@
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
+                      type="button"
                       class="product-card-wishlist"
-                      aria-lable="Add to wishlist"
+                      aria-label="Add to wishlist"
                     >
                       <svg class="icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
@@ -761,18 +811,18 @@
                     </button>
                   </div>
 
-                  <button class="btn btn-primary product-card-cart">
+                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
                       class="icon"
-                    />
+                    >
                     Add to cart
                   </button>
                 </div>
-              </div>
+              </article>
 
-              <div class="product-card">
+              <article class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -781,7 +831,7 @@
                     src="assets/images/room-and-board.jpg"
                     alt="Room and Board"
                     class="d-block product-card-img"
-                  />
+                  >
                 </div>
 
                 <div class="product-card-content">
@@ -792,6 +842,7 @@
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
+                      type="button"
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
@@ -801,21 +852,23 @@
                     </button>
                   </div>
 
-                  <button class="btn btn-primary product-card-cart">
+                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
                       class="icon"
-                    />
+                    >
                     Add to cart
                   </button>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
 
           <button
+            type="button"
             class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-next"
+            aria-label="Next slider"
           >
             <svg class="icon">
               <use href="assets/icons/sprite.svg#chevron-right"></use>
@@ -840,7 +893,7 @@
         <div class="d-md-flex align-items-start footer-elements">
           <div class="footer-logo pt-md-5">
             <a href="/">
-              <img src="assets/images/white-logo.png" class="img-fluid" />
+              <img src="assets/images/white-logo.png" class="img-fluid" alt="B-World logo">
             </a>
           </div>
 
@@ -882,19 +935,19 @@
 
               <div class="col-6 col-md-4 col-lg-auto">
                 <h4 class="text-nowrap fw-semibold mb-3 footer-title">
-                  Help & Contacts
+                  Help &amp; Contacts
                 </h4>
                 <ul class="list-unstyled footer-list">
                   <li class="d-flex align-items-center gap-2">
-                    <img src="assets/icons/white-phone.svg" width="16" />
-                    <a href="tel:+44587999000">+445 87 999 000</a>
+                    <img src="assets/icons/white-phone.svg" width="16" alt="Phone icon">
+                    <a href="tel:+44587999000">+445&nbsp;87&nbsp;999&nbsp;000</a>
                   </li>
                   <li class="d-flex align-items-center gap-2">
-                    <img src="assets/icons/clock.svg" width="16" />
+                    <img src="assets/icons/clock.svg" width="16" alt="Clock icon">
                     <a href="#">Mo-Fri, 9 AM to 11 PM</a>
                   </li>
                   <li class="d-flex align-items-center gap-2">
-                    <img src="assets/icons/mail.svg" width="16" />
+                    <img src="assets/icons/mail.svg" width="16" alt="Mail icon">
                     <a href="mailto:b.world@store.ro">b.world@store.ro</a>
                   </li>
                 </ul>
@@ -907,12 +960,14 @@
               >
                 <div class="d-flex flex-column align-items-start support-box">
                   <p class="small mb-3">
-                    If you have questions, <br />
-                    you can contact us or <br />
+                    If you have questions,
+                    <br>
+                    you can contact us or
+                    <br>
                     we will do it for you.
                   </p>
 
-                  <button class="btn btn-outline-secondary">
+                  <button type="button" class="btn btn-outline-secondary" aria-label="Request a call">
                     Request a call
                   </button>
                 </div>
@@ -923,15 +978,18 @@
                     <img
                       class="footer-social-icon"
                       src="assets/icons/facebook.svg"
-                    />
+                      alt="Facebook icon"
+                    >
                     <img
                       class="footer-social-icon"
                       src="assets/icons/instagram.svg"
-                    />
+                      alt="Instagram icon"
+                    >
                     <img
                       class="footer-social-icon"
                       src="assets/icons/twitter.svg"
-                    />
+                      alt="Twitter icon"
+                    >
                   </div>
                 </div>
 
@@ -940,15 +998,18 @@
                     <img
                       class="footer-payments-icon"
                       src="assets/icons/pay-pal.svg"
-                    />
+                      alt="PayPal icon"
+                    >
                     <img
                       class="footer-payments-icon"
                       src="assets/icons/master-card.svg"
-                    />
+                      alt="MasterCard icon"
+                    >
                     <img
                       class="footer-payments-icon"
                       src="assets/icons/visa-card.svg"
-                    />
+                      alt="Visa Card icon"
+                    >
                   </div>
                 </div>
               </div>
@@ -957,11 +1018,11 @@
 
           <div class="d-none d-lg-block ms-lg-auto mt-5 ps-3">
             <p class="small mb-3 text-nowrap">
-              If you have questions, <br />
-              you can contact us or <br />
+              If you have questions, <br>
+              you can contact us or <br>
               we will do it for you.
             </p>
-            <button class="btn btn-outline-secondary">Request a call</button>
+            <button type="button" class="btn btn-outline-secondary" aria-label="Request a call">Request a call</button>
           </div>
         </div>
 
@@ -969,21 +1030,23 @@
           class="d-none justify-content-between d-md-flex align-items-center flex-wrap mb-5"
         >
           <div class="d-flex flex-md-row gap-3">
-            <img class="footer-social-icon" src="assets/icons/facebook.svg" />
-            <img class="footer-social-icon" src="assets/icons/instagram.svg" />
-            <img class="footer-social-icon" src="assets/icons/twitter.svg" />
+            <img class="footer-social-icon" src="assets/icons/facebook.svg" alt="Facebook icon">
+            <img class="footer-social-icon" src="assets/icons/instagram.svg" alt="Instagram icon">
+            <img class="footer-social-icon" src="assets/icons/twitter.svg" alt="Twitter icon">
           </div>
 
           <div class="d-flex flex-md-row gap-2">
-            <img class="footer-payments-icon" src="assets/icons/pay-pal.svg" />
+            <img class="footer-payments-icon" src="assets/icons/pay-pal.svg" alt="PayPal icon">
             <img
               class="footer-payments-icon"
               src="assets/icons/master-card.svg"
-            />
+              alt="MasterCard icon"
+            >
             <img
               class="footer-payments-icon"
               src="assets/icons/visa-card.svg"
-            />
+              alt="Visa Card icon"
+            >
           </div>
         </div>
       </div>
@@ -992,186 +1055,5 @@
         &#169; All copyrights are reserved. B-World 2022.
       </div>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const sliders = document.querySelectorAll(".product__slider");
-
-        sliders.forEach((slider) => {
-          const track = slider.querySelector(".product__track");
-          const viewport = slider.querySelector(".product__viewport");
-          const prevBtn = slider.querySelector(".product__control--prev");
-          const nextBtn = slider.querySelector(".product__control--next");
-
-          const section = slider.closest(".layout-section");
-          const dots = section.querySelectorAll(".pagination__dot");
-
-          const gap = 24;
-          const cards = track.querySelectorAll(".product-card");
-
-          let currentIndex = 0;
-          let cardWidth;
-          let visibleCards;
-          let maxIndex;
-          let isDesktop = window.innerWidth >= 992;
-
-          function calculateSizes() {
-            isDesktop = window.innerWidth >= 992;
-
-            cardWidth = cards[0].offsetWidth + gap;
-            visibleCards = Math.floor(viewport.offsetWidth / cardWidth);
-            maxIndex = cards.length - visibleCards;
-
-            if (maxIndex < 0) maxIndex = 0;
-            if (currentIndex > maxIndex) currentIndex = maxIndex;
-          }
-
-          function updateSlider() {
-            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-
-            dots.forEach((dot) =>
-              dot.classList.remove("pagination__dot--active"),
-            );
-
-            if (dots[currentIndex]) {
-              dots[currentIndex].classList.add("pagination__dot--active");
-            }
-          }
-
-          nextBtn?.addEventListener("click", () => {
-            if (!isDesktop) return;
-
-            if (currentIndex < maxIndex) {
-              currentIndex++;
-              updateSlider();
-            }
-          });
-
-          prevBtn?.addEventListener("click", () => {
-            if (!isDesktop) return;
-
-            if (currentIndex > 0) {
-              currentIndex--;
-              updateSlider();
-            }
-          });
-
-          dots.forEach((dot, index) => {
-            dot.addEventListener("click", () => {
-              if (index <= maxIndex) {
-                currentIndex = index;
-                updateSlider();
-              }
-            });
-          });
-
-          viewport.addEventListener("scroll", () => {
-            if (isDesktop) return;
-
-            const scrollLeft = viewport.scrollLeft;
-            const index = Math.round(scrollLeft / cardWidth);
-
-            if (index !== currentIndex) {
-              currentIndex = index;
-
-              dots.forEach((dot) =>
-                dot.classList.remove("pagination__dot--active"),
-              );
-
-              if (dots[currentIndex]) {
-                dots[currentIndex].classList.add("pagination__dot--active");
-              }
-            }
-          });
-
-          window.addEventListener("resize", () => {
-            calculateSizes();
-
-            if (isDesktop) {
-              viewport.scrollLeft = 0;
-              updateSlider();
-            }
-          });
-
-          calculateSizes();
-          updateSlider();
-        });
-      });
-      const gallery = document.querySelector(".gallery");
-      const thumbBoxes = gallery.querySelectorAll(".gallery-thumb-box");
-      const mainImage = gallery.querySelector(".gallery-main-image");
-
-      const prevBtn = gallery.querySelector(".slider-prev");
-      const nextBtn = gallery.querySelector(".slider-next");
-
-      let currentIndex = 0;
-
-      function updateGallery(index) {
-        const img = thumbBoxes[index].querySelector("img");
-        mainImage.src = img.src;
-
-        thumbBoxes.forEach((box) =>
-          box.classList.remove("gallery-thumb-box--active"),
-        );
-        thumbBoxes[index].classList.add("gallery-thumb-box--active");
-
-        currentIndex = index;
-      }
-
-      thumbBoxes.forEach((box, index) => {
-        box.addEventListener("click", () => {
-          updateGallery(index);
-        });
-      });
-
-      nextBtn.addEventListener("click", () => {
-        let newIndex = currentIndex + 1;
-        if (newIndex >= thumbBoxes.length) newIndex = 0;
-        updateGallery(newIndex);
-      });
-
-      prevBtn.addEventListener("click", () => {
-        let newIndex = currentIndex - 1;
-        if (newIndex < 0) newIndex = thumbBoxes.length - 1;
-        updateGallery(newIndex);
-      });
-      const quantity = document.querySelector(".quantity");
-      const minusBtn = quantity.querySelector(".quantity-btn--minus");
-      const plusBtn = quantity.querySelector(".quantity-btn--plus");
-      const number = quantity.querySelector(".quantity-number");
-
-      const min = parseInt(quantity.dataset.min) || 1;
-      const max = parseInt(quantity.dataset.max) || Infinity;
-
-      function updateButtons(value) {
-        minusBtn.disabled = value <= min;
-        plusBtn.disabled = value >= max;
-      }
-
-      minusBtn.addEventListener("click", () => {
-        let value = parseInt(number.textContent);
-        if (value > min) {
-          value--;
-          number.textContent = value;
-          updateButtons(value);
-        }
-      });
-
-      plusBtn.addEventListener("click", () => {
-        let value = parseInt(number.textContent);
-        if (value < max) {
-          value++;
-          number.textContent = value;
-          updateButtons(value);
-        }
-      });
-
-      updateButtons(parseInt(number.textContent));
-      document.querySelectorAll(".product-card__wishlist").forEach((btn) => {
-        btn.addEventListener("click", function (e) {
-          e.stopPropagation();
-          this.classList.toggle("product-card__wishlist--active");
-        });
-      });
-    </script>
   </body>
 </html>
