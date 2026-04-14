@@ -35,17 +35,18 @@
             href="/"
             class="d-flex align-items-center text-decoration-none me-3"
           >
-            <img src="assets/images/logo.png" alt="logo" width="60" >
+            <img src="assets/images/logo.png" alt="logo" width="60">
             <span class="vr mx-2"></span>
             <span class="logo-tagline small">
-              We love <br>
+              We love
+              <br>
               books
             </span>
           </a>
 
           <div class="d-none d-lg-flex align-items-center search">
             <input
-              class="search__input"
+              class="search-input"
               type="text"
               placeholder="Type any book here"
             >
@@ -57,7 +58,7 @@
               <img
                 src="assets/icons/search.svg"
                 alt="Search icon"
-                class="icon search__btn-icon"
+                class="icon search-btn-icon"
               >
             </button>
           </div>
@@ -80,11 +81,7 @@
           </ul>
 
           <div class="d-flex align-items-center ms-auto gap-3">
-            <button
-              type="button"
-              class="btn p-0 devider-icon"
-              aria-label="Shopping cart"
-            >
+            <button type="button" class="btn p-0 devider-icon">
               <img
                 src="assets/icons/purple-cart.svg"
                 class="icon header-icon"
@@ -95,13 +92,8 @@
             <button
               type="button"
               class="btn p-0 position-relative d-none d-md-inline devider-icon"
-              aria-label="Wishlist"
             >
-              <img
-                src="assets/icons/wish-list.svg"
-                class="icon header-icon"
-                alt="Wishlist"
-              >
+              <img src="assets/icons/wish-list.svg" class="icon header-icon" alt="Wishlist" >
               <span
                 class="position-absolute top-0 translate-middle badge rounded-pill"
               >
@@ -113,7 +105,8 @@
               <img
                 src="assets/icons/user.svg"
                 class="icon me-lg-0 header-icon"
-                alt="User profile">
+                alt="User profile"
+              >
             </button>
 
             <button
@@ -121,6 +114,7 @@
               class="btn p-0 d-lg-none"
               data-bs-toggle="offcanvas"
               data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
             >
               <img src="assets/icons/menu.svg" class="icon" alt="Menu" >
             </button>
@@ -154,7 +148,7 @@
 
           <div class="ms-auto d-flex align-items-center gap-4">
             <div class="d-flex align-items-center">
-              <img src="assets/icons/phone.svg" class="icon" alt="Phone icon" >
+              <img src="assets/icons/phone.svg" class="icon" alt="Phone icon">
               <a
                 href="tel:+44587999000"
                 class="ms-2 text-decoration-none text-dark"
@@ -165,8 +159,8 @@
 
             <button
               type="button"
-              class="d-inline-flex align-items-center justify-content-center btn btn-outline-primary"
               aria-label="Request a call"
+              class="d-inline-flex align-items-center justify-content-center btn btn-outline-primary"
             >
               Request a call
             </button>
@@ -179,20 +173,42 @@
         tabindex="-1"
         id="mobileMenu"
       >
-        <div class="offcanvas-header">
-          <img src="assets/images/logo.png" width="60" alt="Logo">
+        <div class="offcanvas-header gap-2 border-bottom pt-3 mb-4">
+          <img src="assets/images/logo.png" width="60" alt="logo" href="./index.html">
+          <button
+              type="button"
+              class="btn p-1 position-relative d-inline"
+            >
+              <img src="assets/icons/wish-list.svg" class="icon header-icon" alt="Wishlist" >
+              <span
+                class="position-absolute top-0 badge rounded-pill"
+              >
+                3
+              </span>
+            </button>
           <button
             type="button"
             class="btn-close"
             data-bs-dismiss="offcanvas"
-            aria-label="Close menu"
+            aria-label="Close"
           ></button>
         </div>
+
+        <a
+          href="./index.html"
+          class="d-inline-flex mx-3 gap-2 home-link"
+          aria-label="Home">
+            <img
+              src="assets/icons/home.svg"
+              class="icon header-icon"
+              alt="Home icon">
+              <h6 class="text-uppercase fw-semibold m-0">HOME</h6>
+        </a>
 
         <div class="offcanvas-body d-flex flex-column h-100">
           <div>
             <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
-            <ul class="nav flex-column gap-2 mb-4">
+            <ul class="nav flex-column gap-1 mb-3">
               <li>
                 <a class="nav-link" href="#hero">The must read</a>
               </li>
@@ -200,22 +216,22 @@
                 <a class="nav-link" href="#benefit">News</a>
               </li>
               <li>
-                <a class="nav-link" href="#selected-for-you"
-                  >Promotion of the mount</a
-                >
+                <a class="nav-link" href="#selected-for-you">
+                  Promotion of the mount
+                </a>
               </li>
               <li>
                 <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
               </li>
               <li>
-                <a class="nav-link" href="#newsletter"
-                  >Subscribe to the newsletter</a
-                >
+                <a class="nav-link" href="#newsletter">
+                  Subscribe to the newsletter
+                </a>
               </li>
             </ul>
 
             <h6 class="text-uppercase fw-semibold mb-3">Policies</h6>
-            <ul class="nav flex-column gap-2 mb-4">
+            <ul class="nav flex-column gap-0 mb-3">
               <li>
                 <a class="nav-link" href="#">Privacy policy</a>
               </li>
@@ -242,11 +258,7 @@
               <div
                 class="d-flex align-items-center justify-content-center ps-2"
               >
-                <img
-                  src="assets/icons/user.svg"
-                  class="icon"
-                  alt="User profile"
-                >
+                <img src="assets/icons/user.svg" class="icon" alt="User icon">
               </div>
               <div>
                 <div class="fw-semibold">User Name</div>
@@ -289,7 +301,7 @@
           </div>
 
           <div
-            class="d-flex flex-column d-md-block align-items-center mt-4 mt-md-0 hero-image-block"
+            class="d-flex flex-column d-md-block align-items-center mt-4 mt-md-0 hero-image-block position-relative"
           >
             <p class="d-none d-lg-flex position-absolute my-2 hero-promo">
               AUTOGRAPHED <br>
@@ -310,24 +322,10 @@
             >
               *within the stock limit
             </span>
-
-            <div class="d-none d-lg-inline-flex gap-3 mt-4">
-              <button type="button" class="btn-outline-primary slider-btn" aria-label="Previous slide">
-                <svg class="icon">
-                  <use href="assets/icons/sprite.svg#chevron-left"></use>
-                </svg>
-              </button>
-
-              <button type="button" class="btn-outline-primary slider-btn" aria-label="Next slide">
-                <svg class="icon">
-                  <use href="assets/icons/sprite.svg#chevron-right"></use>
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
         <div
-          class="d-flex d-lg-none gap-3 align-items-center justify-content-center hero__slider-secondary"
+          class="d-flex gap-3 align-items-center justify-content-center hero__slider-secondary"
         >
           <button type="button" class="btn-outline-primary slider-btn" aria-label="Previous slide">
             <svg class="icon">
@@ -347,7 +345,7 @@
         <div
           class="align-items-center d-md-flex flex-wrap justify-content-between"
         >
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center mb-4 mb-md-0">
             <span class="p-2 benefit-icon">
               <img src="assets/icons/truck.svg" alt="Shipping icon" >
             </span>
@@ -358,7 +356,7 @@
 
           <div class="d-none d-lg-flex benefit-divider"></div>
 
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center mb-4 mb-md-0">
             <span class="p-2 benefit-icon">
               <img src="assets/icons/star.svg" alt="Star icon" >
             </span>

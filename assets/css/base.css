@@ -24,11 +24,11 @@
   --fs-lg: clamp(1.5rem, 1rem + 2vw, 2.375rem);
   --fs-md: clamp(1.25rem, 1rem + 1.5vw, 1.75rem);
   --fs-price: clamp(1.125rem, 1rem + 1vw, 1.5rem);
-  --fs-benefit: clamp(1.25rem, 1rem + 0.5vw, 1.5rem);
+  --fs-benefit: clamp(1.25rem, 1rem + 2vw, 1.5rem);
   --fs-sm: clamp(1rem, 1rem + 0.5vw, 1.25rem);
   --fs-author: clamp(0.875rem, 1rem + 0.3vw, 1.125rem);
   --fs-regular: clamp(0.875rem, 1rem + 0.3vw, 1rem);
-  --fs-typ: 0.75rem;
+  --fs-typ: 0.875rem;
   --fs-badge: 0.75rem;
 
   /* FONT WEIGHT */

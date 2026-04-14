@@ -122,22 +122,14 @@
         <div class="container header-area d-flex align-items-center">
           <ul class="nav">
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#hero">The must read</a>
+              <a class="p-0 nav-link" href="#detail-book">About the Book</a>
             </li>
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#benefit">News</a>
+              <a class="p-0 nav-link" href="#collection">Collection</a>
             </li>
             <li class="nav-item">
-              <a class="p-0 nav-link" href="#selected-for-you"
-                >Promotion of the mount</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#you-must-buy-it-now">Publishes</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#newsletter"
-                >Subscribe to the newsletter</a
+              <a class="p-0 nav-link" href="last-viewed"
+                >Your History</a
               >
             </li>
           </ul>
@@ -169,8 +161,19 @@
         tabindex="-1"
         id="mobileMenu"
       >
-        <div class="offcanvas-header">
-          <img src="assets/images/logo.png" width="60" alt="logo">
+        <div class="offcanvas-header gap-2 border-bottom pt-3 mb-4">
+          <img src="assets/images/logo.png" width="60" alt="logo" href="./index.html">
+          <button
+              type="button"
+              class="btn p-1 position-relative d-inline"
+            >
+              <img src="assets/icons/wish-list.svg" class="icon header-icon" alt="Wishlist" >
+              <span
+                class="position-absolute top-0 badge rounded-pill"
+              >
+                3
+              </span>
+            </button>
           <button
             type="button"
             class="btn-close"
@@ -179,33 +182,36 @@
           ></button>
         </div>
 
+        <a
+          href="./index.html"
+          class="d-inline-flex mx-3 gap-2 home-link"
+          aria-label="Home">
+            <img
+              src="assets/icons/home.svg"
+              class="icon header-icon"
+              alt="Home icon">
+              <h6 class="text-uppercase fw-semibold m-0">HOME</h6>
+        </a>
+
         <div class="offcanvas-body d-flex flex-column h-100">
           <div>
             <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
-            <ul class="nav flex-column gap-2 mb-4">
+            <ul class="nav flex-column gap-1 mb-3">
               <li>
-                <a class="nav-link" href="#hero">The must read</a>
+                <a class="nav-link" href="#detail-book">About the Book</a>
               </li>
               <li>
-                <a class="nav-link" href="#benefit">News</a>
+                <a class="nav-link" href="#collection">Collection</a>
               </li>
               <li>
-                <a class="nav-link" href="#selected-for-you">
-                  Promotion of the mount
-                </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#newsletter">
-                  Subscribe to the newsletter
+                <a class="nav-link" href="#last-viewed">
+                  Your History
                 </a>
               </li>
             </ul>
 
             <h6 class="text-uppercase fw-semibold mb-3">Policies</h6>
-            <ul class="nav flex-column gap-2 mb-4">
+            <ul class="nav flex-column gap-0 mb-3">
               <li>
                 <a class="nav-link" href="#">Privacy policy</a>
               </li>
@@ -412,26 +418,26 @@
             <div class="row g-0 product-detail-meta">
               <div class="col-12 col-md-6 product-detail-meta-item-primary">
                 <div class="row mb-4 p-0 mx-0">
-                  <span class="col-6 col-md-4 p-0 product-detail-meta-label">
+                  <span class="col-6 col-md-5 p-0 product-detail-meta-label flex-wrap">
                     Publisher:
                   </span>
-                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value">
+                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value flex-wrap">
                     Margaret K.Books
                   </span>
                 </div>
                 <div class="row mb-4 p-0 mx-0">
-                  <span class="col-6 col-md-4 p-0 product-detail-meta-label">
+                  <span class="col-6 col-md-5 p-0 product-detail-meta-label flex-wrap">
                     Language:
                   </span>
-                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value">
+                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value flex-wrap">
                     English
                   </span>
                 </div>
                 <div class="row mb-4 mb-md-0 p-0 mx-0">
-                  <span class="col-6 col-md-4 p-0 product-detail-meta-label">
+                  <span class="col-6 col-md-5 p-0 product-detail-meta-label flex-wrap">
                     Print length:
                   </span>
-                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value">
+                  <span class="col-6 col-md-7 pe-0 product-detail-meta-value flex-wrap">
                     592 pages
                   </span>
                 </div>
@@ -439,26 +445,26 @@
 
               <div class="col-12 col-md-6 product-detail-meta-item-secondary">
                 <div class="row mb-4 p-0 mx-0">
-                  <span class="col-6 col-md-6 p-0 product-detail-meta-label">
+                  <span class="col-6 col-md-6 p-0 product-detail-meta-label flex-wrap">
                     Publication date:
                   </span>
-                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value">
+                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value flex-wrap">
                     March 3, 2020
                   </span>
                 </div>
                 <div class="row mb-4 p-0 mx-0">
-                  <span class="col-6 col-md-6 p-0 product-detail-meta-label">
+                  <span class="col-6 col-md-6 p-0 product-detail-meta-label flex-wrap">
                     Reading age:
                   </span>
-                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value">
+                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value flex-wrap">
                     14+
                   </span>
                 </div>
                 <div class="row mb-4 mb-md-0 p-0 mx-0">
-                  <span class="col-6 col-md-6 p-0 product-detail-meta-label">
+                  <span class="col-6 col-md-6 p-0 product-detail-meta-label flex-wrap">
                     Dimensions:
                   </span>
-                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value">
+                  <span class="col-6 col-md-6 p-md-0 product-detail-meta-value flex-wrap">
                     6 x 1.8 x 9 inches
                   </span>
                 </div>
@@ -472,7 +478,7 @@
           <h2 class="text-lg product-title">Collection</h2>
         </div>
 
-        <div class="position-relative p-lg-0 product-slide">
+        <div class="position-relative p-lg-0 product-slider">
           <button
             type="button"
             class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-prev"
@@ -678,7 +684,7 @@
           <h2 class="text-lg product-title">Last viewed</h2>
         </div>
 
-        <div class="position-relative p-lg-0 product-slide">
+        <div class="position-relative p-lg-0 product-slider">
           <button
             type="button"
             class="d-none d-lg-flex position-absolute btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center p-0 slider-btn product-control product-control-prev"
