@@ -1,4 +1,5 @@
 :root {
+  /* COLORS */
   --primary-color: #937dc2;
   --secondary-color: #937dc299;
   --tertiary-color: #c689c6;
@@ -15,18 +16,20 @@
   --bg-color: #fff;
 
   /* LAYOUT */
-  --container-width: 100%;
+  --container-max-width: 75rem;
+  --container-padding: clamp(1rem, 4vw, 1.25rem);
 
   /* FONT SIZE */
-  --fs-xl: 28px;
-  --fs-lg: 24px;
-  --fs-md: 20px;
-  --fs-price: 18px;
-  --fs-sm: 16px;
-  --fs-author: 14px;
-  --fs-regular: 14px;
-  --fs-typ: 12px;
-  --fs-badge: 12px;
+  --fs-xl: clamp(1.75rem, 1rem + 2.5vw, 3rem);
+  --fs-lg: clamp(1.5rem, 1rem + 2vw, 2.375rem);
+  --fs-md: clamp(1.25rem, 1rem + 1.5vw, 1.75rem);
+  --fs-price: clamp(1.125rem, 1rem + 1vw, 1.5rem);
+  --fs-benefit: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+  --fs-sm: clamp(1rem, 1rem + 0.5vw, 1.25rem);
+  --fs-author: clamp(0.875rem, 1rem + 0.3vw, 1.125rem);
+  --fs-regular: clamp(0.875rem, 1rem + 0.3vw, 1rem);
+  --fs-typ: 0.875rem;
+  --fs-badge: 0.75rem;
 
   /* FONT WEIGHT */
   --fw-bold: 700;
@@ -57,76 +60,60 @@ img {
 }
 
 .container {
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
 }
 
-.text--xl {
+.text-xl {
   font-size: var(--fs-xl);
   color: var(--heading-color-primary);
   font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
 }
 
-.text--lg {
+.text-lg {
   font-size: var(--fs-lg);
   color: var(--heading-color-secondary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
-.text--md {
+.text-md {
   font-size: var(--fs-md);
   color: var(--heading-color-primary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
-.text--sm {
+.text-sm {
   font-size: var(--fs-sm);
   color: var(--heading-color-primary);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-tight);
 }
 
-.body--text {
+.body-text {
   font-size: var(--fs-regular);
   color: var(--text-color);
-  font-weight: var(--fw-regular);
-  line-height: var(--lh-normal);
 }
 
-.text--name-card {
+.text-name-card {
   font-size: var(--fs-price);
   color: var(--heading-color-primary);
   line-height: var(--lh-tight);
   font-weight: var(--fw-semibold);
-  margin-bottom: 7px;
+  margin-bottom: 0.5rem;
 }
 
-/* TABLET */
 @media (width >= 768px) {
-  :root {
-    --fs-xl: 48px;
-    --fs-lg: 38px;
-    --fs-md: 28px;
-    --fs-price: 24px;
-    --fs-sm: 20px;
-    --fs-author: 18px;
-    --fs-regular: 16px;
-    --fs-typ: 14px;
-  }
-
   .container {
-    padding: 0 20px;
+    padding: 0 var(--container-padding);
   }
 }
 
-/* DESKTOP */
 @media (width >= 992px) {
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max-width);
     padding: 0;
   }
 }

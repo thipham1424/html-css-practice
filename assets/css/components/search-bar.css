@@ -2,18 +2,14 @@
   background: var(--bg-color);
 }
 
-.search__btn {
+.search-btn {
   width: 20px;
   height: 20px;
   border: none;
   background: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.search__btn-icon {
+.search-btn-icon {
   opacity: 0.6;
 }
 
@@ -22,8 +18,7 @@
     width: 376px;
     border-radius: 2px;
     background: var(--gray-color);
-    display: flex;
-    align-items: center;
     padding: 8px 12px;
+    margin: 0 70px;
   }
 }

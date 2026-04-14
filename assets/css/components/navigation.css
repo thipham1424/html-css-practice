@@ -1,0 +1,11 @@
+.nav {
+  gap: 24px;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
