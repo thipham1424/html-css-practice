@@ -7,7 +7,7 @@
 }
 
 .footer-list li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-list a {
@@ -16,6 +16,7 @@
   text-decoration: none;
   opacity: 0.8;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .footer-list a:hover {
@@ -49,11 +50,12 @@
 .footer-logo {
   padding-top: 40px;
   padding-bottom: 32px;
+  width: 61px;
 }
 
 @media (width >= 768px) {
-  .footer-logo {
-    margin-right: 126px;
+  .footer-elements {
+    gap: 144px;
   }
 
   .footer-payments-icon {
@@ -67,11 +69,7 @@
 }
 
 @media (width >= 992px) {
-  .footer-logo {
-    margin-right: 144px;
-  }
-
   .footer-row {
-    --bs-gutter-x: 78px;
+    gap: 66px;
   }
 }
