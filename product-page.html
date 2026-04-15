@@ -53,7 +53,11 @@
                 type="text"
                 placeholder="Type any book here"
               >
-              <button type="submit" class="btn search-btn" aria-label="Search">
+              <button
+                type="submit"
+                class="d-flex align-items-center justify-content-center cursor-pointer search-btn"
+                aria-label="Search for books"
+              >
                 <img
                   src="assets/icons/search.svg"
                   alt="Search icon"
@@ -124,27 +128,27 @@
 
       <div class="header-border-top d-none d-lg-block">
         <div class="container header-area d-flex align-items-center">
-          <ul class="nav flex-column gap-1 mb-3">
-              <li>
-                <a class="nav-link" href="#hero">The must read</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#benefit">News</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#selected-for-you">
-                  Promotion of the mount
-                </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#newsletter">
-                  Subscribe to the newsletter
-                </a>
-              </li>
-            </ul>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="p-0 nav-link" href="#hero">The must read</a>
+            </li>
+            <li class="nav-item">
+              <a class="p-0 nav-link" href="#benefit">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="p-0 nav-link" href="#selected-for-you"
+                >Promotion of the mount</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="p-0 nav-link" href="#you-must-buy-it-now">Publishes</a>
+            </li>
+            <li class="nav-item">
+              <a class="p-0 nav-link" href="#newsletter"
+                >Subscribe to the newsletter</a
+              >
+            </li>
+          </ul>
 
           <div class="ms-auto d-flex align-items-center gap-4">
             <div class="d-flex align-items-center">
@@ -207,6 +211,7 @@
 
         <div class="offcanvas-body d-flex flex-column h-100">
           <div>
+            <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
             <ul class="nav flex-column gap-1 mb-3">
               <li>
                 <a class="nav-link" href="#hero">The must read</a>
