@@ -7,7 +7,11 @@
   line-height: var(--lh-normal);
   color: var(--tertiary-color);
   border: 1px solid var(--tertiary-color);
+<<<<<<< HEAD
   padding: 10px;
+=======
+  padding: 11px;
+>>>>>>> 54a065a (fix: fixed perfect pixel hero-section with figma)
 }
 
 .hero-title {
@@ -61,8 +65,8 @@
   }
 
   .hero-title {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top:37px;
+    margin-bottom: 34px;
   }
 
   .hero-desc {
@@ -71,29 +75,28 @@
   }
 
   .hero-image-block {
-    width: 623px;
-    height: 535px;
+    width: 627px;
+    height: 510px;
   }
 
   .hero-promo {
     top: 6%;
-    left: 9%;
+    left: 7%;
     font-size: 18px;
     color: var(--text-color);
     letter-spacing: 10%;
   }
 
   .hero-img {
-    margin-right: 64px;
+    margin-right: 75px;
     margin-left: auto;
     width: 55%;
     height: 90%;
-    padding-bottom: 10px;
   }
 
   .hero-note {
-    bottom: 9%;
-    margin-right: 0;
+    bottom: 8%;
+    margin-right: 17px;
     color: var(--heading-color-secondary);
   }
 
