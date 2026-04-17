@@ -56,4 +56,8 @@
   .product-control-next {
     right: -72px;
   }
+
+  .product-track {
+    padding-right: 0;
+  }
 }
