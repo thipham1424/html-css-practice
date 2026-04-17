@@ -46,7 +46,7 @@
 }
 
 @media (width >= 768px) {
-  .devider-icon {
+  .divider-icon {
     border-right: 1px solid var(--primary-color);
   }
 
@@ -56,7 +56,22 @@
 }
 
 @media (width >= 992px) {
+  .top-header {
+    gap: 4.5rem;
+  }
+
   .header-border-top {
     border-top: 1px solid var(--primary-color);
+  }
+  
+  .contact-info {
+    gap: 35px;
+    flex-shrink: 0;
+  }
+
+  .btn-request {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 12px 32px;
   }
 }
