@@ -96,4 +96,8 @@
     margin-right: 0;
     color: var(--heading-color-secondary);
   }
+
+  .hero-slider {
+    margin-top: 32px;
+  }
 }
