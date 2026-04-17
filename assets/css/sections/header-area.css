@@ -63,7 +63,7 @@
   .header-border-top {
     border-top: 1px solid var(--primary-color);
   }
-  
+
   .contact-info {
     gap: 35px;
     flex-shrink: 0;
