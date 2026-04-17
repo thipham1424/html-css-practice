@@ -46,10 +46,10 @@
 }
 
 .btn-request {
-    white-space: nowrap;
-    flex-shrink: 0;
-    padding: 12px 32px;
-  }
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 12px 32px;
+}
 
 @media (width >= 768px) {
   .divider-icon {
@@ -72,6 +72,5 @@
 
   .contact-info {
     gap: 35px;
-    flex-shrink: 0;
   }
 }
