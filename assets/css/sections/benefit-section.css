@@ -4,7 +4,7 @@
 }
 
 .benefit-icon {
-  width: 48px;
+  width: 42px;
 }
 
 .benefit-text {
@@ -12,13 +12,20 @@
   color: var(--heading-color-primary);
 }
 
+@media (width >= 768px) {
+  .benefit-item {
+    padding: 1rem 0;
+  }
+}
+
 @media (width >= 992px) {
-  .benefit-divider {
-    height: 80px;
-    border: 1px solid var(--primary-color);
+  .benefit-item {
+    border-right: 1px solid var(--primary-color);
+    padding-right: 3.75rem;
   }
 
-  .benefit-text:hover {
-    border-bottom: 1px solid var(--dark-color);
+  .benefit-item:last-child {
+    border-right: none;
+    padding-right: 0;
   }
 }
