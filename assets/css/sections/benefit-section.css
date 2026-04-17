@@ -24,6 +24,10 @@
     padding-right: 3.75rem;
   }
 
+  .benefit-text:hover {
+    border-bottom: 1px solid var(--dark-color);
+  }
+
   .benefit-item:last-child {
     border-right: none;
     padding-right: 0;
