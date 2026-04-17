@@ -45,6 +45,12 @@
   align-items: center;
 }
 
+.btn-request {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 12px 32px;
+  }
+
 @media (width >= 768px) {
   .divider-icon {
     border-right: 1px solid var(--primary-color);
@@ -67,11 +73,5 @@
   .contact-info {
     gap: 35px;
     flex-shrink: 0;
-  }
-
-  .btn-request {
-    white-space: nowrap;
-    flex-shrink: 0;
-    padding: 12px 32px;
   }
 }
