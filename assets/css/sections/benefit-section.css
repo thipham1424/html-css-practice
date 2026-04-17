@@ -26,6 +26,7 @@
 
   .benefit-text:hover {
     border-bottom: 1px solid var(--dark-color);
+    cursor: default;
   }
 
   .benefit-item:last-child {
