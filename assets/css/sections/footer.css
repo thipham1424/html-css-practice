@@ -2,7 +2,7 @@
   background: var(--primary-color);
 }
 
-.footer-area.container {
+.footer-area .container {
   padding-right: 0;
 }
 
@@ -63,7 +63,7 @@
 }
 
 @media (width >= 768px) {
-  .footer-area.container {
+  .footer-area .container {
     padding-right: 20px;
   }
 
@@ -95,7 +95,7 @@
 }
 
 @media (width >= 992px) {
-  .footer-area.container {
+  .footer-area .container {
     padding-right: 0;
   }
 

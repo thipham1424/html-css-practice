@@ -48,7 +48,7 @@
 .btn-request {
   white-space: nowrap;
   flex-shrink: 0;
-  padding: 12px 32px;
+  padding: 12px 24px;
 }
 
 @media (width >= 768px) {
@@ -58,6 +58,10 @@
 
   .header-icon {
     margin-right: 16px;
+  }
+
+  .btn-request {
+    padding: 12px 32px;
   }
 }
 
