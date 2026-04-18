@@ -7,15 +7,7 @@
   line-height: var(--lh-normal);
   color: var(--tertiary-color);
   border: 1px solid var(--tertiary-color);
-<<<<<<< HEAD
-<<<<<<< HEAD
   padding: 10px;
-=======
-  padding: 11px;
->>>>>>> 54a065a (fix: fixed perfect pixel hero-section with figma)
-=======
-  padding: 10px;
->>>>>>> 65d9e8e (fix: fix the position of slider-control)
 }
 
 .hero-title {
