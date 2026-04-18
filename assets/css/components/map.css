@@ -4,11 +4,11 @@
 
 .map-image {
   width: 100%;
-  display: block;
 }
 
 @media (width >= 992px) {
   .map {
     border-radius: 5px;
+    margin-top: 0;
   }
 }
