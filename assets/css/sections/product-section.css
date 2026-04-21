@@ -24,6 +24,10 @@
   padding-right: 16px;
 }
 
+.product-control {
+  display: none;
+}
+
 .product-pagination {
   margin-top: 20px;
   text-align: center;
@@ -32,10 +36,6 @@
 @media (width >= 992px) {
   .product-viewport {
     overflow: hidden;
-  }
-
-  .product-control {
-    display: none;
   }
 
   .product-track {
