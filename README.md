@@ -29,6 +29,32 @@ This project is a practice of HTML and CSS focused on building a webpage from a 
 The goal is to convert a Sketch design of an Ecommerce Book Store into a structured and maintainable HTML/CSS implementation.
 The project emphasizes proper HTML semantics, modern CSS layout techniques, and clean code organization.
 
+## STRUCTURE
+
+html-css-practice1/
+├── assets/
+│   ├── icons/
+│   └── images/
+├── css/
+│   ├── components/
+│   ├── sections/
+│   ├── base.css
+│   ├── layout.css
+│   ├── main.css
+│   └── reset.css
+├── husky/
+├── node_modules/
+├── .editorconfig
+├── .gitignore
+├── .prettierrc.json
+├── .stylelintrc.json
+├── component.html
+├── index.html
+├── package-lock.json
+├── package.json
+├── product-page.html
+└── README.md
+
 ## TASK MANAGEMENT
 
 - Git/GitHub
