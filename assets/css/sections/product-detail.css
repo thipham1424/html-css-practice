@@ -40,6 +40,15 @@
   margin-bottom: 18px;
 }
 
+.product-detail-actions {
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 35px;
+}
+
+.product-detail-meta {
+  margin-top: 36px;
+}
+
 @media (width >= 768px) {
   .product-detail-title,
   .product-detail-author {
@@ -55,7 +64,6 @@
   .product-detail-actions {
     gap: 32px;
     margin-right: 37px;
-    padding-bottom: 35px;
   }
 
   .product-detail-info {
@@ -86,10 +94,6 @@
     gap: 60px;
   }
 
-  .product-detail-actions {
-    border-bottom: 1px solid var(--secondary-color);
-  }
-
   .product-detail-btn {
     margin-top: 9px;
   }
@@ -97,9 +101,5 @@
   .product-detail-meta-item {
     margin-top: 19px;
     margin-bottom: 0;
-  }
-
-  .product-detail-meta {
-    margin-top: 36px;
   }
 }
