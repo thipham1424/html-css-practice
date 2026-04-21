@@ -19,10 +19,10 @@
 @import url("./components/navigation.css");
 
 /* SECTIONS */
-@import url("./section/header-area.css");
-@import url("./section/footer.css");
-@import url("./section/benefit-section.css");
-@import url("./section/product-section.css");
-@import url("./section/product-detail.css");
-@import url("./section/newsletter-section.css");
-@import url("./section/hero-section.css");
+@import url("./sections/header-area.css");
+@import url("./sections/footer.css");
+@import url("./sections/benefit-section.css");
+@import url("./sections/product-section.css");
+@import url("./sections/product-detail.css");
+@import url("./sections/newsletter-section.css");
+@import url("./sections/hero-section.css");
