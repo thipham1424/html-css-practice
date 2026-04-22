@@ -67,22 +67,22 @@
             </form>
           </div>
 
-          <ul class="d-none d-lg-flex list-unstyled mb-0 gap-4">
-            <li>
-              <a href="#" class="text-decoration-none privacy"
-                >Privacy policy</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none privacy">Warranty</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none privacy">Shipping</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none privacy">Returns</a>
-            </li>
-          </ul>
+          <nav class="navbar" aria-label="Policies">
+            <ul class="d-none d-lg-flex navbar-nav flex-row flex-wrap gap-4">
+              <li class="nav-item">
+                <a href="#" class="flex-nowrap privacy">Privacy policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="flex-nowrap privacy">Warranty</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="flex-nowrap privacy">Shipping</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="flex-nowrap privacy">Returns</a>
+              </li>
+            </ul>
+          </nav>
 
           <div class="d-flex align-items-center gap-3 ps-3 flex-shrink-0">
             <button type="button" class="btn p-0 divider-icon">
@@ -126,29 +126,31 @@
         </div>
       </div>
 
-      <div class="header-border-top d-none d-lg-block justify-content-between">
+      <div class="header-border-top d-none d-lg-block">
         <div class="container header-area d-flex align-items-center justify-content-between">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#hero">The must read</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#benefit">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#selected-for-you"
-                >Promotion of the mount</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#you-must-buy-it-now">Publishes</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#newsletter"
-                >Subscribe to the newsletter</a
-              >
-            </li>
-          </ul>
+          <nav class="navbar" aria-label="Main navigation">
+            <ul class="d-none d-lg-flex navbar-nav flex-row flex-wrap gap-4">
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#hero">The must read</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#benefit">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#selected-for-you"
+                  >Promotion of the mount</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#you-must-buy-it-now">Publishes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#newsletter"
+                  >Subscribe to the newsletter</a
+                >
+              </li>
+            </ul>
+          </nav>
 
           <div class="d-flex align-items-center contact-info flex-shrink-0">
             <div class="d-flex align-items-center">
@@ -212,37 +214,41 @@
         <div class="offcanvas-body d-flex flex-column h-100">
           <div>
             <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
-            <ul class="nav flex-column gap-1 mb-3">
-              <li>
-                <a class="nav-link" href="#hero">The must read</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#benefit">News</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#selected-for-you">
-                  Promotion of the mount
-                </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#newsletter">
-                  Subscribe to the newsletter
-                </a>
-              </li>
-            </ul>
+            <nav class="navbar" aria-label="Mobile navigation">
+              <ul class="nav flex-column gap-1 mb-3">
+                <li>
+                  <a class="nav-link" href="#hero">The must read</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#benefit">News</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#selected-for-you">
+                    Promotion of the mount
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#newsletter">
+                    Subscribe to the newsletter
+                  </a>
+                </li>
+              </ul>
+            </nav>
 
             <h6 class="text-uppercase fw-semibold mb-3">Policies</h6>
-            <ul class="nav flex-column gap-0 mb-3">
-              <li>
-                <a class="nav-link" href="#">Privacy policy</a>
-              </li>
-              <li><a class="nav-link" href="#">Warranty</a></li>
-              <li><a class="nav-link" href="#">Shipping</a></li>
-              <li><a class="nav-link" href="#">Returns</a></li>
-            </ul>
+            <nav class="navbar" aria-label="MobilePolicies">
+              <ul class="nav flex-column gap-0 mb-3">
+                <li>
+                  <a class="nav-link" href="#">Privacy policy</a>
+                </li>
+                <li><a class="nav-link" href="#">Warranty</a></li>
+                <li><a class="nav-link" href="#">Shipping</a></li>
+                <li><a class="nav-link" href="#">Returns</a></li>
+              </ul>
+            </nav>
 
             <div class="border-top pt-3 mb-4">
               <div class="d-flex align-items-center">
@@ -275,13 +281,13 @@
     </header>
 
     <main>
-      <section class="container">
-        <nav class="d-none d-md-flex fw-regular lh-sm breadcrumb">
-          <a href="index.html" class="breadcrumb-link">Home</a>
-          <span class="breadcrumb-separator"> &gt; </span>
-          <a href="#" class="breadcrumb-link">Fantasy books</a>
-          <span class="breadcrumb-separator"> &gt; </span>
-          <span class="breadcrumb-current">Chain of Gold</span>
+      <section class="d-none d-md-flex container">
+        <nav class="breadcrumb-custom" aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Fantasy books</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chain of Gold</li>
+          </ol>
         </nav>
       </section>
 

@@ -50,6 +50,10 @@
 }
 
 @media (width >= 768px) {
+  .product-detail {
+    margin-top: 16px;
+  }
+
   .product-detail-title,
   .product-detail-author {
     margin-bottom: 16px;

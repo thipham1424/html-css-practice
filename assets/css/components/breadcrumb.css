@@ -1,21 +1,23 @@
 @media (width >= 768px) {
   .breadcrumb {
-    display: flex;
-    margin: 16px 0;
-    gap: 4px;
+    margin-top: 16px;
     font-size: var(--fs-typ);
   }
 
-  .breadcrumb-link {
+  .breadcrumb-item {
     color: var(--dark-color-alpha-50);
     text-decoration: none;
   }
 
-  .breadcrumb-current {
+  .breadcrumb-item.active {
     color: var(--dark-color);
   }
 
-  .breadcrumb-separator {
+  .breadcrumb-custom {
+    --bs-breadcrumb-divider: '>';
+  }
+
+  .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
     color: var(--primary-color);
   }
 }
@@ -23,6 +25,5 @@
 @media (width >= 992px) {
   .breadcrumb {
     margin-top: 24px;
-    margin-bottom: 32px;
   }
 }
