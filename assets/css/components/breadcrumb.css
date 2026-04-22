@@ -14,7 +14,7 @@
   }
 
   .breadcrumb-custom {
-    --bs-breadcrumb-divider: '>';
+    --bs-breadcrumb-divider: ">";
   }
 
   .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
