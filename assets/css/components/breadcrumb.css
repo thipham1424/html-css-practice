@@ -14,11 +14,7 @@
   }
 
   .breadcrumb-custom {
-<<<<<<< HEAD
     --bs-breadcrumb-divider: ">";
-=======
-    --bs-breadcrumb-divider: '>';
->>>>>>> 6164b8f (refactor: apply fully bootstrap for header-area and breadcrumb)
   }
 
   .breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
