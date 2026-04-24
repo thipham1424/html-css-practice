@@ -1,6 +1,10 @@
-.header-area.container {
+.header-area {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.top-header {
+  gap: 0.875rem;
 }
 
 .logo-tagline {
@@ -52,6 +56,10 @@
 }
 
 @media (width >= 768px) {
+  .top-header {
+    gap: 3.75rem;
+  }
+
   .divider-icon {
     border-right: 1px solid var(--primary-color);
   }
