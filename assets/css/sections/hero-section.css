@@ -58,8 +58,8 @@
   }
 
   .hero-promo {
-    top: 25px;
-    left: 40px;
+    top: 8%;
+    left: 0;
     font-size: 18px;
     letter-spacing: 3px;
     color: var(--text-color);

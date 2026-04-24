@@ -2,6 +2,10 @@
   background: var(--primary-color);
 }
 
+.footer-area .container {
+  padding-right: 0;
+}
+
 .footer-title {
   font-size: var(--fs-regular);
 }
@@ -10,13 +14,16 @@
   margin-bottom: 15px;
 }
 
+.footer-list li:last-child {
+  margin-bottom: 0;
+}
+
 .footer-list a {
   color: var(--bg-color);
   font-size: var(--fs-regular);
   text-decoration: none;
   opacity: 0.8;
   transition: 0.3s;
-  white-space: nowrap;
 }
 
 .footer-list a:hover {
@@ -34,8 +41,11 @@
 }
 
 .footer-payments-icon {
-  width: 32px;
-  height: 20px;
+  width: 36px;
+}
+
+.footer-payments-icon.master {
+  width: 36px;
 }
 
 .footer-social-icon {
@@ -48,12 +58,19 @@
 }
 
 .footer-logo {
-  padding-top: 40px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   width: 61px;
 }
 
 @media (width >= 768px) {
+  .footer-area .container {
+    padding-right: 20px;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
   .footer-elements {
     gap: 144px;
   }
@@ -63,12 +80,25 @@
     height: 28px;
   }
 
+  .footer-list a {
+    white-space: nowrap;
+  }
+
+  .footer-payments-icon.master {
+    width: 55px;
+    height: 32px;
+  }
+
   .copy-right {
     font-size: var(--fs-regular);
   }
 }
 
 @media (width >= 992px) {
+  .footer-area .container {
+    padding-right: 0;
+  }
+
   .footer-row {
     gap: 66px;
   }

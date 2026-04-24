@@ -1,7 +1,3 @@
-.product.container {
-  padding-right: 0;
-}
-
 .product-title {
   margin-bottom: 40px;
 }
@@ -13,6 +9,9 @@
 .product-viewport {
   overflow-x: auto;
   scroll-behavior: smooth;
+  margin-right: calc(
+    -1 * var(--container-padding)
+  ); /* use negative margin to remove container padding */
 }
 
 .product-viewport::-webkit-scrollbar {
@@ -44,6 +43,10 @@
 }
 
 @media (width > 1300px) {
+  .product-viewport {
+    margin-right: 0;
+  }
+
   .product-control {
     display: flex;
     top: 191px;
@@ -55,5 +58,9 @@
 
   .product-control-next {
     right: -72px;
+  }
+
+  .product-track {
+    padding-right: 0;
   }
 }
