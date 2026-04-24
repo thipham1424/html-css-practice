@@ -78,7 +78,7 @@
 
   .hero-promo {
     top: 6%;
-    left: 9%;
+    left: 2%;
     font-size: 18px;
     color: var(--text-color);
     letter-spacing: 10%;
@@ -100,5 +100,11 @@
 
   .hero-slider {
     margin-top: 32px;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero-promo {
+    left: 9%;
   }
 }
