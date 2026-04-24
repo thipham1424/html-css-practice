@@ -49,10 +49,9 @@
   }
 
   .newsletter-map {
-    margin-top: 40px;
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
+    left: 0;
+    transform: none;
   }
 
   .highlight {

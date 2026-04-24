@@ -28,7 +28,7 @@
 
 @media (width >= 768px) {
   .hero-wrapper {
-    gap: 40px;
+    gap: 49px;
   }
 
   .hero-desc {
@@ -47,7 +47,7 @@
 
 @media (width >= 992px) {
   .hero-wrapper {
-    gap: 49px;
+    gap: 40px;
   }
 
   .hero-pagination-dot {
