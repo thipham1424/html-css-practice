@@ -66,23 +66,22 @@
               </button>
             </form>
           </div>
-
-          <ul class="d-none d-lg-flex list-unstyled mb-0 gap-4">
-            <li>
-              <a href="#" class="text-decoration-none privacy"
-                >Privacy policy</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none privacy">Warranty</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none privacy">Shipping</a>
-            </li>
-            <li>
-              <a href="#" class="text-decoration-none privacy">Returns</a>
-            </li>
-          </ul>
+          <nav class="navbar" aria-label="Policies">
+            <ul class="d-none d-lg-flex navbar-nav flex-row flex-wrap gap-4">
+              <li class="nav-item">
+                <a href="#" class="flex-nowrap privacy">Privacy policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="flex-nowrap privacy">Warranty</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="flex-nowrap privacy">Shipping</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="flex-nowrap privacy">Returns</a>
+              </li>
+            </ul>
+          </nav>
 
           <div class="d-flex align-items-center ms-auto gap-3">
             <div class="d-none d-md-flex d-lg-none align-items-center me-2">
@@ -135,29 +134,31 @@
         </div>
       </div>
 
-      <div class="header-border-top d-none d-lg-block justify-content-between">
+      <div class="header-border-top d-none d-lg-block">
         <div class="container header-area d-flex align-items-center justify-content-between">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#hero">The must read</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#benefit">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#selected-for-you"
-                >Promotion of the mount</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#you-must-buy-it-now">Publishes</a>
-            </li>
-            <li class="nav-item">
-              <a class="p-0 nav-link" href="#newsletter"
-                >Subscribe to the newsletter</a
-              >
-            </li>
-          </ul>
+          <nav class="navbar" aria-label="Main navigation">
+            <ul class="d-none d-lg-flex navbar-nav flex-row flex-wrap gap-4">
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#hero">The must read</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#benefit">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#selected-for-you"
+                  >Promotion of the mount</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#you-must-buy-it-now">Publishes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0 flex-nowrap" href="#newsletter"
+                  >Subscribe to the newsletter</a
+                >
+              </li>
+            </ul>
+          </nav>
 
           <div class="d-flex align-items-center contact-info flex-shrink-0">
             <div class="d-flex align-items-center">
@@ -221,37 +222,41 @@
         <div class="offcanvas-body d-flex flex-column h-100">
           <div>
             <h6 class="text-uppercase fw-semibold mb-3">Menu</h6>
-            <ul class="nav flex-column gap-1 mb-3">
-              <li>
-                <a class="nav-link" href="#hero">The must read</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#benefit">News</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#selected-for-you">
-                  Promotion of the mount
-                </a>
-              </li>
-              <li>
-                <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#newsletter">
-                  Subscribe to the newsletter
-                </a>
-              </li>
-            </ul>
+            <nav class="navbar" aria-label="Mobile navigation">
+              <ul class="nav flex-column gap-1 mb-3">
+                <li>
+                  <a class="nav-link" href="#hero">The must read</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#benefit">News</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#selected-for-you">
+                    Promotion of the mount
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#you-must-buy-it-now">Publishes</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#newsletter">
+                    Subscribe to the newsletter
+                  </a>
+                </li>
+              </ul>
+            </nav>
 
             <h6 class="text-uppercase fw-semibold mb-3">Policies</h6>
-            <ul class="nav flex-column gap-0 mb-3">
-              <li>
-                <a class="nav-link" href="#">Privacy policy</a>
-              </li>
-              <li><a class="nav-link" href="#">Warranty</a></li>
-              <li><a class="nav-link" href="#">Shipping</a></li>
-              <li><a class="nav-link" href="#">Returns</a></li>
-            </ul>
+            <nav class="navbar" aria-label="MobilePolicies">
+              <ul class="nav flex-column gap-0 mb-3">
+                <li>
+                  <a class="nav-link" href="#">Privacy policy</a>
+                </li>
+                <li><a class="nav-link" href="#">Warranty</a></li>
+                <li><a class="nav-link" href="#">Shipping</a></li>
+                <li><a class="nav-link" href="#">Returns</a></li>
+              </ul>
+            </nav>
 
             <div class="border-top pt-3 mb-4">
               <div class="d-flex align-items-center">
@@ -422,9 +427,9 @@
 
           <div class="product-viewport">
             <div class="d-flex justify-content-lg-between product-track">
-              <article class="product-card">
+              <div class="card product-card border-0">
                 <div
-                  class="position-relative product-card-image"
+                  class="card-img-top position-relative product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
@@ -433,17 +438,22 @@
                     class="d-block product-card-img"
                   >
                 </div>
-
-                <div class="product-card-content">
-                  <h3 class="text-name-card text-truncate">Financial Feminist</h3>
-                  <p class="body-text product-card-author text-truncate">Tori Dunlap</p>
+                <div class="card-body p-0 product-card-content">
+                  <h3 class="text-name-card text-truncate">
+                    Financial Feminist
+                  </h3>
+                  <p
+                    class="body-text product-card-author text-truncate"
+                  >
+                    Tori Dunlap
+                  </p>
                   <div
                     class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
                       type="button"
-                      class="product-card-wishlist"
+                      class="btn p-0 product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
                       <svg class="icon product-card-wishlist-icon">
@@ -451,8 +461,11 @@
                       </svg>
                     </button>
                   </div>
-
-                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
+                  <button
+                    type="button"
+                    class="btn btn-primary product-card-cart"
+                    aria-label="Add to cart"
+                  >
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -461,11 +474,11 @@
                     Add to cart
                   </button>
                 </div>
-              </article>
+              </div>
 
-              <article class="product-card">
+              <div class="card product-card border-0">
                 <div
-                  class="position-relative product-card-image"
+                  class="card-img-top position-relative product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
@@ -475,16 +488,21 @@
                   >
                 </div>
 
-                <div class="product-card-content">
-                  <h3 class="text-name-card text-truncate">No More Police</h3>
-                  <p class="body-text product-card-author text-truncate">Andrea Ritchie</p>
+                <div class="card-body p-0 product-card-content">
+                  <h3 class="text-name-card text-truncate">
+                    No More Police
+                  </h3>
+                  <p class="body-text product-card-author text-truncate"
+                  >
+                    Andrea Ritchie
+                  </p>
                   <div
                     class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
                       type="button"
-                      class="product-card-wishlist"
+                      class="btn p-0 product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
                       <svg class="icon product-card-wishlist-icon">
@@ -493,7 +511,11 @@
                     </button>
                   </div>
 
-                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
+                  <button
+                    type="button"
+                    class="btn btn-primary product-card-cart"
+                    aria-label="Add to cart"
+                  >
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -502,11 +524,11 @@
                     Add to cart
                   </button>
                 </div>
-              </article>
+              </div>
 
-              <article class="product-card">
+              <div class="card product-card border-0">
                 <div
-                  class="position-relative product-card-image"
+                  class="card-img-top position-relative product-card-image"
                   onclick="window.location.href = '#'"
                 >
                   <img
@@ -516,16 +538,20 @@
                   >
                 </div>
 
-                <div class="product-card-content">
-                  <h3 class="text-name-card text-truncate">I'm Glad My Mom Died</h3>
-                  <p class="body-text product-card-author text-truncate">Jennette McCurdy</p>
+                <div class="card-body p-0 product-card-content">
+                  <h3 class="text-name-card text-truncate">
+                    I'm Glad My Mom Died
+                  </h3>
+                  <p class="body-text product-card-author text-truncate"
+                  >
+                  Jennette McCurdy</p>
                   <div
                     class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
                       type="button"
-                      class="product-card-wishlist"
+                      class="btn p-0 product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
                       <svg class="icon product-card-wishlist-icon">
@@ -534,7 +560,11 @@
                     </button>
                   </div>
 
-                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
+                  <button
+                    type="button"
+                    class="btn btn-primary product-card-cart"
+                    aria-label="Add to cart"
+                  >
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -543,13 +573,13 @@
                     Add to cart
                   </button>
                 </div>
-              </article>
+              </div>
 
-              <article
-                class="product-card"
+              <div
+                class="card product-card border-0"
                 onclick="window.location.href = 'product-page.html'"
               >
-                <div class="product-card-image">
+                <div class="card-img-top position-relative product-card-image">
                   <img
                     src="assets/images/chain-of-gold.png"
                     alt="Chain of Gold"
@@ -557,16 +587,21 @@
                   >
                 </div>
 
-                <div class="product-card-content">
-                  <h3 class="text-name-card text-truncate">Chain of Gold</h3>
-                  <p class="body-text product-card-author text-truncate">Cassandra Clare</p>
+                <div class="card-body p-0 product-card-content">
+                  <h3 class="text-name-card text-truncate">
+                    Chain of Gold
+                  </h3>
+                  <p class="body-text product-card-author text-truncate"
+                  >
+                    Cassandra Clare
+                  </p>
                   <div
                     class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
                       type="button"
-                      class="product-card-wishlist"
+                      class="btn p-0 product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
                       <svg class="icon product-card-wishlist-icon">
@@ -575,7 +610,11 @@
                     </button>
                   </div>
 
-                  <button type="button" class="btn btn-primary product-card-cart" aria-label="Add to cart">
+                  <button
+                    type="button"
+                    class="btn btn-primary product-card-cart"
+                    aria-label="Add to cart"
+                  >
                     <img
                       src="assets/icons/white-cart.svg"
                       alt="Cart"
@@ -584,7 +623,7 @@
                     Add to cart
                   </button>
                 </div>
-              </article>
+              </div>
             </div>
           </div>
 
@@ -631,7 +670,7 @@
 
           <div class="product-viewport">
             <div class="d-flex justify-content-lg-between product-track">
-              <article class="product-card">
+              <div class="product-card">
                 <div
                   class="position-relative product-card-image"
                   onclick="window.location.href = '#'"
@@ -670,9 +709,9 @@
                     Add to cart
                   </button>
                 </div>
-              </article>
+              </div>
 
-              <article class="product-card">
+              <div class="product-card">
                 <div
                   class="product-card-image"
                   onclick="window.location.href = '#'"
@@ -711,9 +750,9 @@
                     Add to cart
                   </button>
                 </div>
-              </article>
+              </div>
 
-              <article class="product-card">
+              <div class="product-card">
                 <div
                   class="product-card-image"
                   onclick="window.location.href = '#'"
@@ -754,9 +793,9 @@
                     Add to cart
                   </button>
                 </div>
-              </article>
+              </div>
 
-              <article class="product-card">
+              <div class="product-card">
                 <div
                   class="product-card-image"
                   onclick="window.location.href = '#'"
@@ -795,7 +834,7 @@
                     Add to cart
                   </button>
                 </div>
-              </article>
+              </div>
             </div>
           </div>
 
@@ -829,7 +868,7 @@
             <p class="body-text mb-lg-0 newsletter-desc">
               We are about books and our purpose is to show you the book who can
               change your life or distract you from the real world in a better
-              one. BWorld works with the most popular publishs just for your
+              one. BWorld works with the most popular publishers just for your
               delight.
             </p>
             <p class="body-text newsletter-desc">
@@ -843,14 +882,14 @@
                 id="newsletter-name"
                 type="text"
                 placeholder="Your name"
-                class="newsletter-input"
+                class="form-control rounded-0 newsletter-input"
               >
               <label for="newsletter-email" class="visually-hidden">Your e-mail</label>
               <input
                 id="newsletter-email"
                 type="email"
                 placeholder="Your e-mail"
-                class="newsletter-input"
+                class="form-control rounded-0 newsletter-input"
               >
               <button type="submit" class="btn btn-primary newsletter-btn" aria-label="Subscribe">
                 Subscribe
@@ -884,11 +923,11 @@
                 <h3 class="text-nowrap fw-semibold mb-3 footer-title">
                   Categories
                 </h3>
-                <ul class="list-unstyled footer-list m-0">
-                  <li><a href="#">Psychology</a></li>
-                  <li><a href="#">Self-Help</a></li>
-                  <li><a href="#">Romance</a></li>
-                  <li><a href="#">Mystery</a></li>
+                <ul class="list-unstyled footer-list">
+                  <li><a href="#" class="link-light text-decoration-none">Psychology</a></li>
+                  <li><a href="#" class="link-light text-decoration-none">Self-Help</a></li>
+                  <li><a href="#" class="link-light text-decoration-none">Romance</a></li>
+                  <li><a href="#" class="link-light text-decoration-none">Mystery</a></li>
                 </ul>
               </div>
 
@@ -896,10 +935,10 @@
                 <h3 class="text-nowrap fw-semibold mb-3 footer-title">
                   For kids
                 </h3>
-                <ul class="list-unstyled footer-list m-0">
-                  <li><a href="#">Games</a></li>
-                  <li><a href="#">Comics</a></li>
-                  <li><a href="#">Fantasy</a></li>
+                <ul class="list-unstyled footer-list">
+                  <li><a href="#" class="link-light text-decoration-none">Games</a></li>
+                  <li><a href="#" class="link-light text-decoration-none">Comics</a></li>
+                  <li><a href="#" class="link-light text-decoration-none">Fantasy</a></li>
                 </ul>
               </div>
 
@@ -907,10 +946,10 @@
                 <h3 class="text-nowrap fw-semibold mb-3 footer-title">
                   E-Books
                 </h3>
-                <ul class="list-unstyled footer-list m-0">
-                  <li><a href="#">Fiction</a></li>
-                  <li><a href="#">Historical</a></li>
-                  <li><a href="#">Horror</a></li>
+                <ul class="list-unstyled footer-list">
+                  <li><a href="#" class="link-light text-decoration-none">Fiction</a></li>
+                  <li><a href="#" class="link-light text-decoration-none">Historical</a></li>
+                  <li><a href="#" class="link-light text-decoration-none">Horror</a></li>
                 </ul>
               </div>
 
@@ -921,15 +960,21 @@
                 <ul class="list-unstyled footer-list m-0">
                   <li class="d-flex align-items-center gap-2">
                     <img src="assets/icons/white-phone.svg" width="16" alt="Phone icon">
-                    <a href="tel:+44587999000">+445&nbsp;87&nbsp;999&nbsp;000</a>
+                    <a href="tel:+44587999000" class="link-light text-decoration-none">
+                      +445&nbsp;87&nbsp;999&nbsp;000
+                    </a>
                   </li>
                   <li class="d-flex align-items-center gap-2">
                     <img src="assets/icons/clock.svg" width="16" alt="Clock icon">
-                    <a href="#">Mo-Fri, 9 AM to 11 PM</a>
+                    <a href="#" class="link-light text-decoration-none">
+                      Mo-Fri, 9 AM to 11 PM
+                    </a>
                   </li>
                   <li class="d-flex align-items-center gap-2">
                     <img src="assets/icons/mail.svg" width="16" alt="Mail icon">
-                    <a href="mailto:b.world@store.ro">b.world@store.ro</a>
+                    <a href="mailto:b.world@store.ro" class="link-light text-decoration-none">
+                      b.world@store.ro
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -1014,15 +1059,15 @@
             <img class="footer-social-icon" src="assets/icons/twitter.svg" alt="Twitter icon">
           </div>
 
-          <div class="d-flex flex-md-row gap-3">
-            <img class="footer-payments-icon" src="assets/icons/pay-pal.svg" alt="PayPal icon">
+          <div class="d-flex flex-md-row gap-2">
+            <img class="footer-payments-icon img-fluid" src="assets/icons/pay-pal.svg" alt="PayPal icon">
             <img
-              class="footer-payments-icon master"
+              class="footer-payments-icon img-fluid"
               src="assets/icons/master-card.svg"
               alt="MasterCard icon"
             >
             <img
-              class="footer-payments-icon"
+              class="footer-payments-icon img-fluid"
               src="assets/icons/visa-card.svg"
               alt="Visa icon"
             >
