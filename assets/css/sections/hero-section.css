@@ -7,6 +7,7 @@
   line-height: var(--lh-normal);
   color: var(--tertiary-color);
   border: 1px solid var(--tertiary-color);
+  padding: 10px;
 }
 
 .hero-title {
@@ -21,7 +22,15 @@
   width: 70%;
 }
 
+.btn-hero {
+  padding: 12px 22px;
+}
+
 @media (width >= 768px) {
+  .hero-wrapper {
+    gap: 49px;
+  }
+
   .hero-desc {
     width: 354px;
     margin-bottom: 27px;
@@ -30,9 +39,17 @@
   .hero-img {
     width: 100%;
   }
+
+  .btn-hero {
+    padding: 12px 32px;
+  }
 }
 
 @media (width >= 992px) {
+  .hero-wrapper {
+    gap: 40px;
+  }
+
   .hero-pagination-dot {
     height: 70px;
     border: 1px solid var(--primary-color);
@@ -44,7 +61,8 @@
   }
 
   .hero-title {
-    margin: 32px 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .hero-desc {
@@ -53,25 +71,33 @@
   }
 
   .hero-image-block {
-    width: 627px;
-    height: 533px;
+    width: 623px;
+    height: 535px;
   }
 
   .hero-promo {
-    top: 8%;
-    left: 0;
+    top: 6%;
+    left: 9%;
     font-size: 18px;
-    letter-spacing: 3px;
     color: var(--text-color);
+    letter-spacing: 10%;
   }
 
   .hero-img {
-    margin-right: 55px;
+    margin-right: 64px;
     margin-left: auto;
-    width: 60%;
+    width: 55%;
+    height: 90%;
+    padding-bottom: 10px;
   }
 
   .hero-note {
+    bottom: 9%;
+    margin-right: 0;
     color: var(--heading-color-secondary);
+  }
+
+  .hero-slider {
+    margin-top: 32px;
   }
 }

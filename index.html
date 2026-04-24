@@ -30,21 +30,21 @@
   <body>
     <header class="header-border">
       <div class="container header-area">
-        <div class="d-flex align-items-center justify-content-between top-header">
+        <div class="d-flex align-items-center top-header">
           <a
             href="./index.html"
             class="d-flex align-items-center text-decoration-none flex-shrink-0"
           >
             <img src="assets/images/logo.png" alt="logo" width="60">
             <span class="vr mx-2"></span>
-            <span class="logo-tagline small">
+            <h1 class="logo-tagline small">
               We love
               <br>
               books
-            </span>
+            </h1>
           </a>
 
-          <div class="d-none d-lg-flex align-items-center search ms-1">
+          <div class="d-flex align-items-center search">
             <form class="d-flex align-items-center">
               <label for="search-input" class="visually-hidden">Search books</label>
               <input
@@ -84,7 +84,16 @@
             </li>
           </ul>
 
-          <div class="d-flex align-items-center gap-3 ps-3 flex-shrink-0">
+          <div class="d-flex align-items-center ms-auto gap-3">
+            <div class="d-none d-md-flex d-lg-none align-items-center me-2">
+              <img src="assets/icons/phone.svg" class="icon" alt="Phone icon">
+              <a
+                href="tel:+44587999000"
+                class="ms-2 text-decoration-none text-dark"
+              >
+                +445&nbsp;87&nbsp;999&nbsp;000
+              </a>
+            </div>
             <button type="button" class="btn p-0 divider-icon">
               <img
                 src="assets/icons/purple-cart.svg"
@@ -276,32 +285,34 @@
 
     <main>
       <section id="hero" class="hero container">
-        <div class="align-items-center d-md-flex justify-content-between">
-          <div class="d-none d-lg-flex flex-column gap-4 me-2 hero-pagination">
-            <span class="hero-pagination-dot active"></span>
-            <span class="hero-pagination-dot"></span>
-            <span class="hero-pagination-dot"></span>
-            <span class="hero-pagination-dot"></span>
-          </div>
-          <div>
-            <span class="px-3 py-2 fw-normal hero-badge">
-              Author of august
-            </span>
+        <div class="align-items-center d-md-flex gap-3">
+          <div class="hero-wrapper d-flex">
+            <div class="d-none d-lg-flex flex-column gap-4 hero-pagination">
+              <span class="hero-pagination-dot active"></span>
+              <span class="hero-pagination-dot"></span>
+              <span class="hero-pagination-dot"></span>
+              <span class="hero-pagination-dot"></span>
+            </div>
+            <div>
+              <span class="fw-normal hero-badge d-inline-block">
+                Author of august
+              </span>
 
-            <h1 class="text-xl fw-bold lh-sm mb-3 hero-title">
-              Eric-Emanuel Schmitt
-            </h1>
+              <h1 class="text-xl fw-bold lh-sm hero-title">
+                Eric-Emanuel Schmitt
+              </h1>
 
-            <p class="lh-base body-text hero-desc">
-              Eric-Emmanuel Schmitt has been awarded more than 20 literary
-              prizes and distinctions, and in 2001 he received the title of
-              Chevalier des Arts et des Lettres. His books have been translated
-              into over 40 languages.
-            </p>
+              <p class="lh-base body-text hero-desc">
+                Eric-Emmanuel Schmitt has been awarded more than 20 literary
+                prizes and distinctions, and in 2001 he received the title of
+                Chevalier des Arts et des Lettres. His books have been translated
+                into over 40 languages.
+              </p>
 
-            <button type="button" class="btn btn-primary">
-              View his books
-            </button>
+              <button type="button" class="btn btn-primary btn-hero" aria-label="View Eric-Emanuel Schmitt's books">
+                View his books
+              </button>
+            </div>
           </div>
 
           <div
@@ -326,10 +337,25 @@
             >
               *within the stock limit
             </span>
+            <div
+              class="d-none d-lg-flex position-absolute gap-4 align-items-center justify-content-center hero-slider"
+            >
+              <button type="button" class="btn-outline-primary slider-btn" aria-label="Previous slide">
+                <svg class="icon">
+                  <use href="assets/icons/sprite.svg#chevron-left"></use>
+                </svg>
+              </button>
+
+              <button type="button" class="btn-outline-primary slider-btn" aria-label="Next slide">
+                <svg class="icon">
+                  <use href="assets/icons/sprite.svg#chevron-right"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         <div
-          class="d-flex gap-3 align-items-center justify-content-center"
+          class="d-flex d-lg-none gap-4 align-items-center justify-content-center"
         >
           <button type="button" class="btn-outline-primary slider-btn" aria-label="Previous slide">
             <svg class="icon">
@@ -412,7 +438,7 @@
                   <h3 class="text-name-card text-truncate">Financial Feminist</h3>
                   <p class="body-text product-card-author text-truncate">Tori Dunlap</p>
                   <div
-                    class="d-flex align-items-end justify-content-between product-card-bottom"
+                    class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
@@ -420,7 +446,7 @@
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
-                      <svg class="icon">
+                      <svg class="icon product-card-wishlist-icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
@@ -453,7 +479,7 @@
                   <h3 class="text-name-card text-truncate">No More Police</h3>
                   <p class="body-text product-card-author text-truncate">Andrea Ritchie</p>
                   <div
-                    class="d-flex align-items-end justify-content-between product-card-bottom"
+                    class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
@@ -461,7 +487,7 @@
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
-                      <svg class="icon">
+                      <svg class="icon product-card-wishlist-icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
@@ -494,7 +520,7 @@
                   <h3 class="text-name-card text-truncate">I'm Glad My Mom Died</h3>
                   <p class="body-text product-card-author text-truncate">Jennette McCurdy</p>
                   <div
-                    class="d-flex align-items-end justify-content-between product-card-bottom"
+                    class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
@@ -502,7 +528,7 @@
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
-                      <svg class="icon">
+                      <svg class="icon product-card-wishlist-icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
@@ -535,7 +561,7 @@
                   <h3 class="text-name-card text-truncate">Chain of Gold</h3>
                   <p class="body-text product-card-author text-truncate">Cassandra Clare</p>
                   <div
-                    class="d-flex align-items-end justify-content-between product-card-bottom"
+                    class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
@@ -543,7 +569,7 @@
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
-                      <svg class="icon">
+                      <svg class="icon product-card-wishlist-icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
@@ -621,7 +647,7 @@
                   <h3 class="text-name-card text-truncate">Harlem Shuffle</h3>
                   <p class="body-text product-card-author text-truncate">Colson Whitehead</p>
                   <div
-                    class="d-flex align-items-end justify-content-between product-card-bottom"
+                    class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
@@ -629,7 +655,7 @@
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
-                      <svg class="icon">
+                      <svg class="icon product-card-wishlist-icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
@@ -662,7 +688,7 @@
                   <h3 class="text-name-card text-truncate">Two Old Women</h3>
                   <p class="body-text product-card-author text-truncate">Velma Wallis</p>
                   <div
-                    class="d-flex align-items-end justify-content-between product-card-bottom"
+                    class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
@@ -670,7 +696,7 @@
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
-                      <svg class="icon">
+                      <svg class="icon product-card-wishlist-icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
@@ -705,7 +731,7 @@
                     Taylor Jenkins Reid
                   </p>
                   <div
-                    class="d-flex align-items-end justify-content-between product-card-bottom"
+                    class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
@@ -713,7 +739,7 @@
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
-                      <svg class="icon">
+                      <svg class="icon product-card-wishlist-icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
@@ -746,7 +772,7 @@
                   <h3 class="text-name-card text-truncate">Book Lovers</h3>
                   <p class="body-text product-card-author text-truncate">Emily Henry</p>
                   <div
-                    class="d-flex align-items-end justify-content-between product-card-bottom"
+                    class="d-flex align-items-center justify-content-between product-card-bottom"
                   >
                     <span class="text-sm product-card-price">$20.46</span>
                     <button
@@ -754,7 +780,7 @@
                       class="product-card-wishlist"
                       aria-label="Add to wishlist"
                     >
-                      <svg class="icon">
+                      <svg class="icon product-card-wishlist-icon">
                         <use href="assets/icons/sprite.svg#wishlist"></use>
                       </svg>
                     </button>
@@ -832,7 +858,7 @@
             </form>
           </div>
 
-          <div class="map position-relative newsletter-map">
+          <div class="map mt-lg-0 position-relative newsletter-map">
             <img
               src="assets/images/map.png"
               alt="Store location map"

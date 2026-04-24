@@ -23,11 +23,11 @@
 
 @media (width >= 768px) {
   .newsletter-content {
-    max-width: 555px;
+    max-width: 565px;
   }
 
   .newsletter-title {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 
   .newsletter-btn {
@@ -40,16 +40,12 @@
     gap: 60px;
   }
 
-  .newsletter-content {
-    flex: 1;
-  }
-
   .newsletter-desc {
-    margin-bottom: 0;
+    margin-bottom: 57px;
   }
 
   .newsletter-btn {
-    margin-top: 27px;
+    margin-top: 15px;
   }
 
   .newsletter-map {
