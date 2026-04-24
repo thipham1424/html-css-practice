@@ -9,11 +9,9 @@
 .product-viewport {
   overflow-x: auto;
   scroll-behavior: smooth;
-  
+
   /* use negative margin to remove container padding */
-  margin-right: calc(
-    -1 * var(--container-padding)
-  );
+  margin-right: calc(-1 * var(--container-padding));
 }
 
 .product-viewport::-webkit-scrollbar {
